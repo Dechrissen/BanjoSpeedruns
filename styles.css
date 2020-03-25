@@ -1,3 +1,32 @@
 body {
-  background-color: lightgrey;
+  background-color: aliceblue;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+div.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(auto, auto);
+}
+
+div.panel {
+  border: 3px solid;
+  padding: 2px;
+}
+
+div.info {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+div.bk {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+div.bt {
+  grid-column: 2;
+  grid-row: 2;
 }
