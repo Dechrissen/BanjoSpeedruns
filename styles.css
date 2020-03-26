@@ -1,19 +1,78 @@
 body {
   background-color: aliceblue;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 0.875em;
+}
+
+.panelname {
+  font-family: Georgia, Times, serif;
+}
+
+.title {
+  font-family: Georgia, Times, serif;
+}
+
+.section {
+  font-family: Georgia, Times, serif;
+  font-size: 1.4em;
+}
+
+.trick {
+  font-size: 1em;
+}
+
+a:link {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+div.navwrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  grid-auto-rows: minmax(auto, auto);
+}
+
+div.navbox {
+  grid-column: 1;
+  grid-row: 1;
+  border: 1px solid;
+  padding: 3px;
+  background-color: #d8dfe5;
 }
 
 div.wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
   grid-auto-rows: minmax(auto, auto);
 }
 
 div.panel {
-  border: 3px solid;
-  padding: 2px;
+  border: 2px solid;
+  padding: 4px;
+  background-color: #d8dfe5;
 }
 
 div.info {
@@ -22,11 +81,11 @@ div.info {
 }
 
 div.bk {
-  grid-column: 1;
-  grid-row: 2;
+  grid-column: 2;
+  grid-row: 1;
 }
 
 div.bt {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 3;
+  grid-row: 1;
 }
