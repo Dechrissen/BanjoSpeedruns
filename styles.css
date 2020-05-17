@@ -1,5 +1,5 @@
 body {
-  background-color: aliceblue;
+  background-color: white;
   margin-left: 20%;
   margin-right: 20%;
   font-family: "Open Sans", Helvetica, sans-serif;
@@ -59,12 +59,12 @@ div.navbox {
   grid-row: 1;
   border: 1px solid;
   padding: 3px;
-  background-color: #d8dfe5;
+  background-color: #D8D8D8;
 }
 
 div.wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   grid-gap: 15px;
   grid-auto-rows: minmax(auto, auto);
 }
@@ -72,20 +72,36 @@ div.wrapper {
 div.panel {
   border: 2px solid;
   padding: 4px;
-  background-color: #d8dfe5;
+  background-color: #D8D8D8;
 }
 
-div.info {
+
+div.bk {
   grid-column: 1;
   grid-row: 1;
 }
 
-div.bk {
+div.bt {
   grid-column: 2;
   grid-row: 1;
 }
 
-div.bt {
+div.gr {
   grid-column: 3;
   grid-row: 1;
+}
+
+div.bp {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+div.nb {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+div.info {
+  grid-column: 3;
+  grid-row: 2;
 }
