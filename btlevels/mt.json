@@ -1,0 +1,19 @@
+{
+  "title":"Mayahem Temple",
+  "description":"blabla fun level haha",
+  "general":[
+    {"name":"Jade Snake Grove Early", "description":"cool trick", "video":"https://www.youtube.com/embed/RaXh8aMmdG0"},
+    {"name":"Pillars", "description":"cool trick", "video":"https://www.youtube.com/embed/Huy-Vhfm64Q"},
+    {"name":"Prison Compound Code", "description":"cool trick", "video":"https://www.youtube.com/embed/S-WeHArOWK"},
+    {"name":"Relic Jump", "description":"cool trick", "video":"https://www.youtube.com/embed/MV8dfNrBqLw"},
+    {"name":"Stadium Early", "description":"cool trick", "video":"https://www.youtube.com/embed/uRJIKw5zNwA"}
+  ],
+  "cwkshots":[
+    {"name":"Swamp Jiggy Shot", "description":"cool trick", "video":"https://www.youtube.com/embed/E3RGZthPNoc"},
+    {"name":"Pillars Shots", "description":"cool trick", "video":"https://www.youtube.com/embed/S-WeHArOWK0"}
+  ],
+  "cwkwarps":[
+    {"name":"Snake Head Skip", "description":"cool trick", "video":"https://www.youtube.com/embed/bcXc2OFDQsU"}
+  ],
+  "outofbounds":[]
+}

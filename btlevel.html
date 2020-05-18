@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Derek Andersen">
+    <meta name="description" content="Website for the Banjo-Kazooie speedrunning community.">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>BT Level Template</title>
+    <script type="text/javascript">
+      async function injectLevelData () {
+        var x = await fetch("./btlevels/mt.json");
+        x = await x.json();
+        var newP = document.createElement('p');
+        var newContent = document.createTextNode(x.general[0].description);
+        newP.appendChild(newContent);
+        currentDiv = document.getElementById("abc");
+        document.body.insertBelow(newP, currentDiv);
+      }
+    </script>
+  </head>
+  <body>
+    <p id="abc">Hello World</p>
+    <button type="button" onclick=injectLevelData()>Click here</button>
+  </body>
+</html>
