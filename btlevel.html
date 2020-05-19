@@ -6,60 +6,22 @@
     <meta name="description" content="Website for the Banjo-Kazooie speedrunning community.">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>BT Level Template</title>
-    <script type="text/javascript">
-      // function that is called upon loading a level page
-      async function injectLevelData () {
-        // get current level from URL
-        var level = await fetch("./btlevels/mt.json");
-        level = await level.json();
-        // set page name, title and description to current level
-        document.title = level.title;
-        document.getElementById("levelname").innerHTML = level.title;
-        document.getElementById("description").innerHTML = level.description;
-
-        if (level.general.length > 0) {
-          var section = document.createElement("p");
-          section.classList.add("section");
-          section.setAttribute("id", "general");
-          var content = document.createTextNode("General Tricks");
-          section.appendChild(content);
-          currentP = document.getElementById("last");
-          document.body.insertBefore(section, currentP);
-
-          var i;
-          for (i = 0; i < level.general.length; i++) {
-            last = document.getElementById("last");
-            //
-            var trick = document.createElement("p");
-            trick.classList.add("trick");
-            var name = document.createTextNode(level.general[i].name);
-            trick.appendChild(name);
-            document.body.insertBefore(trick, last);
-            //
-            var description = document.createElement("p");
-            var des = document.createTextNode(level.general[i].description);
-            description.appendChild(des);
-            document.body.insertBefore(description, last);
-            //
-            var videoP = document.createElement("p");
-            var iframe = document.createElement("iframe");
-            iframe.width = "560";
-            iframe.height = "315";
-            iframe.src = level.general[i].video;
-            iframe.frameborder = "0";
-            iframe.allowfullscreen = "true";
-            videoP.appendChild(iframe);
-            document.body.insertBefore(videoP, last);
-          }
-        }
-      }
-    </script>
+    <script type="text/javascript" src="./functions.js"></script>
   </head>
   <body>
-    <p id="levelname">Level Name</p>
-    <p id="abc">Hello World</p>
-    <button type="button" onclick=injectLevelData()>Click here</button>
-    <p id="description">Level description.</p>
+    <p id="levelname">[Level Name]</p>
+    <hr>
+    <div class="navwrapper">
+      <div class="navbox">
+        <p><b>Index</b></p>
+        <ol id="boxlist"></ol>
+      </div>
+    </div>
+
+    <button type="button" onclick=injectLevelData()>Click here to inject level data</button>
+    <button type="button" onclick=populateNavBox()>Click here to populate navbox</button>
+
+    <p id="description">[Level description]</p>
     <p id="last"></p>
   </body>
 </html>
