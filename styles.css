@@ -23,6 +23,10 @@ body {
   font-size: 1.2em;
 }
 
+#t {
+  color: red;
+}
+
 a:link {
   color: blue;
   background-color: transparent;
