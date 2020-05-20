@@ -1,17 +1,17 @@
 var sections = ["general", "cwkshots", "cwkwarps", "outofbounds"];
 var sectionNames = ["General Tricks", "Clockwork Shots", "Clockwork Warps", "Out of Bounds"];
 var level;
-var url = "banjowiki.com/btlevels/ggm"
+var url = "banjowiki.com/btlevels/mt"
 //var url = window.location.href;
 var code = url.split("/").pop();
 
 async function injectLevelData () {
   // get current level from URL
   level = await fetch("./btlevels/"+code+".json")
+  // check if level code JSON exists, and return 404 if not
   if (level.ok == false) {
     return errorPage();
   }
-  //level = await fetch("./btlevels/mt.json");
   level = await level.json();
   // set page name, title and description to current level
   document.title = level.title;
