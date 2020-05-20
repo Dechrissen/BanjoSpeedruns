@@ -1,10 +1,17 @@
 var sections = ["general", "cwkshots", "cwkwarps", "outofbounds"];
 var sectionNames = ["General Tricks", "Clockwork Shots", "Clockwork Warps", "Out of Bounds"];
 var level;
+var url = "banjowiki.com/btlevels/ggm"
+//var url = window.location.href;
+var code = url.split("/").pop();
 
 async function injectLevelData () {
   // get current level from URL
-  level = await fetch("./btlevels/mt.json");
+  level = await fetch("./btlevels/"+code+".json")
+  if (level.ok == false) {
+    return errorPage();
+  }
+  //level = await fetch("./btlevels/mt.json");
   level = await level.json();
   // set page name, title and description to current level
   document.title = level.title;
@@ -67,4 +74,8 @@ function populateNavBox () {
       ol.appendChild(li);
     }
   }
+}
+
+function errorPage () {
+  window.location.replace("./404.html");
 }
