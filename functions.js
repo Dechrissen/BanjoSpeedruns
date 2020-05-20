@@ -1,13 +1,22 @@
-var sections = ["general", "cwkshots", "cwkwarps", "outofbounds"];
-var sectionNames = ["General Tricks", "Clockwork Shots", "Clockwork Warps", "Out of Bounds"];
-var level;
-var url = "banjowiki.com/btlevels/mt"
 //var url = window.location.href;
-var code = url.split("/").pop();
+var url = "https://banjowiki.com/bklevels/mm"
+var game = url.split("/")[3];
+switch (game) {
+  case "btlevels":
+    var sections = ["general", "cwkshots", "cwkwarps", "outofbounds"];
+    var sectionNames = ["General Tricks", "Clockwork Shots", "Clockwork Warps", "Out of Bounds"];
+    break;
+  case "bklevels":
+    var sections = ["general", "outofbounds"];
+    var sectionNames = ["General Tricks", "Out of Bounds"];
+    break;
+}
+var level;
+var levelcode = url.split("/").pop();
 
 async function injectLevelData () {
   // get current level from URL
-  level = await fetch("./btlevels/"+code+".json")
+  level = await fetch("./"+game+"/"+levelcode+".json")
   // check if level code JSON exists, and return 404 if not
   if (level.ok == false) {
     return errorPage();
