@@ -1,11 +1,17 @@
 # Level JSON Guidelines
 The individual level pages are automatically generated based on the JSON files for the respective levels.
 The file `level.html` is a template HTML file that is populated with level data via the `injectLevelData()` function, depending on the level in the URL.
-For this reason, the JSON level files must follow a particular format in order for the injection to work properly.  
+For this reason, the JSON level files must follow a particular format in order for the injection to work properly. The guidelines for each
+individual game are below.
 
 ## Games
 1. [Banjo-Kazooie](#banjo-kazooie)
 2. [Banjo-Tooie](#banjo-tooie)
+
+### Important things to note
+- The video fields for each trick contain *embed* links, not normal video links (note the `/embed`)
+- If there is no description or video for a trick, leave those fields as empty strings (i.e. `""`)
+- If there are no tricks in a particular category (like `"outofbounds"` above), leave its list empty
 
 ## Banjo-Kazooie
 
@@ -31,7 +37,9 @@ Sample JSON level data, named `mm.json`, for Mumbo's Mountain:
 4. `"outofbounds"` Out-of-bounds tricks (list)  
 
 Fields 1 and 2 contain strings, while fields 3 and 4 contain lists of JSON objects (one object per trick in that category).
-A trick object contains 3 fields: `"name"`, `"description"`, and `"video"`, which are self-explanatory.
+A trick object contains 3 fields: `"name"`, `"description"`, and `"video"`, which are self-explanatory.  
+
+[JSON template for Banjo-Kazooie levels](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/JSON_Guidelines/bkleveltemplate.json)
 
 ## Banjo-Tooie
 
@@ -67,9 +75,6 @@ Sample JSON level data, named `mt.json`, for Mayahem Temple:
 6. `"outofbounds"` Out-of-bounds tricks (list)  
 
 Fields 1 and 2 contain strings, while fields 3-6 contain lists of JSON objects (one object per trick in that category).
-A trick object contains 3 fields: `"name"`, `"description"`, and `"video"`, which are self-explanatory.
+A trick object contains 3 fields: `"name"`, `"description"`, and `"video"`, which are self-explanatory.  
 
-#### Important things to note
-- The video fields for each trick contain *embed* links, not normal video links (note the `/embed`)
-- If there is no description or video for a trick, leave those fields as empty strings (i.e. `""`)
-- If there are no tricks in a particular category (like `"outofbounds"` above), leave its list empty
+![JSON template for Banjo-Tooie levels](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/JSON_Guidelines/btleveltemplate.json)
