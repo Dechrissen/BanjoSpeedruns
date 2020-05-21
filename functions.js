@@ -46,8 +46,10 @@ async function injectLevelData () {
         //
         var trick = document.createElement("p");
         trick.classList.add("trick");
-        var name = document.createTextNode(level[sections[index]][i].name);
+        var trick_name = level[sections[index]][i].name;
+        var name = document.createTextNode(trick_name);
         trick.appendChild(name);
+        trick.setAttribute("id", trick_name.replace(/ /g, "_").replace(/'/g, ""));
         document.body.insertBefore(trick, last);
         //
         var description = document.createElement("p");
@@ -82,8 +84,24 @@ function populateNavBox () {
       var name = document.createTextNode(sectionNames[index]);
       link.appendChild(name);
       li.appendChild(link);
-      ol = document.getElementById("boxlist");
-      ol.appendChild(li);
+      ul = document.getElementById("boxlist");
+      ul.appendChild(li);
+      // create sublist of tricks for current trick section
+      var sub_ol = document.createElement("ol");
+      var num;
+      for (num = 0; num < level[sections[index]].length; num++) {
+        var sub_li = document.createElement("li");
+        var sub_link = document.createElement("a");
+        var trick_name = level[sections[index]][num].name;
+        // remove spaces and apostrophes from trick name, then make it a #bookmark
+        sub_link.setAttribute("href", "#" + trick_name.replace(/ /g, "_").replace(/'/g, ""));
+        var sub_name = document.createTextNode(trick_name);
+        sub_link.appendChild(sub_name);
+        sub_li.appendChild(sub_link);
+        sub_ol.appendChild(sub_li);
+      }
+      // add bookmarked trick list under corresponding trick section in nav box
+      ul.appendChild(sub_ol);
     }
   }
 }
