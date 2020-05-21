@@ -8,9 +8,10 @@
     <title>BK/BT Level Template</title>
     <script type="text/javascript" src="./functions.js"></script>
   </head>
-  <body>
-    <p id="levelname">[LEVEL NAME]</p>
+  <body onload=injectLevelData()>
+    <h1 class="title" id="levelname">[LEVEL NAME]</h1>
     <hr>
+
     <div class="navwrapper">
       <div class="navbox">
         <p><b>Index</b></p>
@@ -18,10 +19,8 @@
       </div>
     </div>
 
-    <button type="button" onclick=injectLevelData()>Click here to inject level data</button>
-    <button type="button" onclick=populateNavBox()>Click here to populate navbox</button>
-
     <p id="description">[LEVEL DESCRIPTION]</p>
+
     <p id="last"></p>
   </body>
 </html>

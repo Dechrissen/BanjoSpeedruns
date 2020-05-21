@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/bklevels/mm"
+var url = "https://banjowiki.com/btlevels/mt"
 var game = url.split("/")[3];
 switch (game) {
   case "btlevels":
@@ -37,6 +37,8 @@ async function injectLevelData () {
       section.appendChild(content);
       currentP = document.getElementById("last");
       document.body.insertBefore(section, currentP);
+      var hr = document.createElement("hr");
+      document.body.insertBefore(hr, currentP);
 
       var i;
       for (i = 0; i < level[sections[index]].length; i++) {
@@ -67,6 +69,7 @@ async function injectLevelData () {
       }
     }
   }
+  populateNavBox();
 }
 
 function populateNavBox () {
