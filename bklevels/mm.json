@@ -1,10 +1,10 @@
 {
   "title":"Mumbo's Mountain",
-  "description":"This is a suuuuuuuuuuuuuuuuuuuuper fun level haha!",
+  "description":"This is a fun level haha!",
   "general":[
-    {"name":"Termite Tower (v. 1.0 only)", "description":"This is a cool trick.", "video":"https://www.youtube.com/embed/tAq4nIyZWJ8"}
+    {"name":"Trick 1", "description":"This is a cool trick.", "video":"https://www.youtube.com/embed/tAq4nIyZWJ8"}
   ],
   "outofbounds":[
-    {"name":"Termite Tower TAS", "description":"This is also a cool trick.", "video":"https://www.youtube.com/embed/LMvXeUZFbgg"}
+    {"name":"Trick 2", "description":"This is also a cool trick.", "video":"https://www.youtube.com/embed/LMvXeUZFbgg"}
   ]
 }

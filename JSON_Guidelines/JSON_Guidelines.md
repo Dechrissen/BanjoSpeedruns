@@ -1,7 +1,39 @@
-# Banjo-Tooie Level JSON Guidelines
+# Level JSON Guidelines
 The individual level pages are automatically generated based on the JSON files for the respective levels.
-The file `btlevel.html` is a template HTML file that is populated with level data via the `injectLevelData()` function, depending on the level in the URL.
+The file `level.html` is a template HTML file that is populated with level data via the `injectLevelData()` function, depending on the level in the URL.
 For this reason, the JSON level files must follow a particular format in order for the injection to work properly.  
+
+## Games
+1. [Banjo-Kazooie](#banjo-kazooie)
+2. [Banjo-Tooie](#banjo-tooie)
+
+## Banjo-Kazooie
+
+Sample JSON level data, named `mm.json`, for Mumbo's Mountain:
+```
+{
+  "title":"Mumbo's Mountain",
+  "description":"Cool level description words go here.",
+  "general":[
+    {"name":"Trick 1", "description":"This is a cool trick.", "video":"https://www.youtube.com/embed/abcdefg1234"}
+  ],
+  "outofbounds":[
+    {"name":"Trick 2", "description":"This is a bad trick.", "video":"https://www.youtube.com/embed/abcdefg1234"},
+    {"name":"Trick 3", "description":"This is a really bad trick.", "video":"https://www.youtube.com/embed/abcdefg1234"}
+  ]
+}
+```
+
+#### Fields
+1. `"title"` Name of the level
+2. `"description"` Level description
+3. `"general"` General tricks (list)
+4. `"outofbounds"` Out-of-bounds tricks (list)  
+
+Fields 1 and 2 contain strings, while fields 3 and 4 contain lists of JSON objects (one object per trick in that category).
+A trick object contains 3 fields: `"name"`, `"description"`, and `"video"`, which are self-explanatory.
+
+## Banjo-Tooie
 
 Sample JSON level data, named `mt.json`, for Mayahem Temple:
 ```
@@ -39,5 +71,5 @@ A trick object contains 3 fields: `"name"`, `"description"`, and `"video"`, whic
 
 #### Important things to note
 - The video fields for each trick contain *embed* links, not normal video links (note the `/embed`)
-- If there is no description or video for a trick, leave those fields as empty strings (i.e. `""`) 
+- If there is no description or video for a trick, leave those fields as empty strings (i.e. `""`)
 - If there are no tricks in a particular category (like `"outofbounds"` above), leave its list empty
