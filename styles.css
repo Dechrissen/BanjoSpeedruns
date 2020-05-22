@@ -23,30 +23,26 @@ body {
   font-size: 1.2em;
 }
 
-#t {
-  color: red;
-}
-
 a:link {
-  color: blue;
+  color: #2F65F9;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: green;
+  color: #311C90;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: orange;
+  font-size: 110%;
   background-color: transparent;
   text-decoration: underline;
 }
 
 a:active {
-  color: blue;
+  color: #FAFA69;
   background-color: transparent;
   text-decoration: none;
 }
@@ -83,11 +79,13 @@ div.panel {
 div.bk {
   grid-column: 1;
   grid-row: 1;
+  background-color: Salmon;
 }
 
 div.bt {
   grid-column: 2;
   grid-row: 1;
+  background-color: SkyBlue;
 }
 
 div.gr {
@@ -108,4 +106,5 @@ div.nb {
 div.info {
   grid-column: 3;
   grid-row: 1;
+  background-color: LightGreen;
 }
