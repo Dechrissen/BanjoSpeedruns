@@ -2,16 +2,17 @@ body {
   background-color: white;
   margin-left: 20%;
   margin-right: 20%;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "OpenSans", Helvetica, sans-serif;
   font-size: 0.875em;
 }
 
 .panelname {
-  font-family: Georgia, Times, serif;
+  font-family: "SourceSerifPro", Times, serif;
+  font-size: 1.2em;
 }
 
 .title {
-  font-family: Georgia, Times, serif;
+  font-family: "SourceSerifPro", Times, serif;
 }
 
 .section {
@@ -36,9 +37,10 @@ a:visited {
 }
 
 a:hover {
-  font-size: 110%;
-  background-color: transparent;
-  text-decoration: underline;
+  font-size: 100%;
+  background-color: AliceBlue;
+  text-decoration: none;
+  border-radius: 3px;
 }
 
 a:active {
@@ -70,9 +72,10 @@ div.wrapper {
 }
 
 div.panel {
-  border: 2px solid;
+  border: 2.75px solid;
   padding: 4px;
   background-color: #D8D8D8;
+  border-radius: 20px;
 }
 
 
@@ -107,4 +110,14 @@ div.info {
   grid-column: 3;
   grid-row: 1;
   background-color: LightGreen;
+}
+
+@font-face {
+    font-family: 'OpenSans'; /*a name to be used later*/
+    src: './Fonts/OpenSans-Regular.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'SourceSerifPro'; /*a name to be used later*/
+    src: './Fonts/SourceSerifPro-Regular.ttf'); /*URL to font*/
 }
