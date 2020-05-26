@@ -3,11 +3,22 @@ body {
   margin-left: 20%;
   margin-right: 20%;
   font-family: "OpenSans", Helvetica, sans-serif;
-  font-size: 0.875em;
+  font-size: .95em;
+}
+
+hr {
+border: 0;
+height: 2px;
+background: #333;
+background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
 }
 
 .panelname {
-  font-family: "SourceSerifPro", Times, serif;
+  font-family: "Charter", Times, serif;
+  font-weight: bold;
   font-size: 1.2em;
 }
 
@@ -15,9 +26,14 @@ body {
   font-family: "SourceSerifPro", Times, serif;
 }
 
+#levelname {
+  font-size: 250%;
+}
+
 .section {
-  font-family: Georgia, Times, serif;
-  font-size: 1.4em;
+  font-family: "Charter", Times, serif;
+  font-weight: bold;
+  font-size: 1.6em;
 }
 
 .trick {
@@ -25,13 +41,13 @@ body {
 }
 
 a:link {
-  color: #2F65F9;
+  color: Black;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #311C90;
+  color: Black;
   background-color: transparent;
   text-decoration: none;
 }
@@ -43,15 +59,25 @@ a:hover {
   border-radius: 3px;
 }
 
+ul {
+  list-style: none;
+}
+
+#trick-list-section {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 a:active {
-  color: #FAFA69;
+  color: LightGrey;
   background-color: transparent;
   text-decoration: none;
 }
 
 div.navwrapper {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
   grid-auto-rows: minmax(auto, auto);
 }
@@ -60,8 +86,9 @@ div.navbox {
   grid-column: 1;
   grid-row: 1;
   border: 1px solid;
-  padding: 3px;
-  background-color: #D8D8D8;
+  border-radius: 5px;
+  padding: 2px;
+  background-color: FloralWhite;
 }
 
 div.wrapper {
@@ -72,7 +99,7 @@ div.wrapper {
 }
 
 div.panel {
-  border: 2.75px solid;
+  border: 2px solid;
   padding: 4px;
   background-color: #D8D8D8;
   border-radius: 20px;
@@ -113,11 +140,28 @@ div.info {
 }
 
 @font-face {
-    font-family: 'OpenSans'; /*a name to be used later*/
-    src: './Fonts/OpenSans-Regular.ttf'); /*URL to font*/
+    font-family: 'OpenSans';
+    src: './Fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'SourceSerifPro'; /*a name to be used later*/
-    src: './Fonts/SourceSerifPro-Regular.ttf'); /*URL to font*/
+    font-family: 'SourceSerifPro';
+    src: './Fonts/SourceSerifPro-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'SourceSerifPro';
+    src: './Fonts/SourceSerifPro-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: './Fonts/charter_regular-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'Charter';
+    src: './Fonts/charter_bold-webfont.ttf');
+    font-weight: bold;
 }

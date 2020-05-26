@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/btlevels/mt"
+var url = "https://banjowiki.com/btlevels/mt";
 var game = url.split("/")[3];
 switch (game) {
   case "btlevels":
@@ -60,8 +60,8 @@ async function injectLevelData () {
         if (level.general[i].video != "") {
           var videoP = document.createElement("p");
           var iframe = document.createElement("iframe");
-          iframe.width = "560";
-          iframe.height = "315";
+          iframe.width = "480";
+          iframe.height = "270";
           iframe.src = level[sections[index]][i].video;
           iframe.frameborder = "0";
           iframe.allowfullscreen = "true";
@@ -79,6 +79,7 @@ function populateNavBox () {
   for (index = 0; index < sections.length; index++) {
     if (level[sections[index]].length > 0) {
       var li = document.createElement("li");
+      li.setAttribute("id", "trick-list-section");
       var link = document.createElement("a");
       link.setAttribute("href", "#" + sections[index]);
       var name = document.createTextNode(sectionNames[index]);
