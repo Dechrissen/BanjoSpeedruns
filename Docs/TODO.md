@@ -14,3 +14,4 @@
 - [ ] Search bar
 - [ ] Dynamic columns for tricks in individual level pages (to display more tricks on screen at once for larger displays)
 - [ ] 'Contribute' button (on GitHub)
+- [ ] Repeating Jiggy background image for every page site-wide
