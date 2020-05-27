@@ -1,0 +1,13 @@
+{
+  "title":"Banjo-Tooie 100%",
+  "leaderboard":"https://www.speedrun.com/bt#100",
+  "description":"This category is super easy.",
+  "documents":[
+    {"name":"Cool Document 1", "link":"https://tinyurl.com/vzl8xnp"},
+    {"name":"Cool Document 2", "link":"https://tinyurl.com/vzl8xnp"}
+  ],
+  "videos":[
+    {"name":"Cool Vid 1", "video":"https://www.youtube.com/embed/tAq4nIyZWJ8"},
+    {"name":"Cool Vid 2", "video":"https://www.youtube.com/embed/tAq4nIyZWJ8"}
+  ]
+}

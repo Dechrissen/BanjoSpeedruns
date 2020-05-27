@@ -1,7 +1,7 @@
 body {
   background-color: white;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 18%;
+  margin-right: 18%;
   font-family: "OpenSans", Helvetica, sans-serif;
   font-size: .95em;
 }
@@ -23,7 +23,8 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
 }
 
 .title {
-  font-family: "SourceSerifPro", Times, serif;
+  font-family: "Charter", Times, serif;
+  font-size: bold;
 }
 
 #levelname {
@@ -142,6 +143,12 @@ div.info {
 @font-face {
     font-family: 'OpenSans';
     src: './Fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: './Fonts/OpenSans-Regular.ttf');
+    font-weight: bold;
 }
 
 @font-face {
