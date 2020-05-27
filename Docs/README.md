@@ -1,5 +1,5 @@
 # Banjo Speedrunning Wiki
-*Website for the Banjo-Kazooie speedrunning community.*
+*Website for the Banjo-Kazooie speedrunning community.*  
 https://banjospeedruns.com
 
 ## Purpose
