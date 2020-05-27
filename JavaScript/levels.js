@@ -16,7 +16,7 @@ var levelcode = url.split("/").pop();
 
 async function injectLevelData () {
   // get current level from URL
-  level = await fetch("./"+game+"/"+levelcode+".json")
+  level = await fetch("./"+game+"/"+levelcode+".json");
   // check if level code JSON exists, and return 404 if not
   if (level.ok == false) {
     return errorPage();
