@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/btlevels/mt";
+var url = "https://banjowiki.com/btlevels/mt"; // test url
 var game = url.split("/")[3];
 switch (game) {
   case "btlevels":
@@ -24,14 +24,16 @@ async function injectLevelData () {
   }
 
   level = await level.json();
-  
+
   // set page name, title and description to current level
   document.title = level.title;
   document.getElementById("levelname").innerHTML = level.title;
   document.getElementById("description").innerHTML = level.description;
 
+  // create a section for each trick type if its list isn't empty
   var index;
   for (index = 0; index < sections.length; index++) {
+    // check if the section is empty
     if (level[sections[index]].length > 0) {
       var section = document.createElement("p");
       section.classList.add("section");
@@ -43,10 +45,12 @@ async function injectLevelData () {
       var hr = document.createElement("hr");
       document.body.insertBefore(hr, currentP);
 
+      // add each trick from the section in order
       var i;
       for (i = 0; i < level[sections[index]].length; i++) {
         last = document.getElementById("last");
-        //
+
+        // create p element for trick title
         var trick = document.createElement("p");
         trick.classList.add("trick");
         var trick_name = level[sections[index]][i].name;
@@ -54,12 +58,14 @@ async function injectLevelData () {
         trick.appendChild(name);
         trick.setAttribute("id", trick_name.replace(/ /g, "_").replace(/'/g, ""));
         document.body.insertBefore(trick, last);
-        //
+
+        // create p element for trick description
         var description = document.createElement("p");
         var des = document.createTextNode(level[sections[index]][i].description);
         description.appendChild(des);
         document.body.insertBefore(description, last);
-        //
+
+        // create iframe element for trick video embed
         if (level.general[i].video != "") {
           var videoP = document.createElement("p");
           var iframe = document.createElement("iframe");
@@ -76,6 +82,7 @@ async function injectLevelData () {
   }
   populateNavBox();
 }
+
 
 function populateNavBox () {
   var index;
@@ -109,6 +116,7 @@ function populateNavBox () {
     }
   }
 }
+
 
 function errorPage () {
   window.location.replace("./404.html");

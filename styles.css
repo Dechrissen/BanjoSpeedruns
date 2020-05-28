@@ -24,11 +24,16 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
 
 .title {
   font-family: "Charter", Times, serif;
-  font-size: bold;
+  font-weight: bold;
 }
 
 #levelname {
   font-size: 250%;
+}
+
+#categoryname {
+  font-family: "Charter", Times, serif;
+  font-size: 150%;
 }
 
 .section {
@@ -110,7 +115,7 @@ div.panel {
 div.bk {
   grid-column: 1;
   grid-row: 1;
-  background-color: #ef9193;
+  background-color: #fd9598;
 }
 
 div.bt {

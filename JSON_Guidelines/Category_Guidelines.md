@@ -10,7 +10,7 @@ For this reason, the JSON category files must follow a particular format in orde
 Sample JSON category data, named `100.html`, for Banjo-Kazooie 100%:
 ```
 {
-  "title":"Banjo-Kazooie 100%",
+  "title":"100%",
   "leaderboard":"https://www.speedrun.com/bk#100",
   "description":"This category is super easy and it's not a challenge at all to get sub tooth hurty.",
   "documents":[

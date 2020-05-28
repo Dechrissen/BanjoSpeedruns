@@ -1,6 +1,15 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/btcategories/100";
+var url = "https://banjowiki.com/btcategories/100"; // test url
 var game = url.split("/")[3];
+var gamename;
+switch (game) {
+  case "bkcategories":
+    gamename = "Banjo-Kazooie";
+    break;
+  case "btcategories":
+    gamename = "Banjo-Tooie";
+    break;
+}
 var category;
 var categorycode = url.split("/").pop();
 
@@ -14,8 +23,9 @@ async function injectCategoryData () {
 
   category = await category.json();
 
-  // set page name, title and description to current category
-  document.title = category.title;
+  // set page name, title, description, and add Speedrun.com link for current category
+  document.title = gamename + " " + category.title;
+  document.getElementById("gamename").innerHTML = gamename;
   document.getElementById("categoryname").innerHTML = category.title;
   document.getElementById("description").innerHTML = category.description;
   document.getElementById("leaderboard").innerHTML = "Speedrun.com Leaderboard for " + category.title;
@@ -37,13 +47,15 @@ async function injectCategoryData () {
     var i;
     for (i = 0; i < category["documents"].length; i++) {
       last = document.getElementById("last");
-      //
+
+      // create p element for document name
       var doc = document.createElement("p");
       doc.classList.add("doc");
       var doc_name = category["documents"][i].name;
       var name = document.createTextNode(doc_name);
       document.body.insertBefore(doc, last);
-      //
+
+      // create link to document
       var link = document.createElement("a");
       link.setAttribute("href", category["documents"][i].link);
       link.setAttribute("target", "_blank");
@@ -68,15 +80,24 @@ async function injectCategoryData () {
     var i;
     for (i = 0; i < category["videos"].length; i++) {
       last = document.getElementById("last");
-      //
+
+      // create p element for video name
       var video = document.createElement("p");
       video.classList.add("vid");
       var vid_name = category["videos"][i].name;
       var name = document.createTextNode(vid_name);
-      video.appendChild(name);
+
+      // create link to video, and add it to video title p element
+      var link = document.createElement("a");
+      var link_name = category["videos"][i].video.replace('embed', 'watch');
+      link.setAttribute("href", link_name);
+      link.setAttribute("target", "_blank");
+      link.appendChild(name);
+      video.appendChild(link);
       video.setAttribute("id", vid_name.replace(/ /g, "_").replace(/'/g, ""));
       document.body.insertBefore(video, last);
 
+      // create iframe element for video embed
       var videoP = document.createElement("p");
       var iframe = document.createElement("iframe");
       iframe.width = "352";
@@ -88,7 +109,6 @@ async function injectCategoryData () {
       document.body.insertBefore(videoP, last);
     }
   }
-
 }
 
 
