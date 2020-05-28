@@ -9,6 +9,7 @@
 - [ ] Add clickable bookmarks to the sections in category pages
 - [x] Add video links to the video names in category pages (in addition to the embeds)
 - [ ] Copyright stuff
+- [ ] Add JSONLint (https://jsonlint.com/?code=) to the JSON guidelines files and reformat JSON templates
 
 
 ### Possible To-Do
