@@ -1,6 +1,6 @@
 ![banjospeedruns.com logo](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/images/banjospeedruns-logo.png)
 
-# Banjo Speedrunning Wiki
+# banjospeedruns.com
 *Website for the Banjo-Kazooie speedrunning community.*  
 https://banjospeedruns.com  
 
