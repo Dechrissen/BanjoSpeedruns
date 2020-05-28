@@ -1,8 +1,8 @@
+![banjospeedruns.com logo](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/images/banjospeedruns-logo.png)
+
 # Banjo Speedrunning Wiki
 *Website for the Banjo-Kazooie speedrunning community.*  
 https://banjospeedruns.com  
-
-![banjospeedruns.com logo](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/images/banjospeedruns-logo.png)
 
 ## Purpose
 The purpose of this website is to serve as a collection of resources, tricks, strategies, and routes for speedrunning all *Banjo-Kazooie* series games:
