@@ -16,10 +16,10 @@
 
 ### Banjo-Tooie level files
 - [ ] `sm.json`
-- [ ] `ioh.json`
+- [x] `ioh.json`
 - [ ] `mt.json`
-- [ ] `ggm.json`
-- [ ] `ww.json`
+- [x] `ggm.json`
+- [x] `ww.json`
 - [ ] `jrl.json`
 - [ ] `tdl.json`
 - [ ] `hfp.json`
