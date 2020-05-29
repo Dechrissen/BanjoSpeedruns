@@ -1,0 +1,21 @@
+{
+	"title": "Clanker's Cavern",
+	"description": "I hope you like swimming and cycles.",
+	"general": [{
+		"name": "Tooth Cycles",
+		"description": "To begin the level we are going to dive deep to collect a few notes and a jinjo free Clanker. Gloop, the bubble-producing fish at the bottom of the level, is on a global cycle the moment the level starts. Getting to him fast is necessary for the best positioning and air supply. Three methods around outlined below.",
+		"video": "https://www.youtube.com/embed/4jnM6kdcE68"
+	},
+	{
+		"name":"Honeycomb Backflip",
+		"description":"In 100% it is fastest to do a backflip in mid air to grab Honeycomb 1 and land back where you started. This requires a specific combination of button presses and timing.",
+		"video":"https://www.youtube.com/embed/GRXf74jBMbk?start=630"
+
+	},
+	{
+		"name":"Saw Blade Wonderwingless",
+		"description":"It's fast and simple to go through the saw blades without using wonderwing",
+		"video":"https://www.youtube.com/embed/YcBr4GUJVQg?start=348"
+    }],
+	"outofbounds": []
+}

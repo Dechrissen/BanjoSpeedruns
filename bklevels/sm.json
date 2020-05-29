@@ -1,0 +1,15 @@
+{
+	"title": "Spiral Mountain",
+	"description": "The first area in any run. In 100% we are going to collect 6 honeycombs around the mountain before we head up. In any% we are going straight up the mountain. The only notable trick to mention is Bottles skip which can be accomplished in one of two methods",
+	"general": [{
+		"name": "Bottles Skip (backflip method)",
+		"description": "This method was used intially to skip the bottles cutscene at the top of SM",
+		"video": "https://www.youtube.com/embed/YuK9wP7y2g8"
+    },
+    {
+		"name": "Bottles Skip (new method)",
+		"description": "A newer, faster method of accomplishing the skip.",
+		"video": "https://www.youtube.com/embed/s0mEXtXfpB0"
+	}],
+	"outofbounds": []
+}

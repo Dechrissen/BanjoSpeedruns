@@ -1,0 +1,29 @@
+{
+	"title": "Freezeezy Peak",
+	"description": "Get the wahays ready. The placement of FP in your run varies massively depending on your route.",
+	"general": [{
+		"name": "Yolo Star",
+		"description": "This is a fast method to fly through the star at the top of the christmas tree. IF YOU DO NOT WANT TO DO YOLO STAR THEN THE NEXT BEST THING IS: eakbomb through the star for the first one, turn and fly into it for the second, then beakbust and hold back for the third (press Z as soon as you hear the star sound from the second pass through)",
+		"video": "https://www.youtube.com/embed/8E_xZQBckaA"
+    },
+    {
+        "name":"No-Scoping the Christmas Tree",
+        "description":"This is a tutorial for how you can shoot the tree switch without looking.",
+        "video":"https://www.youtube.com/embed/hwq7g6pCLTA"
+    },
+    {
+        "name":"Honeycomb Swim",
+        "description":"You can get into the tunnel in Wozza's cave meant for Walrus Banjo as regular banjo. This is used to grab the honeycomb and end FP in 100%.",
+        "video":"https://www.youtube.com/embed/EnseAlH-m5k?start=139"
+    },
+    {
+        "name":"100% Boggy Races",
+        "description":"Both boggy race strats are covered here.",
+        "video":"https://www.youtube.com/embed/Mf8kklA8mKA"
+    }],
+	"outofbounds": [{
+        "name":"FP Early",
+		"description":"This trick is used in any% and the fastest route in 100%. *Star Fox voice*: Good luck",
+		"video":"https://www.youtube.com/embed/hq3T4c-HWNs"
+    }]
+}

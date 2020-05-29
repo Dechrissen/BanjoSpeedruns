@@ -1,14 +1,21 @@
 {
 	"title": "Mumbo's Mountain",
-	"description": "This is a fun level haha!",
+	"description": "First level in the run. The route is very different depending on which version you are playing.",
 	"general": [{
-		"name": "Trick 1",
-		"description": "This is a cool trick.",
+		"name": "Ticker's Tower as Banjo & Kazooie",
+		"description": "THIS TRICK IS ONLY AVAILABLE ON v1.0. IT IS NOT POSSIBLE ON XBOX OR v1.1. This allows you to completely skip the transformation for MM. Knowledge of slope abuse will help.",
 		"video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
+	},
+	{
+		"name":"Witch Switch as Banjo & Kazooie",
+		"description":"By using slope abuse you can get Banjo up this mountain without having to be a termite. This and Ticker's Tower can be combined to completely avoid the termite transformation in v1.0",
+		"video":"https://www.youtube.com/embed/YcBr4GUJVQg?start=190"
+
+	},
+	{
+		"name":"Jiggy Jig Skip",
+		"description":"By jumping into the jiggy after the blue jinjo you can catch the jiggy and fall into the water to skip the dancing animation.",
+		"video":"https://www.youtube.com/embed/YcBr4GUJVQg?start=1"
 	}],
-	"outofbounds": [{
-		"name": "Trick 2",
-		"description": "This is also a cool trick.",
-		"video": "https://www.youtube.com/embed/LMvXeUZFbgg"
-	}]
+	"outofbounds": []
 }
