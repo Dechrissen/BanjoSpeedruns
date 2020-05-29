@@ -1,11 +1,20 @@
 {
-  "title":"Mumbo's Mountain",
-  "description":"Cool level description words go here.",
-  "general":[
-    {"name":"Trick 1", "description":"This is a cool trick.", "video":"https://www.youtube.com/embed/abcdefg1234"}
-  ],
-  "outofbounds":[
-    {"name":"Trick 2", "description":"This is a bad trick.", "video":"https://www.youtube.com/embed/abcdefg1234"},
-    {"name":"Trick 3", "description":"This is a really bad trick.", "video":"https://www.youtube.com/embed/abcdefg1234"}
-  ]
+	"title": "Mumbo's Mountain",
+	"description": "Cool level description words go here.",
+	"general": [{
+		"name": "Trick 1",
+		"description": "This is a cool trick.",
+		"video": "https://www.youtube.com/embed/abcdefg1234"
+	}],
+	"outofbounds": [{
+			"name": "Trick 2",
+			"description": "This is a bad trick.",
+			"video": "https://www.youtube.com/embed/abcdefg1234"
+		},
+		{
+			"name": "Trick 3",
+			"description": "This is a really bad trick.",
+			"video": "https://www.youtube.com/embed/abcdefg1234"
+		}
+	]
 }

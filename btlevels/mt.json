@@ -1,19 +1,47 @@
 {
-  "title":"Mayahem Temple",
-  "description":"This is a fun level haha!",
-  "general":[
-    {"name":"Jade Snake Grove Early", "description":"This is a cool trick.", "video":"https://www.youtube.com/embed/RaXh8aMmdG0"},
-    {"name":"Pillars", "description":"This is also a cool trick.", "video":"https://www.youtube.com/embed/Huy-Vhfm64Q"},
-    {"name":"Prison Compound Codes", "description":"This is one of the coolest tricks.", "video":"https://www.youtube.com/embed/EEtp3dI1KD8"},
-    {"name":"Relic Jump", "description":"Amazing trick.", "video":"https://www.youtube.com/embed/MV8dfNrBqLw"},
-    {"name":"Stadium Early", "description":"This trick is really hard.", "video":"https://www.youtube.com/embed/uRJIKw5zNwA"}
-  ],
-  "cwkshots":[
-    {"name":"Swamp Jiggy Shot", "description":"Impossible trick, don't do this in runs.", "video":"https://www.youtube.com/embed/E3RGZthPNoc"},
-    {"name":"Pillars Shots", "description":"One of the hardest tricks.", "video":"https://www.youtube.com/embed/S-WeHArOWK0"}
-  ],
-  "cwkwarps":[
-    {"name":"Snake Head Skip", "description":"Easy trick.", "video":"https://www.youtube.com/embed/bcXc2OFDQsU"}
-  ],
-  "outofbounds":[]
+	"title": "Mayahem Temple",
+	"description": "This is a fun level haha!",
+	"general": [{
+			"name": "Jade Snake Grove Early",
+			"description": "This is a cool trick.",
+			"video": "https://www.youtube.com/embed/RaXh8aMmdG0"
+		},
+		{
+			"name": "Pillars",
+			"description": "This is also a cool trick.",
+			"video": "https://www.youtube.com/embed/Huy-Vhfm64Q"
+		},
+		{
+			"name": "Prison Compound Codes",
+			"description": "This is one of the coolest tricks.",
+			"video": "https://www.youtube.com/embed/EEtp3dI1KD8"
+		},
+		{
+			"name": "Relic Jump",
+			"description": "Amazing trick.",
+			"video": "https://www.youtube.com/embed/MV8dfNrBqLw"
+		},
+		{
+			"name": "Stadium Early",
+			"description": "This trick is really hard.",
+			"video": "https://www.youtube.com/embed/uRJIKw5zNwA"
+		}
+	],
+	"cwkshots": [{
+			"name": "Swamp Jiggy Shot",
+			"description": "Impossible trick, don't do this in runs.",
+			"video": "https://www.youtube.com/embed/E3RGZthPNoc"
+		},
+		{
+			"name": "Pillars Shots",
+			"description": "One of the hardest tricks.",
+			"video": "https://www.youtube.com/embed/S-WeHArOWK0"
+		}
+	],
+	"cwkwarps": [{
+		"name": "Snake Head Skip",
+		"description": "Easy trick.",
+		"video": "https://www.youtube.com/embed/bcXc2OFDQsU"
+	}],
+	"outofbounds": []
 }

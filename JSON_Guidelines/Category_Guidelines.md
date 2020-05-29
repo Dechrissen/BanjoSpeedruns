@@ -6,22 +6,36 @@ For this reason, the JSON category files must follow a particular format in orde
 ### Important things to note
 - The video fields for each trick contain *embed* links, not normal video links (note the `/embed`)
 - If there are no items in a particular section (i.e. no documents/videos), leave its list empty
+- You can run your JSON through [this tool](https://jsonlint.com/?code=) to check its validity
 
 Sample JSON category data, named `100.html`, for Banjo-Kazooie 100%:
 ```
 {
-  "title":"100%",
-  "leaderboard":"https://www.speedrun.com/bk#100",
-  "description":"This category is super easy and it's not a challenge at all to get sub tooth hurty.",
-  "documents":[
-    {"name":"Cool Document 1", "link":"https://tinyurl.com/vzl8xnp"},
-    {"name":"Fun Document 2", "link":"https://tinyurl.com/vzl8xnp"},
-    {"name":"Rad Document 3", "link":"https://tinyurl.com/vzl8xnp"}
-  ],
-  "videos":[
-    {"name":"Cool Vid 1", "video":"https://www.youtube.com/embed/tAq4nIyZWJ8"},
-    {"name":"Helpful Vid 2", "video":"https://www.youtube.com/embed/tAq4nIyZWJ8"}
-  ]
+	"title": "100%",
+	"leaderboard": "https://www.speedrun.com/bk#100",
+	"description": "This category is super easy and it's not a challenge at all to get sub tooth hurty.",
+	"documents": [{
+			"name": "Cool Document 1",
+			"link": "https://tinyurl.com/vzl8xnp"
+		},
+		{
+			"name": "Fun Document 2",
+			"link": "https://tinyurl.com/vzl8xnp"
+		},
+		{
+			"name": "Rad Document 3",
+			"link": "https://tinyurl.com/vzl8xnp"
+		}
+	],
+	"videos": [{
+			"name": "Cool Vid 1",
+			"video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
+		},
+		{
+			"name": "Helpful Vid 2",
+			"video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
+		}
+	]
 }
 ```
 

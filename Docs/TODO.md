@@ -9,7 +9,7 @@
 - [ ] Add clickable bookmarks to the sections in category pages
 - [x] Add video links to the video names in category pages (in addition to the embeds)
 - [ ] Copyright stuff
-- [ ] Add JSONLint (https://jsonlint.com/?code=) to the JSON guidelines files and reformat JSON templates
+- [x] Add JSONLint (https://jsonlint.com/?code=) to the JSON guidelines files and reformat JSON templates
 
 
 ### Possible To-Do
@@ -19,3 +19,4 @@
 - [ ] 'Contribute (on GitHub)' button
 - [ ] Repeating Jiggy background image for every page site-wide
 - [ ] Links to individual game leaderboards in each game's panel, or all in the General panel
+- [ ] Display Speedrun.com leaderboards somewhere on the site

@@ -1,14 +1,27 @@
 {
-  "title":"100%",
-  "leaderboard":"https://www.speedrun.com/bk#100",
-  "description":"This category is super easy and it's not a challenge at all to get sub tooth hurty.",
-  "documents":[
-    {"name":"Cool Document 1", "link":"https://tinyurl.com/vzl8xnp"},
-    {"name":"Fun Document 2", "link":"https://tinyurl.com/vzl8xnp"},
-    {"name":"Rad Document 3", "link":"https://tinyurl.com/vzl8xnp"}
-  ],
-  "videos":[
-    {"name":"Cool Vid 1", "video":"https://www.youtube.com/embed/tAq4nIyZWJ8"},
-    {"name":"Helpful Vid 2", "video":"https://www.youtube.com/embed/tAq4nIyZWJ8"}
-  ]
+	"title": "100%",
+	"leaderboard": "https://www.speedrun.com/bk#100",
+	"description": "This category is super easy and it's not a challenge at all to get sub tooth hurty.",
+	"documents": [{
+			"name": "Cool Document 1",
+			"link": "https://tinyurl.com/vzl8xnp"
+		},
+		{
+			"name": "Fun Document 2",
+			"link": "https://tinyurl.com/vzl8xnp"
+		},
+		{
+			"name": "Rad Document 3",
+			"link": "https://tinyurl.com/vzl8xnp"
+		}
+	],
+	"videos": [{
+			"name": "Cool Vid 1",
+			"video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
+		},
+		{
+			"name": "Helpful Vid 2",
+			"video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
+		}
+	]
 }

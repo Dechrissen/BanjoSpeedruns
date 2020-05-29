@@ -12,21 +12,31 @@ individual game are below.
 - The video fields for each trick contain *embed* links, not normal video links (note the `/embed`)
 - If there is no description or video for a trick, leave those fields as empty strings (i.e. `""`)
 - If there are no tricks in a particular category (like `"outofbounds"` above), leave its list empty
+- You can run your JSON through [this tool](https://jsonlint.com/?code=) to check its validity
 
 ## Banjo-Kazooie
 
 Sample JSON level data, named `mm.json`, for Mumbo's Mountain:
 ```
 {
-  "title":"Mumbo's Mountain",
-  "description":"Cool level description words go here.",
-  "general":[
-    {"name":"Trick 1", "description":"This is a cool trick.", "video":"https://www.youtube.com/embed/abcdefg1234"}
-  ],
-  "outofbounds":[
-    {"name":"Trick 2", "description":"This is a bad trick.", "video":"https://www.youtube.com/embed/abcdefg1234"},
-    {"name":"Trick 3", "description":"This is a really bad trick.", "video":"https://www.youtube.com/embed/abcdefg1234"}
-  ]
+	"title": "Mumbo's Mountain",
+	"description": "Cool level description words go here.",
+	"general": [{
+		"name": "Trick 1",
+		"description": "This is a cool trick.",
+		"video": "https://www.youtube.com/embed/abcdefg1234"
+	}],
+	"outofbounds": [{
+			"name": "Trick 2",
+			"description": "This is a bad trick.",
+			"video": "https://www.youtube.com/embed/abcdefg1234"
+		},
+		{
+			"name": "Trick 3",
+			"description": "This is a really bad trick.",
+			"video": "https://www.youtube.com/embed/abcdefg1234"
+		}
+	]
 }
 ```
 

@@ -23,14 +23,18 @@ For example, the URL `https://banjospeedrunning.com/btlevels/mt` will generate t
 
 ```JSON
 {
-  "title":"Mumbo's Mountain",
-  "description":"This is a fun level haha!",
-  "general":[
-    {"name":"Trick 1", "description":"This is a cool trick.", "video":"https://www.youtube.com/embed/tAq4nIyZWJ8"}
-  ],
-  "outofbounds":[
-    {"name":"Trick 2", "description":"This is also a cool trick.", "video":"https://www.youtube.com/embed/LMvXeUZFbgg"}
-  ]
+	"title": "Mumbo's Mountain",
+	"description": "This is a fun level haha!",
+	"general": [{
+		"name": "Trick 1",
+		"description": "This is a cool trick.",
+		"video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
+	}],
+	"outofbounds": [{
+		"name": "Trick 2",
+		"description": "This is also a cool trick.",
+		"video": "https://www.youtube.com/embed/LMvXeUZFbgg"
+	}]
 }
 ```
 
