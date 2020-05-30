@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/bklevels/fp"; // test url
+var url = "https://banjowiki.com/btlevels/mt"; // test url
 var game = url.split("/")[3];
 switch (game) {
   case "btlevels":

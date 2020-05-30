@@ -1,46 +1,46 @@
 {
 	"title": "Mayahem Temple",
-	"description": "This is a fun level haha!",
+	"description": "Depending on whether the category you're running does GGM Early, Mayahem Temple will come either first or a bit later on in the run after GGM.",
 	"general": [{
 			"name": "Jade Snake Grove Early",
-			"description": "This is a cool trick.",
+			"description": "You can enter Jade Snake Grove without Golden Goliath by flying undernearth the overhanging leaves and beak bombing into a gap to enter the loading zone.",
 			"video": "https://www.youtube.com/embed/RaXh8aMmdG0"
 		},
 		{
 			"name": "Pillars",
-			"description": "This is also a cool trick.",
+			"description": "The pillars can be scaled with some carefully timed jumps, flutters, and beak busts, to skip needing to hit the columns below.",
 			"video": "https://www.youtube.com/embed/Huy-Vhfm64Q"
 		},
 		{
 			"name": "Prison Compound Codes",
-			"description": "This is one of the coolest tricks.",
+			"description": "The Prison Compound is opened with one of three randomly generated codes. This video showcases all three possibilites.",
 			"video": "https://www.youtube.com/embed/EEtp3dI1KD8"
 		},
 		{
 			"name": "Relic Jump",
-			"description": "Amazing trick.",
+			"description": "Targitzan's relic can be stolen without needing to tiptoe across the sticks, which saves a lot of time.",
 			"video": "https://www.youtube.com/embed/MV8dfNrBqLw"
 		},
 		{
 			"name": "Stadium Early",
-			"description": "This trick is really hard.",
+			"description": "The Mayan Kickball stadium can be entered without transforming into the Stony. This requires a precise beak bomb above the guard's head, into the loading zone.",
 			"video": "https://www.youtube.com/embed/uRJIKw5zNwA"
 		}
 	],
 	"cwkshots": [{
 			"name": "Swamp Jiggy Shot",
-			"description": "Impossible trick, don't do this in runs.",
+			"description": "You can shoot a clockwork to grab the Jiggy at the end of the swamp, without needing to wade across the swamp with the boots.",
 			"video": "https://www.youtube.com/embed/E3RGZthPNoc"
 		},
 		{
 			"name": "Pillars Shots",
-			"description": "One of the hardest tricks.",
+			"description": "This video showcases the different clockwork shots to obtain the Jiggy on top of the pillars.",
 			"video": "https://www.youtube.com/embed/S-WeHArOWK0"
 		}
 	],
 	"cwkwarps": [{
 		"name": "Snake Head Skip",
-		"description": "Easy trick.",
+		"description": "One of the more difficult tricks in Mayahem Temple. You can warp into the Treasure Chamber by shooting a clockwork into a crack in the door at the top of the building.",
 		"video": "https://www.youtube.com/embed/bcXc2OFDQsU"
 	}],
 	"outofbounds": []
