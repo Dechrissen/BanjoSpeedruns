@@ -1,30 +1,33 @@
 {
-	"title": "Treasure Trove Cove",
-	"description": "This level introduces flying mechanics so have fun.",
-	"general": [{
-		"name": "Leaky without looking",
-		"description": "It's fastest to poop eggs into leaky from the cliff above without looking at him.",
-		"video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
-	},
-	{
-		"name":"Skip Shock Jump cutscene with Leaky (No FFM)",
-		"description":"In a no FFM run, it is required to talk to Bottles to learn Shock Jump. This cutscene can be overlayed on top of Leaky's sandcastle cutscene to skip it.",
-		"video":"https://www.youtube.com/embed/YcBr4GUJVQg?start=206"
-
-	},
-	{
-		"name":"Nipper Skip",
-		"description":"It is possible to clip inside of Nipper and hit him from behind for a faster fight. Both methods are outlined here",
-		"video":"https://www.youtube.com/embed/LowACfLgl48"
+  "title": "Treasure Trove Cove",
+  "description": "This level introduces flying mechanics so have fun.",
+  "general": [
+    {
+      "name": "Leaky without looking",
+      "description": "It's fastest to poop eggs into leaky from the cliff above without looking at him.",
+      "video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
     },
     {
-        "name":"Lighthouse Flightless",
-        "description":"Through massive slope abuse it is possible to reach the lighthouse without using fly.",
-        "video":"https://www.youtube.com/embed/1ZgYbKz3fcU"
-    }],
-	"outofbounds": [{
-        "name":"TTC Early",
-        "description":"You can get into TTC without having to open the level.",
-        "video":"https://www.youtube.com/embed/awK22KjQazo"
-    }]
+      "name": "Skip Shock Jump cutscene with Leaky (No FFM)",
+      "description": "In a no FFM run, it is required to talk to Bottles to learn Shock Jump. This cutscene can be overlayed on top of Leaky's sandcastle cutscene to skip it.",
+      "video": "https://www.youtube.com/embed/YcBr4GUJVQg?start=206"
+    },
+    {
+      "name": "Nipper Skip",
+      "description": "It is possible to clip inside of Nipper and hit him from behind for a faster fight. Both methods are outlined here",
+      "video": "https://www.youtube.com/embed/LowACfLgl48"
+    },
+    {
+      "name": "Lighthouse Flightless",
+      "description": "Through massive slope abuse it is possible to reach the lighthouse without using fly.",
+      "video": "https://www.youtube.com/embed/1ZgYbKz3fcU"
+    }
+  ],
+  "outofbounds": [
+    {
+      "name": "TTC Early",
+      "description": "You can get into TTC without having to open the level.",
+      "video": "https://www.youtube.com/embed/awK22KjQazo"
+    }
+  ]
 }
