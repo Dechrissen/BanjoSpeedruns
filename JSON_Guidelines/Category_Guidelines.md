@@ -9,7 +9,7 @@ For this reason, the JSON category files must follow a particular format in orde
 - You can run your JSON through [this tool](https://jsonlint.com/?code=) to check its validity
 
 Sample JSON category data, named `100.html`, for Banjo-Kazooie 100%:
-```
+```JSON
 {
 	"title": "100%",
 	"leaderboard": "https://www.speedrun.com/bk#100",

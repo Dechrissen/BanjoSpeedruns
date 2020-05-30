@@ -48,7 +48,7 @@ Sample JSON level data, named `mm.json`, for Mumbo's Mountain:
 4. `"outofbounds"` Out-of-bounds tricks (list)  
 
 Fields 1 and 2 contain strings, while fields 3 and 4 contain lists of JSON objects (one object per trick in that category).
-A trick object contains 3 fields: `"name"`, `"description"`, `"video"`, and `"image"` which are self-explanatory.  
+A trick object contains 4 fields: `"name"`, `"description"`, `"video"`, and `"image"` which are self-explanatory.  
 
 [JSON template for Banjo-Kazooie levels](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/JSON_Guidelines/bkleveltemplate.json)
 
@@ -120,6 +120,6 @@ Sample JSON level data, named `mt.json`, for Mayahem Temple:
 6. `"outofbounds"` Out-of-bounds tricks (list)  
 
 Fields 1 and 2 contain strings, while fields 3-6 contain lists of JSON objects (one object per trick in that category).
-A trick object contains 3 fields: `"name"`, `"description"`, `"video"`, and `"image"` which are self-explanatory.  
+A trick object contains 4 fields: `"name"`, `"description"`, `"video"`, and `"image"` which are self-explanatory.  
 
 ![JSON template for Banjo-Tooie levels](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/JSON_Guidelines/btleveltemplate.json)

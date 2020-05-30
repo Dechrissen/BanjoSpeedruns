@@ -86,7 +86,7 @@ async function injectLevelData () {
           img.setAttribute("alt", level[sections[index]][i].name);
           img.setAttribute("width", "400");
           imgP.appendChild(img);
-          document.body.insertBefore(imgP, last)
+          document.body.insertBefore(imgP, last);
         }
       }
     }
