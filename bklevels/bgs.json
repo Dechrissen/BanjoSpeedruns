@@ -1,14 +1,18 @@
 {
-	"title": "Bubblegloop Swamp",
-	"description": "Depending on your route you will do BGS 4th or as the last level. If it's the last level you will have an extra trick to do.",
-	"general": [{
-		"name": "Hut Jumps",
-		"description": "Normally you are required to beak bust these huts and use the shock jump pads to get up. But it is faster to just jump from the top of each hut to the next patform.",
-		"video": "https://www.youtube.com/embed/W8evhhlpr28?start=390"
-	}],
-	"outofbounds": [{
-        "name":"BGS Early (RBA Only)",
-		"description":"As the bee you can clip into the BGS entrance without opening the level. This is used the RBA route. Mumbo will be able to transform you back once you enter the level.",
-		"video":"https://www.youtube.com/embed/zHqRJ6ew5IY?start=1721"
-    }]
+  "title": "Bubblegloop Swamp",
+  "description": "Depending on your route you will do BGS 4th or as the last level. If it's the last level you will have an extra trick to do.",
+  "general": [
+    {
+      "name": "Hut Jumps",
+      "description": "Normally you are required to beak bust these huts and use the shock jump pads to get up. But it is faster to just jump from the top of each hut to the next patform.",
+      "video": "https://www.youtube.com/embed/W8evhhlpr28?start=390"
+    }
+  ],
+  "outofbounds": [
+    {
+      "name": "BGS Early (RBA Only)",
+      "description": "As the bee you can clip into the BGS entrance without opening the level. This is used the RBA route. Mumbo will be able to transform you back once you enter the level.",
+      "video": "https://www.youtube.com/embed/zHqRJ6ew5IY?start=1721"
+    }
+  ]
 }
