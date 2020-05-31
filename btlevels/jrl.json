@@ -1,0 +1,38 @@
+{
+	"title": "Jolly Roger's Lagoon",
+	"description": "The underwater world of Isle o' Hags.",
+	"general": [{
+			"name": "Octopus Swim Tutorial",
+			"description": "With precise swimming movement, Banjo can avoid being hit by the octopus tentacles without freezing it.",
+			"video": "https://www.youtube.com/embed/6j6b8EXWTuI"
+		},
+		{
+			"name": "Alcove Jinjo Slope Abuse",
+			"description": "The slope timer can be abused to quickly climb to the alcove on the far side of the lagoon and collect the jinjo.",
+			"video": "https://www.youtube.com/embed/HMhGYdscCIs"
+		},
+		{
+			"name": "Pawno Skew",
+			"description": "By setting Banjo to the proper angle and firing a clockwork shot, the clockwork can be walked through a loading zone and exploded to give Banjo a skewed angle and hitbox to steal Pawno's Cheato page.",
+			"video": "https://www.youtube.com/embed/_8RDGeuN6CE"
+		},
+		{
+			"name": "Chris. P Bacon With 6 Clockworks + 3 Damage",
+			"description": "Optimal movement for completing Chris P. Bacon while collecting 6 clockwork eggs and taking 3 damage in the process.",
+			"video": "https://www.youtube.com/embed/Y4w6BwdhpPs"
+		}
+	],
+	"cwkshots": [{
+			"name": "Pipe Honeycomb Shot",
+			"description": "How to collect the honeycomb piece on top of the pipe with a clockwork.",
+			"video": "https://www.youtube.com/embed/c0Y18u8VJpo"
+		},
+		{
+			"name": "Smuggler’s Cavern Shot",
+			"description": "How to collect the jiggy in Smuggler's Cavern with a clockwork.",
+			"video": "https://www.youtube.com/embed/SUIamqEmMH4"
+		}
+	],
+	"cwkwarps": [],
+	"outofbounds": []
+}
