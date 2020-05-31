@@ -65,8 +65,8 @@ async function injectLevelData () {
         description.appendChild(des);
         document.body.insertBefore(description, last);
 
-        // create iframe element for trick video embed
-        if (level.general[i].video != "") {
+        // create iframe element for trick video embed if it exists
+        if (level[sections[index]][i].video) {
           var videoP = document.createElement("p");
           var iframe = document.createElement("iframe");
           iframe.width = "480";
@@ -76,6 +76,17 @@ async function injectLevelData () {
           iframe.allowfullscreen = "true";
           videoP.appendChild(iframe);
           document.body.insertBefore(videoP, last);
+        }
+
+        // create img element for image if it exists
+        if (level[sections[index]][i].image) {
+          var imgP = document.createElement("p");
+          var img = document.createElement("img");
+          img.setAttribute("src", level[sections[index]][i].image);
+          img.setAttribute("alt", level[sections[index]][i].name);
+          img.setAttribute("width", "400");
+          imgP.appendChild(img);
+          document.body.insertBefore(imgP, last);
         }
       }
     }
