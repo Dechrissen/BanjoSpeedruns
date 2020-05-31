@@ -1,0 +1,39 @@
+{
+	"title": "100%",
+	"leaderboard": "https://www.speedrun.com/bk#100",
+	"description": "This category involves collecting everything on the totals screen in order to get 100%. This includes all the notes, jiggies, and honeycombs in the game. All mumbo tokens are NOT required as they arent on the totals screen. The use of sandcastle cheats in this category is prohibited. ",
+	"documents": [{
+			"name": "3 Main Route Differences in BK 100% (No RBA, RRBA, RBA)",
+			"link": "https://pastebin.com/sfZThPTp"
+		},
+		{
+			"name": "BK 100% Written Route Document",
+			"link": "https://tinyurl.com/usmuu8a"
+		},
+		{
+			"name": "Mumbo Token Route for 100% No RBA",
+			"link": "https://pastebin.com/ymWPfCBJ"
+		},
+		{
+			"name": "Mumbo Token Route for 100% RRBA",
+			"link": "https://pastebin.com/J27cgqm2"
+		},
+		{
+			"name": "Mumbo Token Route for 100% RBA",
+			"link": "https://pastebin.com/H12dGjhP"
+		}
+	],
+	"videos": [{
+			"name": "BK 100% No RBA Video Tutorial by TheMartonfi1228",
+			"video": "https://youtu.be/XMUBZFwW2HY"
+		},
+		{
+			"name": "BK 100% RRBA Video Tutorial by Azmi",
+			"video": "https://tinyurl.com/raz8v5r"
+		},
+		{
+			"name": "BK 100% Advanced RBA Route Video Tutorial by TheMartonfi1228",
+			"video": "https://youtu.be/t2mVAEdGT9I"
+		}
+	]
+}
