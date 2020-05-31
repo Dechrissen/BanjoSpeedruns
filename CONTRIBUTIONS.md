@@ -20,9 +20,9 @@
 - [x] `mt.json`
 - [x] `ggm.json`
 - [x] `ww.json`
-- [ ] `jrl.json`
-- [ ] `tdl.json`
+- [x] `jrl.json`
+- [x] `tdl.json`
 - [ ] `hfp.json`
 - [ ] `ccl.json`
 - [ ] `gi.json`
-- [ ] `ck.json`
+- [x] `ck.json`
