@@ -1,7 +1,15 @@
-body {
+body.home {
   background-color: white;
   margin-left: 18%;
   margin-right: 18%;
+  font-family: "OpenSans", Helvetica, sans-serif;
+  font-size: .95em;
+}
+
+body {
+  background-color: white;
+  margin-left: 24%;
+  margin-right: 24%;
   font-family: "OpenSans", Helvetica, sans-serif;
   font-size: .95em;
 }
@@ -14,6 +22,10 @@ background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
 background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
 background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
 background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.tab {
+  margin-left: 40px;
 }
 
 .panelname {
@@ -31,10 +43,6 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
   font-size: 250%;
 }
 
-#categoryname {
-  font-family: "Charter", Times, serif;
-  font-size: 150%;
-}
 
 .section {
   font-family: "Charter", Times, serif;
