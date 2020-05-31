@@ -2,7 +2,7 @@
 	"title": "Any%",
 	"leaderboard": "https://www.speedrun.com/bk#any",
 	"description": "This category involves beating grunty as fast as possible. Other than sandcastle cheats there are no restrictions. This category tends to make great use of the glitch known as RBA (Reverse Bee Adventure) as it uses the bee in multiple levels beyond Click Clock Wood. This category is generally thought to be one of the harder categories starting out but it is not impossible to learn.",
-	"documents": [{
+	"routedocuments": [{
 			"name": "Any% Written Route Document",
 			"link": "https://bit.ly/2Zube6r"
 		},
