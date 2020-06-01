@@ -1,0 +1,16 @@
+{
+	"title": "Mad Monster Mansion",
+	"description": "This level has a few tricks like Napper skip and Honeycomb jump, but is mostly just about moving fast. Health management is extremely important. Also there is a secret store room behind the church which can help replenish your counts if you're low.",
+	"general": [{
+			"name": "Napper Skip",
+			"description": "You can skip the jiggy dance by doing some weird trickery with the way you get it from Napper. Useful for saving 3-4 seconds",
+			"video": "https://www.youtube.com/embed/o77iLz6JZTg"
+		},
+		{
+			"name": "Motzand Pattern",
+			"description": "You do not have to wait for Motzand to press the keys if you know the pattern. Do the top pattern first, skip the Motzand text, and then do the bottom pattern and quickly get on the organ and into talon trot.",
+			"image": "https://imgur.com/96pLDDI"
+		}
+	],
+	"outofbounds": []
+}

@@ -1,58 +1,61 @@
 {
-  "title": "Gobi's Valley",
-  "description": "This level has some RNG due to the rings. In all categories there are a variety of different routes you can use depending on your skill level. In Any% this level is visited as the Bee only.",
-  "general": [
-    {
-      "name": "Flightless Gobi Rings",
-      "description": "Getting through the rings without flying can be accomplished a few times by manipulating the camera movement to spawn the rings at will. You can also jump onto another ring without flying if it spawns to the back left of the Jinxy ring.",
-      "video": "https://www.youtube.com/embed/boTv-49aj-M"
-    },
-    {
-      "name": "Another Method for a Flightless Gobi Ring",
-      "description": "Another method for a flightless ring",
-      "video": "https://www.youtube.com/embed/T_qD2CjSLLw"
-    },
-    {
-      "name": "Beak Bombing for Grabba's Jiggy",
-      "description": "It's faster to get Grabba's jiggy while in flight by beak bombing.",
-      "video": "https://www.youtube.com/embed/9YLPWAj75Xo"
-    },
-    {
-      "name": "Fastest Possible Matching Pyramid",
-      "description": "Routing for a quick matching pyramid",
-      "video": "https://www.youtube.com/embed/kVTr90r3zKI"
-    },
-    {
-      "name": "Jinxy Notes with Speed Shoes",
-      "description": "Getting the notes around Jinxy using the speed shoes. A strat used in various categories.",
-      "video": "https://www.youtube.com/embed/MAidUy-8cv8"
-    },
-    {
-      "name": "Sandybutt's Pyramid Maze Skip",
-      "description": "By jumping off of the wall you can get on top of the maze and skip it with some manuevering.",
-      "video": "https://www.youtube.com/embed/EnseAlH-m5k?start=385"
-    },
-    {
-      "name": "Cactus Honeycomb Flightless",
-      "description": "Through damage boosting it is possible to get the circular cactus honeycomb flightless. This is not used in any categories currently, but it's dope.",
-      "video": "https://www.youtube.com/embed/EnseAlH-m5k?start=320"
-    }
-  ],
-  "outofbounds": [
-    {
-      "name": "Gobi Clip",
-      "description": "You can clip into the side of Jinxy and get inside without opening the door. This trick is not recommended for beginners.",
-      "video": "https://youtube.com/embed/kSRhwf18uiE"
-    },
-    {
-      "name": "Water Pyramid Clip",
-      "description": "While flying, you can clip into the side of the water pyramid. This skips having to race to the door in Turbo Trot.",
-      "video": "https://youtube.com/embed/E5puoDVF39Y?start=740"
-    },
-    {
-      "name": "Out of Bounds as the Bee (PAL)",
-      "description": "This is a the PAL version of this trick, it is done differently in NTSC. You can clip out of bounds as the Bee in Gobi's to get inside Rubee's pyramid.",
-      "video": "https://www.youtube.com/embed/If8AURedtJQ"
-    }
-  ]
+	"title": "Gobi's Valley",
+	"description": "This level has some RNG due to the rings. In all categories there are a variety of different routes you can use depending on your skill level. In Any% this level is visited as the Bee only.",
+	"general": [{
+			"name": "Flightless Gobi Rings",
+			"description": "Getting through the rings without flying can be accomplished a few times by manipulating the camera movement to spawn the rings at will. You can also jump onto another ring without flying if it spawns to the back left of the Jinxy ring.",
+			"video": "https://www.youtube.com/embed/boTv-49aj-M"
+		},
+		{
+			"name": "Another Method for a Flightless Gobi Ring",
+			"description": "Another method for a flightless ring",
+			"video": "https://www.youtube.com/embed/T_qD2CjSLLw"
+		},
+		{
+			"name": "Beak Bombing for Grabba's Jiggy",
+			"description": "It's faster to get Grabba's jiggy while in flight by beak bombing.",
+			"video": "https://www.youtube.com/embed/9YLPWAj75Xo"
+		},
+		{
+			"name": "Fastest Possible Matching Pyramid",
+			"description": "Routing for a quick matching pyramid",
+			"video": "https://www.youtube.com/embed/kVTr90r3zKI"
+		},
+		{
+			"name": "Mathing Pyramid Pattern",
+			"description": "This is the optimal path for the matching pyramid.",
+			"image": "https://imgur.com/a/Z5uqa1m"
+		},
+		{
+			"name": "Jinxy Notes with Speed Shoes",
+			"description": "Getting the notes around Jinxy using the speed shoes. A strat used in various categories.",
+			"video": "https://www.youtube.com/embed/MAidUy-8cv8"
+		},
+		{
+			"name": "Sandybutt's Pyramid Maze Skip",
+			"description": "By jumping off of the wall you can get on top of the maze and skip it with some manuevering.",
+			"video": "https://www.youtube.com/embed/EnseAlH-m5k?start=385"
+		},
+		{
+			"name": "Cactus Honeycomb Flightless",
+			"description": "Through damage boosting it is possible to get the circular cactus honeycomb flightless. This is not used in any categories currently, but it's dope.",
+			"video": "https://www.youtube.com/embed/EnseAlH-m5k?start=320"
+		}
+	],
+	"outofbounds": [{
+			"name": "Gobi Clip",
+			"description": "You can clip into the side of Jinxy and get inside without opening the door. This trick is not recommended for beginners.",
+			"video": "https://youtube.com/embed/kSRhwf18uiE"
+		},
+		{
+			"name": "Water Pyramid Clip",
+			"description": "While flying, you can clip into the side of the water pyramid. This skips having to race to the door in Turbo Trot.",
+			"video": "https://youtube.com/embed/E5puoDVF39Y?start=740"
+		},
+		{
+			"name": "Out of Bounds as the Bee (PAL)",
+			"description": "This is a the PAL version of this trick, it is done differently in NTSC. You can clip out of bounds as the Bee in Gobi's to get inside Rubee's pyramid.",
+			"video": "https://www.youtube.com/embed/If8AURedtJQ"
+		}
+	]
 }

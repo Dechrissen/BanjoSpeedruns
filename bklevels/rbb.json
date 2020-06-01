@@ -1,0 +1,41 @@
+{
+	"title": "Rusty Bucket Bay",
+	"description": "RBB has quite a few tricks and a very dangerous engine room. This level is visited as the Bee in any%.",
+	"general": [{
+			"name": "Engine Room Fans and Window Clip (As Banjo)",
+			"description": "Normally, you have to turn off these fans, but it is faster to damage boost through them. This can be done as Banjo or in Talon Trot. After boosting through both fans and hitting both propellor switches, you then have to clip into the room with windows facing engine room.",
+			"video": "https://www.youtube.com/embed/HoU8nmX5hRU?start=243"
+		},
+		{
+			"name": "Engine Room Fans and Window Clip (In Talon Trot)",
+			"description": "Same as above but in Talon Trot.",
+			"video": "https://www.youtube.com/embed/tO7e4_AP6bE"
+		},
+		{
+			"name": "First Pipe Movement",
+			"description": "This video shows optimal movement when going through the first pipe.",
+			"video": "https://www.youtube.com/embed/GF8jgcB5krY"
+		},
+		{
+			"name": "Boom Box Quick Kill",
+			"description": "By firing eggs before the battle starts, you can push Boom Box off the jiggy and kill and grab the jiggy quickly.",
+			"video": "https://www.youtube.com/embed/BD3x99dNos8?start=156"
+		},
+		{
+			"name": "Captain's Room Quick Jiggy",
+			"description": "You can grab the jiggy in the Captain's Quarters without breaking the door by jumping from the bed.",
+			"video": "https://www.youtube.com/embed/BD3x99dNos8?start=232"
+		}
+	],
+	"outofbounds": [{
+			"name": "Engine Room Bee Clip",
+			"description": "As the bee you can clip into the engine room.",
+			"video": "https://www.youtube.com/embed/LsmfrkF5yI0"
+		},
+		{
+			"name": "Window Bee Clip",
+			"description": "As the bee you can clip into the window for the Captain's Quarters.",
+			"video": "https://clips.twitch.tv/AbstruseZanyLasagnaEleGiggle"
+		}
+	]
+}
