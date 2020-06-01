@@ -14,6 +14,9 @@ individual game are below.
 - If there are no tricks in a particular category (like `"outofbounds"` above), leave its list empty
 - You can run your JSON through [this tool](https://jsonlint.com/?code=) to check its validity
 
+### JSON to level page mapping
+![JSON to level page mapping](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/images/JSONtoPageGuide.png)
+
 ## Banjo-Kazooie
 
 Sample JSON level data, named `mm.json`, for Mumbo's Mountain:
