@@ -26,3 +26,17 @@
 - [ ] `ccl.json`
 - [ ] `gi.json`
 - [x] `ck.json`
+
+### Banjo-Kazooie category files
+- [x] `100.json`
+- [ ] `any.json`
+- [ ] `anynorba.json`
+- [ ] `anynodog.json`
+- [ ] `sandcastle.json`
+
+### Banjo-Tooie category files
+- [ ] `100.json`
+- [ ] `any.json`
+- [ ] `anynodcw.json`
+- [ ] `cheato.json`
+- [ ] `allbosses.json`
