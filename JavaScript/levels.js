@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/btlevels/mt"; // test url
+var url = "https://banjowiki.com/bklevels/mmm"; // test url
 var game = url.split("/")[3];
 switch (game) {
   case "btlevels":
@@ -82,11 +82,14 @@ async function injectLevelData () {
         if (level[sections[index]][i].image) {
           var imgP = document.createElement("p");
           var img = document.createElement("img");
-          img.setAttribute("src", level[sections[index]][i].image);
-          img.setAttribute("alt", level[sections[index]][i].name);
+          img.setAttribute("src", level[sections[index]][i].image[0]);
           img.setAttribute("width", "400");
           imgP.appendChild(img);
           document.body.insertBefore(imgP, last);
+
+          // then add alt text to the image if it's provided, or use trick name as default text
+          var alt = level[sections[index]][i].image[1] || level[sections[index]][i].name;
+          img.setAttribute("alt", alt);
         }
       }
     }

@@ -33,7 +33,7 @@ Sample JSON level data, named `mm.json`, for Mumbo's Mountain:
 			"name": "Trick 2",
 			"description": "This is a bad trick.",
 			"video": "https://www.youtube.com/embed/abcdefg1234",
-			"image": "./images/banjospeedruns-logo.png"
+			"image": ["./images/banjospeedruns-logo.png", "This is the alt text for this image."]
 		},
 		{
 			"name": "Trick 3",
@@ -72,7 +72,7 @@ Sample JSON level data, named `mt.json`, for Mayahem Temple:
       "name": "Pillars",
       "description": "This is also a cool trick.",
       "video": "https://www.youtube.com/embed/Huy-Vhfm64Q",
-			"image": "./images/banjospeedruns-logo.png"
+			"image": ["./images/banjospeedruns-logo.png", "This is the alt text for this image."]
     },
     {
       "name": "Prison Compound Codes",
@@ -83,7 +83,7 @@ Sample JSON level data, named `mt.json`, for Mayahem Temple:
       "name": "Relic Jump",
       "description": "Amazing trick.",
       "video": "https://www.youtube.com/embed/MV8dfNrBqLw",
-			"image": "./images/banjospeedruns-logo.png"
+			"image": ["./images/banjospeedruns-logo.png", "This is the alt text for this image."]
     },
     {
       "name": "Stadium Early",
