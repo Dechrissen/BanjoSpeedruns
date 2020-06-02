@@ -15,7 +15,7 @@ individual game are below.
 - You can run your JSON through [this tool](https://jsonlint.com/?code=) to check its validity
 
 ### JSON to level page mapping
-![JSON to level page mapping](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/images/JSONtoPageGuide.png)
+<img src='https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/images/JSONtoPageGuide.png' width='500'>
 
 ## Banjo-Kazooie
 
@@ -72,7 +72,7 @@ Sample JSON level data, named `mt.json`, for Mayahem Temple:
       "name": "Pillars",
       "description": "This is also a cool trick.",
       "video": "https://www.youtube.com/embed/Huy-Vhfm64Q",
-			"image": ["./images/banjospeedruns-logo.png", "This is the alt text for this image."]
+      "image": ["./images/banjospeedruns-logo.png", "This is the alt text for this image."]
     },
     {
       "name": "Prison Compound Codes",
@@ -83,7 +83,7 @@ Sample JSON level data, named `mt.json`, for Mayahem Temple:
       "name": "Relic Jump",
       "description": "Amazing trick.",
       "video": "https://www.youtube.com/embed/MV8dfNrBqLw",
-			"image": ["./images/banjospeedruns-logo.png", "This is the alt text for this image."]
+      "image": ["./images/banjospeedruns-logo.png", "This is the alt text for this image."]
     },
     {
       "name": "Stadium Early",
