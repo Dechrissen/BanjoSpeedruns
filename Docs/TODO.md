@@ -4,14 +4,14 @@
 - [x] Update fonts and style choices site-wide
 - [x] Update JSON formatting guidelines to include BK, and add `bkleveltemplate.json`
 - [ ] 'Support/Donate' button to reimburse annual fees (and a list of past donors)
-- [ ] Top navigation bar
-- [ ] Website icon
+- [x] Top navigation bar
+- [x] Website icon
 - [ ] Add clickable bookmarks to the sections in category pages
 - [x] Add video links to the video names in category pages (in addition to the embeds)
 - [ ] Copyright stuff
 - [x] Add JSONLint (https://jsonlint.com/?code=) to the JSON guidelines files and reformat JSON templates
 - [ ] Change 404 image to Jamjars bonk
-- [ ] Add `alt` field to images in level JSONs
+- [x] Add `alt` field to images in level JSONs
 
 
 ### Possible To-Do

@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/bklevels/mmm"; // test url
+var url = "https://banjowiki.com/bklevels/gv"; // test url
 var game = url.split("/")[3];
 switch (game) {
   case "btlevels":
@@ -42,8 +42,8 @@ async function injectLevelData () {
       section.appendChild(content);
       currentP = document.getElementById("last");
       document.body.insertBefore(section, currentP);
-      var hr = document.createElement("hr");
-      document.body.insertBefore(hr, currentP);
+      //var hr = document.createElement("hr");
+      //document.body.insertBefore(hr, currentP);
 
       // add each trick from the section in order
       var i;
@@ -53,6 +53,7 @@ async function injectLevelData () {
         // create p element for trick title
         var trick = document.createElement("p");
         trick.classList.add("trick");
+        trick.classList.add("tab");
         var trick_name = level[sections[index]][i].name;
         var name = document.createTextNode(trick_name);
         trick.appendChild(name);
@@ -61,6 +62,7 @@ async function injectLevelData () {
 
         // create p element for trick description
         var description = document.createElement("p");
+        description.classList.add("tab");
         var des = document.createTextNode(level[sections[index]][i].description);
         description.appendChild(des);
         document.body.insertBefore(description, last);
@@ -68,6 +70,7 @@ async function injectLevelData () {
         // create iframe element for trick video embed if it exists
         if (level[sections[index]][i].video) {
           var videoP = document.createElement("p");
+          videoP.classList.add("tab");
           var iframe = document.createElement("iframe");
           iframe.width = "480";
           iframe.height = "270";

@@ -41,8 +41,8 @@ async function injectCategoryData () {
     section.appendChild(content);
     currentP = document.getElementById("last");
     document.body.insertBefore(section, currentP);
-    var hr = document.createElement("hr");
-    document.body.insertBefore(hr, currentP);
+    //var hr = document.createElement("hr");
+    //document.body.insertBefore(hr, currentP);
 
     var i;
     for (i = 0; i < category["routedocuments"].length; i++) {
@@ -51,6 +51,7 @@ async function injectCategoryData () {
       // create p element for document name
       var doc = document.createElement("p");
       doc.classList.add("doc");
+      doc.classList.add("tab");
       var doc_name = category["routedocuments"][i].name;
       var name = document.createTextNode(doc_name);
       document.body.insertBefore(doc, last);
@@ -74,8 +75,8 @@ async function injectCategoryData () {
     section.appendChild(content);
     currentP = document.getElementById("last");
     document.body.insertBefore(section, currentP);
-    var hr = document.createElement("hr");
-    document.body.insertBefore(hr, currentP);
+    //var hr = document.createElement("hr");
+    //document.body.insertBefore(hr, currentP);
 
     var i;
     for (i = 0; i < category["videos"].length; i++) {
@@ -84,6 +85,7 @@ async function injectCategoryData () {
       // create p element for video name
       var video = document.createElement("p");
       video.classList.add("vid");
+      video.classList.add("tab");
       var vid_name = category["videos"][i].name;
       var name = document.createTextNode(vid_name);
 
@@ -99,6 +101,7 @@ async function injectCategoryData () {
 
       // create iframe element for video embed
       var videoP = document.createElement("p");
+      videoP.classList.add("tab");
       var iframe = document.createElement("iframe");
       iframe.width = "352";
       iframe.height = "198";
