@@ -3,7 +3,7 @@ body.home {
   margin-left: 15%;
   margin-right: 15%;
   font-family: "OpenSans", Helvetica, sans-serif;
-  font-size: .95em;
+  font-size: 1em;
 }
 
 body {
@@ -32,6 +32,11 @@ background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
   font-family: "Charter", Times, serif;
   font-weight: bold;
   font-size: 1.2em;
+}
+
+.panelsection {
+  font-family: "Charter", Times, serif;
+  font-weight: bold;
 }
 
 .title {
@@ -68,7 +73,8 @@ a:visited {
 
 a:hover {
   font-size: 100%;
-  background-color: #eacb88;
+  color: white;
+  background-color: DarkSlateGrey;
   text-decoration: none;
   border-radius: 3px;
 }
@@ -122,13 +128,13 @@ div.panel {
 
 
 div.bk {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 1;
   background-color: #fd9598;
 }
 
 div.bt {
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1;
   background-color: #88a7ea;
 }
@@ -136,20 +142,23 @@ div.bt {
 div.gr {
   grid-column: 1;
   grid-row: 2;
+  background-color: #BB77BB;
 }
 
 div.bp {
   grid-column: 2;
   grid-row: 2;
+  background-color: #81D8D0;
 }
 
 div.nb {
   grid-column: 3;
   grid-row: 2;
+  background-color: #E4D2BA;
 }
 
 div.info {
-  grid-column: 3;
+  grid-column: 1;
   grid-row: 1;
   background-color: #ffeeb4;
 }
