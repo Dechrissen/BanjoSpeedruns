@@ -8,10 +8,11 @@
 - [x] Website icon
 - [ ] Add clickable bookmarks to the sections in category pages
 - [x] Add video links to the video names in category pages (in addition to the embeds)
-- [ ] Copyright stuff
+- [x] Copyright stuff
 - [x] Add JSONLint (https://jsonlint.com/?code=) to the JSON guidelines files and reformat JSON templates
 - [ ] Change 404 image to Jamjars bonk
 - [x] Add `alt` field to images in level JSONs
+- [ ] Set up contact email address 'mail@banjospeedruns.com'
 
 
 ### Possible To-Do
@@ -27,3 +28,4 @@
 - [ ] 'News' page for community news/updates
 - [ ] 'Player of the week/month/etc.' page that checks Speedrun.com to see most improved runner for a set period of time
 - [ ] Link the BK practice ROM patch download
+- [ ] 'Generate a random page' button

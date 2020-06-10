@@ -14,6 +14,11 @@ body {
   font-size: .95em;
 }
 
+footer {
+  text-align: center;
+  font-size: .8em;
+}
+
 hr {
 border: 0;
 height: 2px;
@@ -86,6 +91,10 @@ a:active {
   border-radius: 3px;
 }
 
+.logo a:hover {
+  background-color: transparent;
+}
+
 ul {
   list-style: none;
 }
@@ -142,13 +151,13 @@ div.bt {
 div.gr {
   grid-column: 1;
   grid-row: 2;
-  background-color: #BB77BB;
+  background-color: #D6ADD6;
 }
 
 div.bp {
   grid-column: 2;
   grid-row: 2;
-  background-color: #81D8D0;
+  background-color: LightGrey;
 }
 
 div.nb {
