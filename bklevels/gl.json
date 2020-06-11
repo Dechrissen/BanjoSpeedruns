@@ -2,8 +2,8 @@
 	"title": "Gruntilda's Lair",
 	"description": "Main Hub World. A number of clips can be done to skip level entrances and note doors. Some are harder than others.",
 	"general": [{
-			"name": "Switchless Grunty Statue Jiggy",
-			"description": "You can clip into the Grunty statue near BGS to get the jiggy underneath without hitting the grunty switch.",
+			"name": "Quick Grunty Statue Jiggy",
+			"description": "You can shock spring jump onto the Grunty Statue without having to drop from above.",
 			"video": "https://www.youtube.com/embed/EnseAlH-m5k&start=1"
 		},
 		{
