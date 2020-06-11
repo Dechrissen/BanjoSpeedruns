@@ -3,16 +3,16 @@
 
 ### Banjo-Kazooie level files
 - [x] `sm.json`
-- [ ] `gl.json`
+- [x] `gl.json`
 - [x] `mm.json`
 - [x] `ttc.json`
 - [x] `cc.json`
 - [x] `bgs.json`
 - [x] `fp.json`
 - [x] `gv.json`
-- [ ] `mmm.json`
-- [ ] `rbb.json`
-- [ ] `ccw.json`
+- [x] `mmm.json`
+- [x] `rbb.json`
+- [x] `ccw.json`
 
 ### Banjo-Tooie level files
 - [ ] `sm.json`
