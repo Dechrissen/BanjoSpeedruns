@@ -1,0 +1,51 @@
+{
+	"title": "Click Clock Wood",
+	"description": "Don't fall! This level has 4 seasonal segments on that change the layout and collectables and they must be done in order. For 100% your route will vary depending on if you plan on doing the Softlock trick or not",
+	"general": [{
+			"name": "Spring 1 Cutscene Skip (Softlock only)",
+			"description": "Using some bees you can damage Banjo into moving during the flower cutscene in Spring 1.",
+			"video": "https://www.youtube.com/embed/T6SgL8sBesU"
+		},
+		{
+			"name": "Spring 2 Softlock",
+			"description": "In Spring 2 it is possible to intentionally cause a softlock by using eggs on the flower. By going to Mumbo's during this you can cancel the softlock. The flower jiggy can then be collected by the bee.",
+			"video": "https://www.youtube.com/embed/6ktn_DnlSfY"
+		},
+		{
+			"name": "Spring 2 Mumbo Token in the Snare",
+			"description": "It is possible to quickly get a mumbo token in a snare bear in Spring 2.",
+			"video": "https://www.youtube.com/embed/_LCrl5m6HTQ"
+		},
+		{
+			"name": "Ice Clip",
+			"description": "If you miss Winter Clip , then you need to perform ice clip to quickly escape from Gnawty's house in winter while under the ice.",
+			"video": "https://youtube/embed/YlzfYRZQ5Js?start=2261"
+		}
+	],
+	"outofbounds": [{
+			"name": "Winter Clip 1",
+			"description": "In winter, while in flight, you can clip through the tree straight into Gnawty's house for honeycomb 2.",
+			"video": "https://www.youtube.com/embed/YlzfYRZQ5Js?start=2166"
+		},
+		{
+			"name": "Winter Clip 2",
+			"description": "While still in flight in Gawty's house (after WC1) you can collect the honeycomb and beak bomb through the floor to void out of winter.",
+			"video": "https://youtube/embed/YlzfYRZQ5Js?start=2220"
+		},
+		{
+			"name": "Zubba's Nest Clip",
+			"description": "As the bee in Spring 2, you can clip out of the Zubbas nest to void back to the lobby of CCW.",
+			"video": "https://youtube/embed/YlzfYRZQ5Js?start=2464"
+		},
+		{
+			"name": "Autumn Clip",
+			"description": "If you are not doing the Softlock route, you will have to use this clip to void of out Autumn. By getting caught on the side of the ramp while falling, you can build up speed quickly which causes Banjo to fall through the map into the void.",
+			"video": "https://youtube/embed/YlzfYRZQ5Js?start=1715"
+		},
+		{
+			"name": "Spring Clip",
+			"description": "If you are performing Softlock, then after you raise the flower in Spring, you will have to exit Spring 1 through a void out. It works the same as Autumn clip except visual cues are different due to the fact that Spring and Fall have different ground textures. Spring 1 has less lag than Autumn which makes this trick slightly harder to perform than Autumn clip.",
+			"video": "https://youtube/embed/7aDHms_WDzk?start=591"
+		}
+	]
+}
