@@ -13,15 +13,15 @@
 		}
 	],
 	"outofbounds": [{
-            "name": "450 Note Door Skip",
-            "description": "This clip is achieved much in the same way as FP early, except the movement you do after clipping is different.",
-            "video": "https://www.youtube.com/embed/blcYHUsUH7M"
-        },
-        {
-            "name": "640 Note Door Skip",
-            "description": "With the water raised to level 3, you can clip out of bounds using a pipe and jump into the loading zone behind the 640 door.",
-            "video": "https://www.youtube.com/embed/B8fWERAtfeE?start=296"
-        },
+			"name": "450 Note Door Skip",
+			"description": "This clip is achieved much in the same way as FP early, except the movement you do after clipping is different.",
+			"video": "https://www.youtube.com/embed/blcYHUsUH7M"
+		},
+		{
+			"name": "640 Note Door Skip",
+			"description": "With the water raised to level 3, you can clip out of bounds using a pipe and jump into the loading zone behind the 640 door.",
+			"video": "https://www.youtube.com/embed/B8fWERAtfeE?start=296"
+		},
 		{
 			"name": "765 Note Door Skip",
 			"description": "As the bee you can get out of bounds above the 765 door and get to places in the lair that the bee is not allowed be in. This video also covers the RBA section for 100%/",
@@ -31,6 +31,6 @@
 			"name": "Door of Grunty",
 			"description": "You can get behind the final door in teh game without opening it. This trick is one of the more difficult in the game, but it's not impossible.",
 			"video": "https://youtube/embed/YlzfYRZQ5Js?start=1715"
-        }
-    ]
+		}
+	]
 }
