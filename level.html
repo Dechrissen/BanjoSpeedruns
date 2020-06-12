@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="author" content="Derek Andersen">
     <meta name="description" content="Website for the Banjo-Kazooie speedrunning community.">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="text/javascript" src="./JavaScript/levels.js"></script>
     <title>BK/BT Level Template</title>
-  </head>
-  <body onload=injectLevelData()>
+</head>
+
+<body onload=injectLevelData()>
+
     <h1 class="title" id="levelname">[LEVEL NAME]</h1>
 
     <div class="navwrapper">
-      <div class="navbox">
-        <ul id="boxlist"></ul>
-      </div>
+        <div class="navbox">
+            <ul id="boxlist"></ul>
+        </div>
     </div>
 
-    <p id="description">[LEVEL DESCRIPTION]</p>
+    <p class="tab" id="description">[LEVEL DESCRIPTION]</p>
 
     <p id="last"></p>
-  </body>
+</body>
+
+<footer>
+  <script type="text/javascript" src="./JavaScript/footer.js"></script>
+</footer>
+
 </html>

@@ -9,12 +9,12 @@ For this reason, the JSON category files must follow a particular format in orde
 - You can run your JSON through [this tool](https://jsonlint.com/?code=) to check its validity
 
 Sample JSON category data, named `100.html`, for Banjo-Kazooie 100%:
-```
+```JSON
 {
 	"title": "100%",
 	"leaderboard": "https://www.speedrun.com/bk#100",
 	"description": "This category is super easy and it's not a challenge at all to get sub tooth hurty.",
-	"documents": [{
+	"routedocuments": [{
 			"name": "Cool Document 1",
 			"link": "https://tinyurl.com/vzl8xnp"
 		},
@@ -42,8 +42,8 @@ Sample JSON category data, named `100.html`, for Banjo-Kazooie 100%:
 #### Fields
 1. `"title"` Name of the game + category
 2. `"description"` Category description & rules
-3. `"documents"` Relevant documents, like routes, tips, etc. (list)
-4. `"videos"` Relevant videos, like route walkthroughs, important tricks, etc. (list)
+3. `"routedocuments"` Relevant documents and videos, like routes, tips, etc. (list)
+4. `"videos"` Relevant videos, like important tricks, movement guides, etc. (list)
 
 Fields 1 and 2 contain strings, while fields 3 and 4 contain lists of JSON objects (one object per item in that section).
 A document object contains 2 fields: `"name"` and `"link"`. A video object contains 2 fields: `"name"` and `"video"`.  

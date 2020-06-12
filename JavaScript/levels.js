@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/btlevels/mt"; // test url
+var url = "https://banjowiki.com/bklevels/gv"; // test url
 var game = url.split("/")[3];
 switch (game) {
   case "btlevels":
@@ -42,8 +42,8 @@ async function injectLevelData () {
       section.appendChild(content);
       currentP = document.getElementById("last");
       document.body.insertBefore(section, currentP);
-      var hr = document.createElement("hr");
-      document.body.insertBefore(hr, currentP);
+      //var hr = document.createElement("hr");
+      //document.body.insertBefore(hr, currentP);
 
       // add each trick from the section in order
       var i;
@@ -53,6 +53,7 @@ async function injectLevelData () {
         // create p element for trick title
         var trick = document.createElement("p");
         trick.classList.add("trick");
+        trick.classList.add("tab");
         var trick_name = level[sections[index]][i].name;
         var name = document.createTextNode(trick_name);
         trick.appendChild(name);
@@ -61,13 +62,15 @@ async function injectLevelData () {
 
         // create p element for trick description
         var description = document.createElement("p");
+        description.classList.add("tab");
         var des = document.createTextNode(level[sections[index]][i].description);
         description.appendChild(des);
         document.body.insertBefore(description, last);
 
-        // create iframe element for trick video embed
-        if (level.general[i].video != "") {
+        // create iframe element for trick video embed if it exists
+        if (level[sections[index]][i].video) {
           var videoP = document.createElement("p");
+          videoP.classList.add("tab");
           var iframe = document.createElement("iframe");
           iframe.width = "480";
           iframe.height = "270";
@@ -76,6 +79,20 @@ async function injectLevelData () {
           iframe.allowfullscreen = "true";
           videoP.appendChild(iframe);
           document.body.insertBefore(videoP, last);
+        }
+
+        // create img element for image if it exists
+        if (level[sections[index]][i].image) {
+          var imgP = document.createElement("p");
+          var img = document.createElement("img");
+          img.setAttribute("src", level[sections[index]][i].image[0]);
+          img.setAttribute("width", "400");
+          imgP.appendChild(img);
+          document.body.insertBefore(imgP, last);
+
+          // then add alt text to the image if it's provided, or use trick name as default text
+          var alt = level[sections[index]][i].image[1] || level[sections[index]][i].name;
+          img.setAttribute("alt", alt);
         }
       }
     }

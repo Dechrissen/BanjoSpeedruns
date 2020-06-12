@@ -3,6 +3,7 @@
 # banjospeedruns.com
 *Website for the Banjo-Kazooie speedrunning community.*  
 https://banjospeedruns.com  
+*Status*: In development  
 
 ## Purpose
 The purpose of this website is to serve as a collection of resources, tricks, strategies, and routes for speedrunning all *Banjo-Kazooie* series games:

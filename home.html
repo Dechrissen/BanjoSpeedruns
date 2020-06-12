@@ -1,154 +1,180 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="author" content="Derek Andersen">
     <meta name="description" content="Website for the Banjo-Kazooie speedrunning community.">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="image/png" href="./images/icon.png">
     <title>Banjo Speedruns</title>
-  </head>
+</head>
 
-  <body>
-    <p style="text-align:center;"><img src="./images/banjospeedruns-logo.png" alt="banjospeedruns.com logo" width="750"></p>
+<body class="home">
+    <div id="page-container">
+        <div id="content-wrap">
 
-    <div class="wrapper">
-      <div class="info panel">
-        <h3 class="panelname">General Links & Resources</h3>
-        <hr>
-        <h5>General</h5>
-        <ul>
-          <li><a href="https://www.speedrun.com/banjo" target="_blank">Speedrun.com Leaderboards</a></li>
-        </ul>
 
-        <h5>Social</h5>
-        <ul>
-          <li><a href="https://discord.gg/5AjXe4Y" target="_blank">Community Discord Server</a></li>
-          <li><a href="https://www.twitch.tv/banjorace" target="_blank">Community Race Channel</a></li>
-          <li><a href="https://discord.gg/r4XxMkW" target="_blank">Race Discord Server</li>
-          <li><a href="https://twitter.com/BanjoSpeedruns" target="_blank">Official Twitter</li>
-        </ul>
+            <p class="logo"><a href="./home.html"><img src="./images/banjospeedruns-logo.png" alt="banjospeedruns.com logo" width="750"></a></p>
 
-        <h5>Category Extensions Boards</h5>
-        <ul>
-          <li><a href="https://docs.google.com/spreadsheets/d/19TWv0MQ5EnfOAymdNgPrXbBIwQj1H7aJYOe-Q5V6tHQ/edit?usp=sharing" target="_blank">Banjo-Kazooie</a></li>
-          <li><a href ="https://docs.google.com/spreadsheets/d/1Y5uyj-o2JnJJX1_MYON6J9ZaysM7T8ZDtQhEXYM83u0/edit?usp=sharing" target="_blank">Banjo-Tooie</a></li>
-        </ul>
 
-        <h5>Bingo</h5>
-        <ul>
-          <li>Banjo-Tooie</li>
-        </ul>
-      </div>
+            <div class="topnav">
+                <a class="active" href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="./about.html">About</a>
+                <a href="./support.html">Support</a>
+            </div>
+            <br>
 
-      <div class="bk panel">
-        <h3 class="panelname">Banjo-Kazooie</h3>
-        <hr>
-        <h5>Individual Levels</h5>
-        <ul>
-          <li><a href="./bklevels/sm">Spiral Mountain</a></li>
-          <li><a href="./bklevels/gl">Grunty's Lair (Overworld)</a></li>
-          <li><a href="./bklevels/mm">Mumbo's Mountain</a></li>
-          <li><a href="./bklevels/ttc">Treasure Trove Cove</a></li>
-          <li><a href="./bklevels/cc">Clanker's Cavern</a></li>
-          <li><a href="./bklevels/bgs">Bubblegloop Swamp</a></li>
-          <li><a href="./bklevels/fp">Freezeezy Peak</a></li>
-          <li><a href="./bklevels/gv">Gobi's Valley</a></li>
-          <li><a href="./bklevels/mmm">Mad Montser Mansion</a></li>
-          <li><a href="./bklevels/rbb">Rusty Bucket Bay</a></li>
-          <li><a href="./bklevels/ccw">Click Clock Wood</a></li>
-        </ul>
 
-        <h5>Categories</h5>
-        <ul>
-          <li><a href="./bkcategories/100">100%</a></li>
-          <li><a href="./bkcategories/any">Any%</a></li>
-          <li><a href="./bkcategories/anynorba">Any% No RBA</a></li>
-          <li><a href="./bkcategories/anynodog">Any% No DoG</a></li>
-          <li><a href="./bkcategories/sandcastle">Sandcastle%</a></li>
-        </ul>
+            <div class="wrapper">
+                <div class="info panel">
+                    <h3 class="panelname">General Links & Resources</h3>
+                    <hr>
+                    <h4 class="panelsection">General</h4>
+                    <ul>
+                        <li><a href="https://www.speedrun.com/banjo" target="_blank">Speedrun.com Leaderboards</a></li>
+                        <li><a href="https://livesplit.org/" target="_blank">LiveSplit Speedrun Timer</a></li>
+                        <li><a href="http://www.speedrunslive.com/" target="_blank">SpeedRunsLive</a></li>
+                    </ul>
 
-        <h5>Information</h5>
-        <ul>
-          <li>General Movement</li>
-          <li>Version Differences</li>
-        </ul>
-      </div>
+                    <h4 class="panelsection">Social</h4>
+                    <ul>
+                        <li><a href="https://discord.gg/5AjXe4Y" target="_blank">Community Discord Server</a></li>
+                        <li><a href="https://www.twitch.tv/banjorace" target="_blank">Community Race Channel</a></li>
+                        <li><a href="https://discord.gg/r4XxMkW" target="_blank">Race Discord Server</a></li>
+                        <li><a href="https://twitter.com/BanjoSpeedruns" target="_blank">Official Twitter</a></li>
+                    </ul>
 
-      <div class="bt panel">
-        <h3 class="panelname">Banjo-Tooie</h3>
-        <hr>
-        <h5>Individual Levels</h5>
-        <ul>
-          <li><a href="./btlevels/sm">Spiral Mountain</a></li>
-          <li><a href="./btlevels/ioh">Isle O' Hags (Overworld)</a></li>
-          <li><a href="./btlevels/mt">Mayahem Temple</a></li>
-          <li><a href="./btlevels/ggm">Glitter Gulch Mine</a></li>
-          <li><a href="./btlevels/ww">Witchyworld</a></li>
-          <li><a href="./btlevels/jrl">Jolly Roger's Lagoon</a></li>
-          <li><a href="./btlevels/tdl">Terrydactyland</a></li>
-          <li><a href="./btlevels/gi">Grunty Industries</a></li>
-          <li><a href="./btlevels/hfp">Hailfire Peaks</a></li>
-          <li><a href="./btlevels/ccl">Cloud Cuckooland</a></li>
-          <li><a href="./btlevels/ck">Cauldron Keep</a></li>
-        </ul>
+                    <h4 class="panelsection">Category Extensions Boards</h4>
+                    <ul>
+                        <li><a href="https://docs.google.com/spreadsheets/d/19TWv0MQ5EnfOAymdNgPrXbBIwQj1H7aJYOe-Q5V6tHQ/edit?usp=sharing" target="_blank">Banjo-Kazooie</a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1Y5uyj-o2JnJJX1_MYON6J9ZaysM7T8ZDtQhEXYM83u0/edit?usp=sharing" target="_blank">Banjo-Tooie</a></li>
+                    </ul>
 
-        <h5>Categories</h5>
-        <ul>
-          <li><a href="./btcategories/100">100%</a></li>
-          <li><a href="./btcategories/any">Any%</a></li>
-          <li><a href="./btcategories/anynodcw">Any% No DCW</a></li>
-          <li><a href="./btcategories/allbosses">All Bosses</a></li>
-          <li><a href="./btcategories/cheato">Cheato%</a></li>
-        </ul>
+                    <h4 class="panelsection">Bingo</h4>
+                    <ul>
+                        <li>Banjo-Tooie</li>
+                    </ul>
+                </div>
 
-        <h5>Information</h5>
-        <ul>
-          <li>General Movement</li>
-          <li>Version Differences</li>
-        </ul>
-      </div>
+                <div class="bk panel">
+                    <h3 class="panelname">Banjo-Kazooie</h3>
+                    <hr>
 
-      <div class="gr panel">
-        <h3 class="panelname">Banjo-Kazooie: Grunty's Revenge</h3>
-        <hr>
-        <h5>Individual Levels</h5>
-        <ul>
-          <li>Spiral Mere</li>
-          <li>Cliff Farm</li>
-          <li>Breegull Beach</li>
-          <li>Bad Magic Bayou</li>
-          <li>Spiller's Harbor</li>
-          <li>Freezing Furnace</li>
-          <li>Grunty's Castle</li>
-        </ul>
+                    <h4 class="panelsection">Categories</h4>
+                    <ul>
+                        <li><a href="./bkcategories/100">100%</a></li>
+                        <li><a href="./bkcategories/any">Any%</a></li>
+                        <li><a href="./bkcategories/anynorba">Any% No RBA</a></li>
+                    </ul>
 
-        <h5>Categories</h5>
-        <ul>
-          <li>100%</li>
-          <li>Any%</li>
-        </ul>
-      </div>
+                    <h4 class="panelsection">Individual Levels</h4>
+                    <ul>
+                        <li><a href="./bklevels/sm">Spiral Mountain</a></li>
+                        <li><a href="./bklevels/gl">Grunty's Lair (Overworld)</a></li>
+                        <li><a href="./bklevels/mm">Mumbo's Mountain</a></li>
+                        <li><a href="./bklevels/ttc">Treasure Trove Cove</a></li>
+                        <li><a href="./bklevels/cc">Clanker's Cavern</a></li>
+                        <li><a href="./bklevels/bgs">Bubblegloop Swamp</a></li>
+                        <li><a href="./bklevels/fp">Freezeezy Peak</a></li>
+                        <li><a href="./bklevels/gv">Gobi's Valley</a></li>
+                        <li><a href="./bklevels/mmm">Mad Montser Mansion</a></li>
+                        <li><a href="./bklevels/rbb">Rusty Bucket Bay</a></li>
+                        <li><a href="./bklevels/ccw">Click Clock Wood</a></li>
+                    </ul>
 
-      <div class="bp panel">
-        <h3 class="panelname">Banjo-Pilot</h3>
-        <hr>
-        <h5>Categories</h5>
-        <ul>
-          <li>100%</li>
-          <li>Any%</li>
-        </ul>
-      </div>
+                    <h4 class="panelsection">Information</h4>
+                    <ul>
+                        <li>General Movement</li>
+                        <li><a href="./bkversions.html">Version Differences</a></li>
+                    </ul>
+                </div>
 
-      <div class="nb panel">
-        <h3 class="panelname">Banjo-Kazooie: Nuts & Bolts</h3>
-        <hr>
-        <h5>Categories</h5>
-        <ul>
-          <li>100%</li>
-          <li>131 Jiggy</li>
-          <li>Any%</li>
-        </ul>
-      </div>
+                <div class="bt panel">
+                    <h3 class="panelname">Banjo-Tooie</h3>
+                    <hr>
+
+                    <h4 class="panelsection">Categories</h4>
+                    <ul>
+                        <li><a href="./btcategories/100">100%</a></li>
+                        <li><a href="./btcategories/any">Any%</a></li>
+                        <li><a href="./btcategories/anynodcw">Any% No DCW</a></li>
+                    </ul>
+
+                    <h4 class="panelsection">Individual Levels</h4>
+                    <ul>
+                        <li><a href="./btlevels/sm">Spiral Mountain</a></li>
+                        <li><a href="./btlevels/ioh">Isle O' Hags (Overworld)</a></li>
+                        <li><a href="./btlevels/mt">Mayahem Temple</a></li>
+                        <li><a href="./btlevels/ggm">Glitter Gulch Mine</a></li>
+                        <li><a href="./btlevels/ww">Witchyworld</a></li>
+                        <li><a href="./btlevels/jrl">Jolly Roger's Lagoon</a></li>
+                        <li><a href="./btlevels/tdl">Terrydactyland</a></li>
+                        <li><a href="./btlevels/gi">Grunty Industries</a></li>
+                        <li><a href="./btlevels/hfp">Hailfire Peaks</a></li>
+                        <li><a href="./btlevels/ccl">Cloud Cuckooland</a></li>
+                        <li><a href="./btlevels/ck">Cauldron Keep</a></li>
+                    </ul>
+
+                    <h4 class="panelsection">Information</h4>
+                    <ul>
+                        <li>General Movement</li>
+                        <li><a href="./btversions.html">Version Differences</a></li>
+                    </ul>
+                </div>
+
+                <div class="gr panel">
+                    <h3 class="panelname">Banjo-Kazooie: Grunty's Revenge</h3>
+                    <hr>
+
+                    <h4 class="panelsection">Categories</h4>
+                    <ul>
+                        <li>100%</li>
+                        <li>Any%</li>
+                    </ul>
+
+                    <h4 class="panelsection">Individual Levels</h4>
+                    <ul>
+                        <li>Spiral Mere</li>
+                        <li>Cliff Farm</li>
+                        <li>Breegull Beach</li>
+                        <li>Bad Magic Bayou</li>
+                        <li>Spiller's Harbor</li>
+                        <li>Freezing Furnace</li>
+                        <li>Grunty's Castle</li>
+                    </ul>
+
+                </div>
+
+                <div class="bp panel">
+                    <h3 class="panelname">Banjo-Pilot</h3>
+                    <hr>
+                    <h4 class="panelsection">Categories</h4>
+                    <ul>
+                        <li>100%</li>
+                        <li>Any%</li>
+                    </ul>
+                </div>
+
+                <div class="nb panel">
+                    <h3 class="panelname">Banjo-Kazooie: Nuts & Bolts</h3>
+                    <hr>
+                    <h4 class="panelsection">Categories</h4>
+                    <ul>
+                        <li>100%</li>
+                        <li>131 Jiggy</li>
+                        <li>Any%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <footer id="sticky-footer">
+            <script type="text/javascript" src="./JavaScript/footer.js"></script>
+        </footer>
+
     </div>
-  </body>
+</body>
+
 </html>

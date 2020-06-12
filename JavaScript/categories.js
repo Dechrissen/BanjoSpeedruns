@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/btcategories/100"; // test url
+var url = "https://banjowiki.com/bkcategories/100"; // test url
 var game = url.split("/")[3];
 var gamename;
 switch (game) {
@@ -33,31 +33,32 @@ async function injectCategoryData () {
   document.getElementById("leaderboard").setAttribute("target", "_blank");
 
   // create 'Documents' section
-  if (category["documents"].length > 0) {
+  if (category["routedocuments"].length > 0) {
     var section = document.createElement("p");
     section.classList.add("section");
-    section.setAttribute("id", "documents");
-    var content = document.createTextNode("Documents");
+    section.setAttribute("id", "routedocuments");
+    var content = document.createTextNode("Documents & Route Videos");
     section.appendChild(content);
     currentP = document.getElementById("last");
     document.body.insertBefore(section, currentP);
-    var hr = document.createElement("hr");
-    document.body.insertBefore(hr, currentP);
+    //var hr = document.createElement("hr");
+    //document.body.insertBefore(hr, currentP);
 
     var i;
-    for (i = 0; i < category["documents"].length; i++) {
+    for (i = 0; i < category["routedocuments"].length; i++) {
       last = document.getElementById("last");
 
       // create p element for document name
       var doc = document.createElement("p");
       doc.classList.add("doc");
-      var doc_name = category["documents"][i].name;
+      doc.classList.add("tab");
+      var doc_name = category["routedocuments"][i].name;
       var name = document.createTextNode(doc_name);
       document.body.insertBefore(doc, last);
 
       // create link to document
       var link = document.createElement("a");
-      link.setAttribute("href", category["documents"][i].link);
+      link.setAttribute("href", category["routedocuments"][i].link);
       link.setAttribute("target", "_blank");
       link.appendChild(name);
       doc.appendChild(link);
@@ -70,12 +71,12 @@ async function injectCategoryData () {
     var section = document.createElement("p");
     section.classList.add("section");
     section.setAttribute("id", "videos");
-    var content = document.createTextNode("Videos");
+    var content = document.createTextNode("Helpful Videos");
     section.appendChild(content);
     currentP = document.getElementById("last");
     document.body.insertBefore(section, currentP);
-    var hr = document.createElement("hr");
-    document.body.insertBefore(hr, currentP);
+    //var hr = document.createElement("hr");
+    //document.body.insertBefore(hr, currentP);
 
     var i;
     for (i = 0; i < category["videos"].length; i++) {
@@ -84,6 +85,7 @@ async function injectCategoryData () {
       // create p element for video name
       var video = document.createElement("p");
       video.classList.add("vid");
+      video.classList.add("tab");
       var vid_name = category["videos"][i].name;
       var name = document.createTextNode(vid_name);
 
@@ -99,6 +101,7 @@ async function injectCategoryData () {
 
       // create iframe element for video embed
       var videoP = document.createElement("p");
+      videoP.classList.add("tab");
       var iframe = document.createElement("iframe");
       iframe.width = "352";
       iframe.height = "198";

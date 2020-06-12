@@ -1,0 +1,88 @@
+{
+	"title": "Terrydactyland",
+	"description": "This is where the real fun begins. The first level with heaps of clockwork shots and warps.",
+	"general": [{
+			"name": "Fall to Chompasaurus",
+			"description": "A well-placed jump from the upper area inside the mountain will land you on top of Chompa's pillar.",
+			"video": "https://www.youtube.com/embed/0XE6k7DU0nI"
+		},
+		{
+			"name": "Slope Climb To Springy Step Silo",
+			"description": "Banjo can quickly reach Jamjars' silo to learn Springy Step Shoes by abusing the slope timer near the entrance to TDL.",
+			"video": "https://www.youtube.com/embed/qrUF_2av2UQ"
+		},
+		{
+			"name": "Styracosaurus Slope Climb as Mumbo",
+			"description": "Mumbo can reach the Styracosaurus Cave via the ramp by abusing the slope timer.",
+			"video": "https://www.youtube.com/embed/Bzb4SsMk2p4"
+		},
+		{
+			"name": "Crouch Falls",
+			"description": "As solo Kazooie, you can run and crouch-slide to avoid taking fall damage from high areas.",
+			"video": "https://www.youtube.com/embed/UTOhvEezx7M"
+		},
+		{
+			"name": "Stomping Plains as BK",
+			"description": "How to cross Stomping Plains as BK.",
+			"video": "https://www.youtube.com/embed/Mo1DubnLr7Q"
+		},
+		{
+			"name": "Stomping Plains as Solo Kazooie (Includes Clockwork Shot)",
+			"description": "How to cross Stomping Plains as solo Kazooie and collect the jiggy.",
+			"video": "https://www.youtube.com/embed/anihCeuzTV4"
+		},
+		{
+			"name": "How to Fight/2-Cycle Terry",
+			"description": "Optimal movement for defeating Terry in only two cycles.",
+			"video": "https://www.youtube.com/embed/PrRoh-wbrao"
+		}
+	],
+	"cwkshots": [{
+			"name": "Roar Cage Shot",
+			"description": "You can avoid collecting the roar cage jiggy as baby T-rex by shooting a clockwork egg through a gap around it.",
+			"video": "https://www.youtube.com/embed/Q-NU8IPrlrc"
+		},
+		{
+			"name": "Roar Cage Shot (Alternate Method)",
+			"description": "An alternate method to collect the roar cage jiggy with a clockwork.",
+			"video": "https://www.youtube.com/embed/QRsVE4qcVTc"
+		},
+		{
+			"name": "Daddy T-Rex Cage Shot",
+			"description": "Collect the jinjo with a clockwork egg instead of activating the switch with daddy T-rex.",
+			"video": "https://www.youtube.com/embed/QO54gS1tX3Q"
+		},
+		{
+			"name": "Inside the Mountain Cheato Page Shot",
+			"description": "How to collect the cheato page inside the mountain with a clockwork.",
+			"video": "https://www.youtube.com/embed/5ShCXNtcT_k"
+		},
+		{
+			"name": "Dippy's Cheato Page Shot",
+			"description": "Dippy's Cheato page can be collected without filling his water by shooting a clockwork egg.",
+			"video": "https://www.youtube.com/embed/uFHeBmhCYBQ"
+		},
+		{
+			"name": "Stomping Plains as Solo Kazooie (Clockwork Shot)",
+			"description": "How to collect the Stomping Plains jiggy as solo Kazooie with a clockwork egg.",
+			"video": "https://youtube.com/embed/anihCeuzTV4?start=30&end=212;"
+		}
+	],
+	"cwkwarps": [{
+			"name": "TDL Early",
+			"description": "In Unga Bungas' Cave, Banjo takes damage from an enemy at the same time a clockwork enters the loading zone to TDL, warping Banjo to the other side of the loading zone.",
+			"video": "https://player.twitch.tv/?video=v492599455&autoplay=false"
+		},
+		{
+			"name": "Chompasaurus Warp",
+			"description": "Walking a clockwork through the loading zone to Terry's nest while damaging it with a grenade egg will warp Banjo through the loading zone to the other side.",
+			"video": "https://www.youtube.com/embed/MnV8r-cuG3k"
+		},
+		{
+			"name": "Oogle Boogle Early",
+			"description": "While pooping a grenade egg into the loading zone area, shoot a clockwork egg into the grenade's hitbox as it explodes to warp Banjo into Oogle Boogles' Cave.",
+			"video": "https://www.youtube.com/embed/uGiHtxYMHoQ"
+		}
+	],
+	"outofbounds": []
+}

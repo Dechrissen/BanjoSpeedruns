@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="author" content="Derek Andersen">
     <meta name="description" content="Website for the Banjo-Kazooie speedrunning community.">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script type="text/javascript" src="./JavaScript/categories.js"></script>
     <title>Category Template</title>
-  </head>
-  <body onload="injectCategoryData()">
+</head>
+
+<body onload="injectCategoryData()">
     <h1 class="title" id="gamename">[GAME NAME]</h1>
-    <h3 id="categoryname">[CATEGORY NAME]</h3>
+    <h2 class="title" id="categoryname">[CATEGORY NAME]</h2>
     <hr>
 
-    <p id="description">[CATEGORY DESCRIPTION]</p>
-    <p><a id="leaderboard">[LEADERBOARD LINK]</a></p>
+    <p class="tab" id="description">[CATEGORY DESCRIPTION]</p>
+    <p class="tab"><a id="leaderboard">[LEADERBOARD LINK]</a></p>
 
     <p id="last"></p>
-  </body>
+</body>
+
+<footer>
+    <script type="text/javascript" src="./JavaScript/footer.js"></script>
+</footer>
+
 </html>
