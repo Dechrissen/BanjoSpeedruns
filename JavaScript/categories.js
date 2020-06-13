@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/bkcategories/100"; // test url
+var url = "https://banjowiki.com/bkcategories/any"; // test url
 var game = url.split("/")[3];
 var gamename;
 switch (game) {
@@ -53,7 +53,7 @@ async function injectCategoryData () {
       doc.classList.add("doc");
       doc.classList.add("tab");
       var doc_name = category["routedocuments"][i].name;
-      var name = document.createTextNode(doc_name);
+      var name = document.createTextNode("• " + doc_name);
       document.body.insertBefore(doc, last);
 
       // create link to document
