@@ -18,14 +18,13 @@
 ### Possible To-Do
 
 - [ ] Search bar
-- [ ] Dynamic columns for tricks in individual level pages (to display more tricks on screen at once for larger displays)
 - [ ] 'Contribute (on GitHub)' button
 - [ ] Repeating Jiggy background image for every page site-wide
-- [ ] Links to individual game leaderboards in each game's panel, or all in the General panel
+- [x] Links to individual game leaderboards in each game's panel, or all in the General panel
 - [ ] Display Speedrun.com leaderboards somewhere on the site
 - [ ] 'Streams' page with live streamers of Banjo games who have `speedrun` tag applied to their stream
 - [ ] 'WRs' page
 - [ ] 'News' page for community news/updates
 - [ ] 'Player of the week/month/etc.' page that checks Speedrun.com to see most improved runner for a set period of time
-- [ ] Link the BK practice ROM patch download
+- [x] Link the BK practice ROM patch download
 - [ ] 'Generate a random page' button
