@@ -1,0 +1,33 @@
+{
+	"title": "Any% No RBA",
+	"leaderboard": "https://www.speedrun.com/bk#Any_No_RBA",
+	"description": "This category involves beating grunty as fast as possible without the use of RBA (reverse bee adventure). Sandcastle cheats are not allowed. In this category you go through every level as BK and collect notes and jiggies along the way. Token count is very lenient due to only needing the pumpkin. The only big tricks this category does is FP early and DoG skip, so it's definitely a lot easier than normal any%l.",
+	"routedocuments": [
+		{
+			"name": "Any% No RBA Mumbo Token Route",
+			"link": "https://pastebin.com/mFpJAdYA"
+		},
+		{
+			"name": "Any% Video Tutorial by Azmi",
+			"link": " https://pastebin.com/YaXzv3pK"
+		}
+	],
+	"videos": [{
+			"name": "Treasure Trove Cove Early tutorial by Azmi",
+			"video": "https://www.youtube.com/embed/awK22KjQazo"
+		},
+		{
+			"name": "FP Early Tutorial by Mittenz",
+			"video": "https://www.youtube.com/embed/hq3T4c-HWNs"
+		},
+		{
+			"name": "DoG Skip Tutorial by Oxylen",
+			"video": "https://www.youtube.com/embed/GbtoYVCBc90"
+		},
+		{
+			"name": "Grunty Fight Tutorial by Duck",
+			"video": "https://www.youtube.com/embed/naPs4_T2z7E"
+		}
+
+	]
+}
