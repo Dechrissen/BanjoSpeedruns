@@ -22,7 +22,7 @@
 			"video": "https://www.youtube.com/embed/kVTr90r3zKI"
 		},
 		{
-			"name": "Mathing Pyramid Pattern",
+			"name": "Matching Pyramid Pattern",
 			"description": "This is the optimal path for the matching pyramid.",
 			"image": ["images/gobis_matching.png", "Matching Pyramid Pattern"]
 		},

@@ -1,0 +1,27 @@
+{
+	"title": "Any%",
+	"leaderboard": "https://www.speedrun.com/bt#Any",
+	"description": "The goal of this category is to beat Hag 1 as fast as possible. The use of Delayed Cutscene Warp is allowed.",
+	"routedocuments": [{
+			"name": "Any% Written Route",
+			"link": "https://tinyurl.com/yx76epqf"
+		}
+	],
+	"videos": [{
+      "name": "70 Jiggy Door Skip by EmoArbiter",
+      "video": "https://www.youtube.com/embed/X9jNeOjpzJM"
+    },
+    {
+      "name": "PTS Tutorial by Kongkrete",
+      "video": "https://www.youtube.com/embed/6va_EHPLhaA"
+    },
+    {
+      "name": "Cauldron Keep Early Tutorial by Kongkrete",
+      "video": "https://www.youtube.com/embed/t4LtcgaV5uY"
+    },
+    {
+      "name": "Hag 1 Any% Tutorial by GDO",
+      "video": "https://www.youtube.com/embed/GAlyuZmCKM4"
+    }
+	]
+}

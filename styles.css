@@ -302,7 +302,7 @@ div.info {
 
 /* PROGRESS BAR STUFF */
 .meter {
-	height: 30px;  /* Can be anything */
+	height: 24px;  /* Can be anything */
 	position: relative;
 	background: #555;
 	-moz-border-radius: 25px;
