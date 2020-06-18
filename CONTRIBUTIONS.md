@@ -24,15 +24,13 @@
 - [x] `tdl.json`
 - [ ] `hfp.json`
 - [ ] `ccl.json`
-- [ ] `gi.json`
+- [x] `gi.json`
 - [x] `ck.json`
 
 ### Banjo-Kazooie category files
 - [x] `100.json`
 - [x] `any.json`
 - [x] `anynorba.json`
-- [ ] `anynodog.json`
-- [ ] `sandcastle.json`
 
 ### Banjo-Tooie category files
 - [ ] `100.json`

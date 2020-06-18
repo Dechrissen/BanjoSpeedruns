@@ -1,0 +1,75 @@
+{
+	"title": "Grunty Industries",
+	"description": "A fairly difficult and hard-to-navigate level.",
+	"general": [{
+		"name": "Floor 4 Early",
+    "description": "You can shoot a Grenade Egg through the wall to access Floor 4 early.",
+    "video": "https://www.youtube.com/embed/vDEbZ7NnomI"
+	},
+  {
+    "name": "Solo Banjo to HFP",
+    "description": "You can glitch walk through the Toxic Waste pipe to enter HFP as solo Banjo.",
+    "video": "https://www.youtube.com/embed/LWLXj1NaIf0"
+  },
+  {
+    "name": "Underwater Toxic Waste Jiggy From Wrong Side",
+    "description": "You can grab the Jiggy through the wall while underwater.",
+    "video": "https://www.youtube.com/embed/wFsbKYUJPYk"
+  },
+  {
+    "name": "Jump Across Trash Compactor",
+    "description": "You can use solo Banjo's Pack Whack to jump across the Trash Compactors.",
+    "video": "https://www.youtube.com/embed/_3CuJDqAh48"
+  },
+  {
+    "name": "Clinkers' Cavern Route",
+    "description": "Optimal route for Clinkers' Cavern.",
+    "video": "https://www.youtube.com/embed/sjBVxhqM0kE"
+  }],
+	"cwkshots": [{
+    "name": "Toxic Waste Clockwork Shot by Pjii",
+		"description": "JRL Switch from GI - Pjii's New Method",
+		"video": "https://www.youtube.com/embed/mPdCOPoR_uM"
+	},
+  {
+    "name": "Tintops Jiggy Shot",
+    "description": "You can shoot a Clockwork to grab the Tintops Jiggy without having to kill them.",
+    "video": "https://www.youtube.com/embed/81GsWOpnDj8"
+  },
+  {
+    "name": "Weldar Skip",
+    "description": "You can shoot a Clockwork through the ladder to grab Weldar's Jiggy without having to fight him.",
+    "video": "https://www.youtube.com/embed/tf0G41tvXp4"
+  },
+  {
+    "name": "Back Door Break-In",
+    "description": "You can shoot a Clockwork through the back door of GI to press a switch and enter the building.",
+    "video": "https://www.youtube.com/embed/emqXWKo65vE"
+  },
+  {
+    "name": "Floor 5 Jinjo Shot",
+    "description": "You can grab this Floor 5 Jinjo with a Clockwork.",
+    "video": "https://www.youtube.com/embed/nGKkxOS7QrU"
+  },
+  {
+    "name": "Oil Drill Jiggy Shot",
+    "description": "You can grab the Oil Drill Jiggy with a Clockwork.",
+    "video": "https://www.youtube.com/embed/AfFGNvcCHA"
+  },
+  {
+    "name": "Floor 2 Cheato Page Shot",
+    "description": "You can grab this Cheato Page with a Clockwork.",
+    "video": "https://www.youtube.com/embed/xgK7F816cqs"
+  }],
+	"cwkwarps": [{
+		"name": "Quality Control Early",
+		"description": "You can use a Clockwork warp to access the Quality Control room.",
+		"video": "https://www.youtube.com/embed/QFyjHK7Y7X0"
+	},
+  {
+    "name": "Break-In",
+    "description": "You can Clockwork warp into the main building of GI.",
+    "video": "https://www.youtube.com/embed/Y0k3Ft86KpY"
+  }],
+	"outofbounds": []
+}
