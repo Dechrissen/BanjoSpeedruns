@@ -29,8 +29,10 @@ async function injectCategoryData () {
   document.getElementById("categoryname").innerHTML = category.title;
   document.getElementById("description").innerHTML = category.description;
   document.getElementById("leaderboard").innerHTML = "Speedrun.com Leaderboard for " + category.title;
-  document.getElementById("leaderboard").setAttribute("href", category.leaderboard);
-  document.getElementById("leaderboard").setAttribute("target", "_blank");
+  document.getElementById("form").setAttribute("action", category.leaderboard);
+  document.getElementById("form").setAttribute("method", "get");
+  document.getElementById("form").setAttribute("target", "_blank");
+
 
   // create 'Documents' section
   if (category["routedocuments"].length > 0) {
@@ -84,6 +86,7 @@ async function injectCategoryData () {
 
       // create p element for video name
       var video = document.createElement("p");
+      video.setAttribute("style", "font-weight: bold;");
       video.classList.add("vid");
       video.classList.add("tab");
       var vid_name = category["videos"][i].name;

@@ -52,6 +52,7 @@ async function injectLevelData () {
 
         // create p element for trick title
         var trick = document.createElement("p");
+        trick.setAttribute("style", "font-weight: bold;");
         trick.classList.add("trick");
         trick.classList.add("tab");
         var trick_name = level[sections[index]][i].name;

@@ -7,10 +7,20 @@
     <meta name="description" content="Website for the Banjo-Kazooie speedrunning community.">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/png" href="./images/icon.png">
+    <script type="text/javascript">
+      function show () {
+        var email = document.getElementById("email");
+        var emailButton = document.getElementById("emailButton");
+        email.setAttribute("style", "display: inline;");
+        emailButton.remove();
+      }
+    </script>
     <title>Legal</title>
 </head>
 
-<body class="home">
+<body>
+  <div id="page-container">
+    <div id="content-wrap">
     <p class="logo"><a href="./home.html"><img src="./images/banjospeedruns-logo.png" alt="banjospeedruns.com logo" width="750"></a></p>
 
     <br>
@@ -24,10 +34,17 @@
         not reasonable without concrete evidence of an infringement. Upon notification of violations, we will remove such links immediately.</p>
 
     <h4 class="tab" style="font-family: 'Charter';">Contact</h4>
-    <p class="tab"></p>
+    <p class="tab">Direct business inquiries to: <button type="button" id="emailButton" onclick="show()">Show email</button> <span id="email" style="display: none;">mail@banjospeedruns.com</span></p>
 
     <br>
     <p>BanjoSpeedruns is © 2020 Derek Andersen.</p>
+    </div>
+
+    <footer id="sticky-footer">
+        <script type="text/javascript" src="./JavaScript/footer.js"></script>
+    </footer>
+
+  </div>
 </body>
 
 </html>
