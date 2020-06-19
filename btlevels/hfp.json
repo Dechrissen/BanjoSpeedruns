@@ -1,0 +1,45 @@
+{
+	"title": "Hailfire Peaks",
+	"description": "A difficult level.",
+	"general": [{
+		"name": "Chilly Willy Early",
+		"description": "How to get up to Chilly Willy without the use of Claw Clamber boots.",
+		"video": "https://www.youtube.com/embed/txonreKt_mU"
+	},
+  {
+    "name": "Shack Pack Skip",
+    "description": "How to get the Jinjo and fish for Boggy in the hot water without using Shack Pack.",
+    "video": "https://www.youtube.com/embed/5Vb89K0ihuU"
+  },
+  {
+    "name": "Hot Waterfall Jinjo Damage Boost",
+    "description": "How to grab the Jinjo behind the waterfall without pillars.",
+    "video": "https://www.youtube.com/embed/EQFp1p2dvXI"
+  }],
+	"cwkshots": [{
+		"name": "Ice Wall Shot",
+		"description": "You can shoot a Clockwork through the ice wall to grab the Jiggy.",
+		"video": "https://www.youtube.com/embed/xemzn0fczqM"
+	},
+  {
+    "name": "Ice Train Shot",
+    "description": "You can shoot a Clockwork through the entrance to Boggy's Igloo to grab the train station Jiggy.",
+    "video": "https://www.youtube.com/embed/vbuOHaOi9F0"
+  },
+  {
+    "name": "Ice Train Shot (Pause Buffer Method)",
+    "description": "You can shoot a Clockwork through the ground beneath Boggy's Igloo using a precise pause timing to grab the train station Jiggy.",
+    "video": "https://www.youtube.com/embed/mJWVNbe72vg?start=10932"
+  },
+  {
+    "name": "Icicle Grotto Cheato Page Shot",
+    "description": "You can shoot a Clockwork through the wall in Icicle Grotto to grab the Cheato Page.",
+    "video": "https://www.youtube.com/embed/X8uu1uv7dfU"
+  }],
+	"cwkwarps": [],
+	"outofbounds": [{
+		"name": "Slit Clip",
+		"description": "How to get the Colosseum Jiggy as solo Kazooie with a Clockwork.",
+		"video": "https://www.youtube.com/embed/-OpHqJvlsMY"
+	}]
+}

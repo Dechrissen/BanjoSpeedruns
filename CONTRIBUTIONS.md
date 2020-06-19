@@ -15,15 +15,15 @@
 - [x] `ccw.json`
 
 ### Banjo-Tooie level files
-- [ ] `sm.json`
+- [x] `sm.json`
 - [x] `ioh.json`
 - [x] `mt.json`
 - [x] `ggm.json`
 - [x] `ww.json`
 - [x] `jrl.json`
 - [x] `tdl.json`
-- [ ] `hfp.json`
-- [ ] `ccl.json`
+- [x] `hfp.json`
+- [x] `ccl.json`
 - [x] `gi.json`
 - [x] `ck.json`
 

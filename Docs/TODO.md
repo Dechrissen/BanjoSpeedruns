@@ -11,7 +11,7 @@
 - [x] Add JSONLint (https://jsonlint.com/?code=) to the JSON guidelines files and reformat JSON templates
 - [x] Change 404 image to Jamjars bonk
 - [x] Add `alt` field to images in level JSONs
-- [ ] Set up contact email address 'mail@banjospeedruns.com'
+- [x] Set up contact email address 'mail@banjospeedruns.com'
 
 
 ### Possible To-Do

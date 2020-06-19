@@ -33,6 +33,11 @@
 			"name": "Cauldron Keep Early",
 			"description": "Using a wall and the pipe leading up to the Cauldron Keep entrance, you can beak bust when Banjo makes contact with the wall to clip through it. You can then climb up the rest of the pipe from out-of-bounds and flutter behind the lasers guarding the door to enter the level early.",
 			"video": "https://player.twitch.tv/?video=v125481941&autoplay=false"
-		}
+		},
+		{
+				"name": "70 Jiggy Barrier Skip",
+				"description": "Floating point clip past the Hag 1 door.",
+				"video": "https://www.youtube.com/embed/X9jNeOjpzJM"
+			}
 	]
 }

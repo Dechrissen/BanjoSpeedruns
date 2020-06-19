@@ -1,0 +1,50 @@
+{
+	"title": "Cloud Cuckooland",
+	"description": "The last full level of the game.",
+	"general": [{
+		"name": "Dirt Patch Patterns",
+		"description": "",
+		"image": ["./images/dirt.png", "Dirt Patch Patterns"]
+	},
+  {
+    "name": "Central Cavern Jump",
+    "description": "",
+    "video": "https://www.youtube.com/embed/iz-iBzkWoyg"
+  },
+  {
+    "name": "Cheese Wedge Skew",
+    "description": "",
+    "video": "https://www.youtube.com/embed/4I3ypoQtdnw"
+  },
+  {
+    "name": "George Clip",
+    "description": "You can clip through George, grab the ledge, and climb up to access his Flight Pad.",
+    "video": "https://www.youtube.com/embed/KYsZcTWdWOs"
+  },
+  {
+    "name": "Sack Pack Jump to Sack Race",
+    "description": "How to get across the gap to Sack Pack race without the Floatus Floatium.",
+    "video": "https://www.youtube.com/embed/ZoY3EHFdKUg"
+  },
+  {
+    "name": "Jelly Castle as Bee",
+    "description": "How to get into the Jelly Castle as the Bee and back out.",
+    "video": "https://www.youtube.com/embed/x11fzIMAMJQ"
+  }],
+	"cwkshots": [{
+		"name": "High Jump Clockwork Shot",
+		"description": "",
+		"video": "https://www.youtube.com/embed/nsS3PcerABQ"
+	},
+  {
+    "name": "Superstash Shot",
+    "description": "You can shoot a Clockwork through the Superstash door to grab its Jiggy.",
+    "video": "https://www.youtube.com/embed/V1RT4yOy6Ss"
+  }],
+	"cwkwarps": [{
+		"name": "Cheese Wedge Warps",
+		"description": "",
+		"video": "https://www.youtube.com/embed/D4APAizdrMc"
+	}],
+	"outofbounds": []
+}

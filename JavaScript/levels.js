@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/btlevels/gi"; // test url
+var url = "https://banjowiki.com/btlevels/ccl"; // test url
 var game = url.split("/")[3];
 switch (game) {
   case "btlevels":
@@ -85,6 +85,7 @@ async function injectLevelData () {
         // create img element for image if it exists
         if (level[sections[index]][i].image) {
           var imgP = document.createElement("p");
+          imgP.classList.add("tab");
           var img = document.createElement("img");
           img.setAttribute("src", level[sections[index]][i].image[0]);
           img.setAttribute("width", "400");

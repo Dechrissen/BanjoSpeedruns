@@ -1,0 +1,12 @@
+{
+	"title": "Spiral Mountain",
+	"description": "The first level of the game.",
+	"general": [{
+		"name": "Klungo Cutscene Skip",
+		"description": "You can skip the cutscene where Klungo walks into the Digger Tunnel.",
+		"video": ""
+	}],
+	"cwkshots": [],
+	"cwkwarps": [],
+	"outofbounds": []
+}
