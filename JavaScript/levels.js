@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/btlevels/ccl"; // test url
+var url = "https://banjospeedruns.com/btlevels/ccl"; // test url
 var game = url.split("/")[3];
 switch (game) {
   case "btlevels":
@@ -16,7 +16,7 @@ var levelcode = url.split("/").pop();
 
 async function injectLevelData () {
   // get current level from URL
-  level = await fetch("./"+game+"/"+levelcode+".json");
+  level = await fetch("/"+game+"/"+levelcode+".json");
 
   // check if level code JSON exists, and return 404 if not
   if (level.ok == false) {
@@ -138,5 +138,5 @@ function populateNavBox () {
 
 
 function errorPage () {
-  window.location.replace("./404.html");
+  window.location.replace("/404.html");
 }

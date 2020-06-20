@@ -1,5 +1,5 @@
 //var url = window.location.href;
-var url = "https://banjowiki.com/btcategories/any"; // test url
+var url = "https://banjospeedruns.com/btcategories/any"; // test url
 var game = url.split("/")[3];
 var gamename;
 switch (game) {
@@ -14,7 +14,7 @@ var category;
 var categorycode = url.split("/").pop();
 
 async function injectCategoryData () {
-  category = await fetch("./"+game+"/"+categorycode+".json");
+  category = await fetch("/"+game+"/"+categorycode+".json");
 
   // check if category code JSON exists, and return 404 if not
   if (category.ok == false) {
@@ -119,5 +119,5 @@ async function injectCategoryData () {
 
 
 function errorPage () {
-  window.location.replace("./404.html");
+  window.location.replace("/404.html");
 }
