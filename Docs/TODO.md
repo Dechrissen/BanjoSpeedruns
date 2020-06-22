@@ -12,6 +12,7 @@
 - [x] Change 404 image to Jamjars bonk
 - [x] Add `alt` field to images in level JSONs
 - [x] Set up contact email address 'mail@banjospeedruns.com'
+- [ ] Xbox Version Differences page/pages for BK/BT
 
 
 ### Possible To-Do

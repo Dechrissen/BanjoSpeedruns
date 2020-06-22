@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Derek Andersen">
+    <meta name="description" content="Website for the Banjo-Kazooie speedrunning community.">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <title>Banjo-Kazooie Movement</title>
+  </head>
+  <body>
+    <p style="font-size: .8em;"><a href="/home.html">← Back to Homepage</a></p>
+
+    <h1 class="title">Banjo-Kazooie Movement Guide</h1>
+
+    <div class="navwrapper">
+        <div class="navbox">
+            <ol id="boxlist">
+              <li><a href="#movement-speeds">Table of Movement Speeds</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <p class="section">Movement Speeds</p>
+    <table id="movement-speeds">
+      <tr>
+        <th>Form (Assuming Flat Ground)</th>
+        <th>Speed</th>
+      </tr>
+      <tr>
+        <td>Banjo Walking</td>
+        <td>500</td>
+      </tr>
+      <tr>
+        <td>Banjo Jumping</td>
+        <td>Instant acceleration to 500 with a slowdown when you land</td>
+      </tr>
+      <tr>
+        <td>Banjo Fluttering</td>
+        <td>Instant acceleration to 500 with no slowdown when you land</td>
+      </tr>
+      <tr>
+        <td>Banjo Rolling</td>
+        <td>Up to 600 near the end of the roll with a big slowdown afterwards</td>
+      </tr>
+      <tr>
+        <td>Using Rat-a-tat-rap</td>
+        <td>Carries the momentum from your previous movement then starts to slow down to a minimum of 500
+          (if you peck out of a neutral jump then it will stay at 500 since a neutral jump has a speed of 500)</td>
+      </tr>
+      <tr>
+        <td>Talon Trot Walking</td>
+        <td>700</td>
+      </tr>
+      <tr>
+        <td>Talon Trot Jumping</td>
+        <td>Instantly accelerates you to 700 with a slowdown if you reach the end of the slide after the jump</td>
+      </tr>
+      <tr>
+        <td>Rat-a-tat-rap out of Talon Trot in Midair</td>
+        <td>Stops your momentum (if you jump off a platform in talon trot and reach the falling animation, then your peck will have momentum)</td>
+      </tr>
+      <tr>
+        <td>Sliding in Talon Trot</td>
+        <td>700 (same properties as walking in talon trot, just a slowdown if you reach the very end of the slide)</td>
+      </tr>
+    </table>
+    <p id="caption">All these assume flat ground, when you apply up and downhill slopes some properties may change. For instance, your XZ speed will decrease if you go up slopes, but increase as you go down slopes. Going uphills you want to slide as little as possible and going downhills you want to slide as much as possible (sometimes may even be worth reaching the end of the slide to just stay walking downhill depending on the length and steepness of the slope). This concept applies to all forms of ground movement for all transformations and shoes.</p>
+
+
+  </body>
+
+  <footer>
+    <br>
+    <script type="text/javascript" src="/JavaScript/footer.js"></script>
+  </footer>
+
+</html>
