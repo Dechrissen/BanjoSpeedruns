@@ -13,6 +13,8 @@
 - [x] Add `alt` field to images in level JSONs
 - [x] Set up contact email address 'mail@banjospeedruns.com'
 - [ ] Xbox Version Differences page/pages for BK/BT
+- [x] BK Movement page
+- [ ] BT Movement page
 
 
 ### Possible To-Do

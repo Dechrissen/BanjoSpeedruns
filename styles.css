@@ -122,9 +122,9 @@ ul {
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 75%;
+  width: 85%;
 }
-#caption {
+#table-caption {
   width: 75%;
   font-style: italic;
 }
@@ -140,7 +140,13 @@ tr:nth-child(even) {
 }
 /* END TABLE STUFF */
 
-
+.game-gif {
+  width: 40%;
+  display: inline;
+}
+.caption {
+  font-style: italic;
+}
 
 #trick-list-section {
   font-weight: bold;
