@@ -1,23 +1,23 @@
 {
 	"title": "100%",
-	"leaderboard": "https://www.speedrun.com/bt#100",
-	"description": "This category is super easy.",
+	"leaderboard": "https://www.speedrun.com/bt?#100",
+	"description": "The goal of this category is to collect everything listed on the Game Totals screen, and defeat Hag 1. The use of Delayed Cutscene Warp is allowed.",
 	"documents": [{
-			"name": "Cool Document 1",
-			"link": "https://tinyurl.com/vzl8xnp"
+			"name": "100% Route Document",
+			"link": "https://tinyurl.com/qqvvll2"
 		},
 		{
-			"name": "Cool Document 2",
-			"link": "https://tinyurl.com/vzl8xnp"
+			"name": "100% Beginner Route Document",
+			"link": "https://tinyurl.com/wtcmcro"
+		},
+		{
+			"name": "GDO's Banjo-Tooie Tutorial Playlist",
+			"link": "https://tinyurl.com/wb6adh5"
+		},
+		{
+			"name": "100% PAL and NTSC-U Route Differences",
+			"link": "https://youtu.be/179hOBD1x90"
 		}
 	],
-	"videos": [{
-			"name": "Cool Vid 1",
-			"video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
-		},
-		{
-			"name": "Cool Vid 2",
-			"video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
-		}
-	]
+	"videos": []
 }

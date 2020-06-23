@@ -1,6 +1,6 @@
 {
 	"title": "Any%",
-	"leaderboard": "https://www.speedrun.com/bt#Any",
+	"leaderboard": "https://www.speedrun.com/bt?#Any",
 	"description": "The goal of this category is to beat Hag 1 as fast as possible. The use of Delayed Cutscene Warp is allowed.",
 	"routedocuments": [{
 			"name": "Any% Written Route",

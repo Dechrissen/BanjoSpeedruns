@@ -19,7 +19,7 @@ legalLi.appendChild(legal);
 // GitHub repo link
 var gh = document.createElement("p");
 var ghLink = document.createElement("a");
-ghLink.setAttribute("href", "https://github.com/Dechrissen/banjospeedruns.com");
+ghLink.setAttribute("href", "https://github.com/Dechrissen/BanjoSpeedruns");
 ghLink.setAttribute("target", "_blank");
 var ghText = document.createTextNode("GitHub");
 ghLink.appendChild(ghText);

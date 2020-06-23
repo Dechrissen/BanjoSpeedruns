@@ -12,10 +12,10 @@
 - [x] Change 404 image to Jamjars bonk
 - [x] Add `alt` field to images in level JSONs
 - [x] Set up contact email address 'mail@banjospeedruns.com'
-- [ ] Xbox Version Differences page/pages for BK/BT
+- [x] Xbox Version Differences page for BK
 - [x] BK Movement page
 - [ ] BT Movement page
-- [ ] Make meta description tags more descriptive 
+- [x] Make meta description tags more descriptive
 
 
 ### Possible To-Do
@@ -32,3 +32,4 @@
 - [x] Link the BK practice ROM patch download
 - [ ] 'Generate a random page' button
 - [ ] Add clickable bookmarks to the sections in category pages
+- [ ] Move logo to menu bar for mobile layout

@@ -1,0 +1,19 @@
+{
+	"title": "No DCW",
+	"leaderboard": "https://www.speedrun.com/bt?#Any_No_DCW",
+	"description": "The goal of this category is to defeat Hag 1 without the use of Delayed Cutscene Warp or bit clips.",
+	"routedocuments": [{
+			"name": "Any% No DCW Route Document",
+			"link": "https://tinyurl.com/rt9ag3x"
+		},
+		{
+			"name": "Any% No DCW Route Beginner Document",
+			"link": "https://tinyurl.com/ukkq9f6"
+		}
+	],
+	"videos": [{
+			"name": "Kongkrete's Any% No DCW Beginner/Intermediate Tutorial",
+			"video": "https://www.youtube.com/embed/mJWVNbe72vg"
+		}
+	]
+}
