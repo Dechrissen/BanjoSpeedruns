@@ -2,7 +2,7 @@
 
 # banjospeedruns.com
 *Website for the Banjo-Kazooie speedrunning community.*  
-![Visit the Site!](https://banjospeedruns.com/)  
+![Visit the Site!](https://banjospeedruns.com)  
 *Status*: In development  
 
 ## Purpose
