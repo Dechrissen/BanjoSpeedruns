@@ -25,7 +25,7 @@
 			"name": "Hag 1 Egg Route (100%)",
 			"description": "Optimal egg routing during Hag 1 for the 100% category.",
 			"video": "https://player.twitch.tv/?video=v292142093&autoplay=false"
-		},
+		}
 	],
 	"cwkshots": [],
 	"cwkwarps": [],
@@ -38,6 +38,6 @@
 				"name": "70 Jiggy Barrier Skip",
 				"description": "Floating point clip past the Hag 1 door.",
 				"video": "https://www.youtube.com/embed/X9jNeOjpzJM"
-			}
+		}
 	]
 }
