@@ -15,6 +15,7 @@
 - [ ] Xbox Version Differences page/pages for BK/BT
 - [x] BK Movement page
 - [ ] BT Movement page
+- [ ] Make meta description tags more descriptive 
 
 
 ### Possible To-Do
