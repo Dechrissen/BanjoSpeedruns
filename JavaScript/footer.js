@@ -9,7 +9,7 @@ footer_list.setAttribute("style", "line-height: 75%;");
 // legal page link
 var legal = document.createElement("p");
 var legalLink = document.createElement("a");
-legalLink.setAttribute("href", "./legal.html");
+legalLink.setAttribute("href", "/legal.html");
 var legalText = document.createTextNode("Legal");
 legalLink.appendChild(legalText);
 legal.appendChild(legalLink);
