@@ -108,7 +108,7 @@ async function injectCategoryData () {
       var iframe = document.createElement("iframe");
       iframe.width = "352";
       iframe.height = "198";
-      iframe.src = category["videos"][i].video;
+      iframe.src = category["videos"][i].video + "&parent=banjospeedruns.com";
       iframe.frameborder = "0";
       iframe.allowfullscreen = "true";
       videoP.appendChild(iframe);
