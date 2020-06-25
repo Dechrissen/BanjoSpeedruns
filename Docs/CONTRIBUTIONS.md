@@ -33,8 +33,8 @@
 - [x] `anynorba.json`
 
 ### Banjo-Tooie category files
-- [ ] `100.json`
+- [x] `100.json`
 - [x] `any.json`
-- [ ] `anynodcw.json`
+- [x] `nodcwbc.json`
 - [ ] `cheato.json`
 - [ ] `allbosses.json`

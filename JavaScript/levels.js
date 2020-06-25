@@ -26,7 +26,7 @@ async function injectLevelData () {
   level = await level.json();
 
   // set page name, title and description to current level
-  document.title = level.title;
+  document.title = level.title + " – Banjo Speedruns";
   document.getElementById("levelname").innerHTML = level.title;
   document.getElementById("description").innerHTML = level.description;
 
