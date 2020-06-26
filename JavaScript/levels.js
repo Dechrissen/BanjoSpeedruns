@@ -12,7 +12,7 @@ switch (game) {
     break;
 }
 var level;
-var levelcode = url.split("/").pop();
+var levelcode = url.split("/").pop().split("#")[0];
 
 async function injectLevelData () {
   // get current level from URL

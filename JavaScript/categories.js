@@ -11,7 +11,7 @@ switch (game) {
     break;
 }
 var category;
-var categorycode = url.split("/").pop();
+var categorycode = url.split("/").pop().split("#")[0];
 
 async function injectCategoryData () {
   category = await fetch("/"+game+"/"+categorycode+".json");
