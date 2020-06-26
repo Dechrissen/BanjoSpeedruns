@@ -16,6 +16,8 @@
 - [x] BK Movement page
 - [ ] BT Movement page
 - [x] Make meta description tags more descriptive
+- [ ] Archive videos
+- [ ] Add a glossary-type section for listing links to pages for various important things like DCW, FFM, Jinjo manip, float clips, quickdives, Clockwork warps, etc.
 
 
 ### Possible To-Do

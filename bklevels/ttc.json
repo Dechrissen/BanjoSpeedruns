@@ -1,15 +1,15 @@
 {
   "title": "Treasure Trove Cove",
-  "description": "This level introduces flying mechanics so have fun.",
+  "description": "This level introduces flying mechanics.",
   "general": [
     {
-      "name": "Leaky without looking",
+      "name": "Leaky Without Looking",
       "description": "It's fastest to poop eggs into leaky from the cliff above without looking at him.",
       "video": "https://www.youtube.com/embed/tAq4nIyZWJ8"
     },
     {
-      "name": "Skip Shock Jump cutscene with Leaky (No FFM)",
-      "description": "In a no FFM run, it is required to talk to Bottles to learn Shock Jump. This cutscene can be overlayed on top of Leaky's sandcastle cutscene to skip it.",
+      "name": "Skip Shock Jump Cutscene with Leaky",
+      "description": "This cutscene can be overlayed on top of Leaky's sandcastle cutscene to skip it.",
       "video": "https://www.youtube.com/embed/YcBr4GUJVQg?start=206"
     },
     {
