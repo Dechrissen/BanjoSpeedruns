@@ -2,7 +2,7 @@
 	"title": "100%",
 	"leaderboard": "https://www.speedrun.com/bt?#100",
 	"description": "The goal of this category is to collect everything listed on the Game Totals screen, and defeat Hag 1. The use of Delayed Cutscene Warp is allowed.",
-	"documents": [{
+	"routedocuments": [{
 			"name": "100% Route Document",
 			"link": "https://tinyurl.com/qqvvll2"
 		},
