@@ -1,4 +1,4 @@
-var amount = 28.60;
+var amount = 37.86;
 var total = 87;
 var percentage = (amount / total) * 100;
 percentage = Math.round((percentage + Number.EPSILON) * 100) / 100;
