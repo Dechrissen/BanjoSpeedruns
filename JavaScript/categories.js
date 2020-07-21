@@ -1,5 +1,5 @@
-//var url = window.location.href;
-var url = "https://banjospeedruns.com/btcategories/nodcwbc"; // test url
+var url = window.location.href;
+//var url = "https://banjospeedruns.com/btcategories/nodcwbc"; // test url
 var game = url.split("/")[3];
 var gamename;
 switch (game) {
