@@ -35,3 +35,4 @@
 - [ ] 'Generate a random page' button
 - [ ] Add clickable bookmarks to the sections in category pages
 - [ ] Move logo to menu bar for mobile layout
+- [ ] Discord server widget/button
