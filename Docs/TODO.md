@@ -18,6 +18,9 @@
 - [x] Make meta description tags more descriptive
 - [ ] Archive videos
 - [ ] Add a glossary-type section for listing links to pages for various important things like DCW, FFM, Jinjo manip, float clips, quickdives, Clockwork warps, etc.
+- [ ] Add "not affiliated with Rare etc." to Legal page
+- [ ] Change all homepage panels to alternating red/blue w/ yellow outline
+- [ ] Add bit clip line app
 
 
 ### Possible To-Do
