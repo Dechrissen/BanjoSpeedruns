@@ -22,6 +22,10 @@
 - [ ] Change all homepage panels to alternating red/blue w/ yellow outline
 - [ ] Add bit clip line app
 - [ ] Remove old Xbox doc and add new one
+- [ ] `/home` redirect to `/home.html` etc. for each page in nginx conifg
+- [ ] Responsive design for mobile layout
+- [ ] Update style & fonts
+- [ ] 'Tournament Archive' section for past tournaments uploaded to YouTube
 
 
 ### Possible To-Do
