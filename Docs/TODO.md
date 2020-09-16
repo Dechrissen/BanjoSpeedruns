@@ -21,6 +21,7 @@
 - [ ] Add "not affiliated with Rare etc." to Legal page
 - [ ] Change all homepage panels to alternating red/blue w/ yellow outline
 - [ ] Add bit clip line app
+- [ ] Remove old Xbox doc and add new one
 
 
 ### Possible To-Do
