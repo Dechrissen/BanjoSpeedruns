@@ -1,5 +1,5 @@
 body.bingo-toolie {
-	background-color: #999999;
+	background-color: white;
 }
 
 h1 {
@@ -32,7 +32,7 @@ textarea {
 	padding-left: 0px; /* use this if input is not centered */
 	margin-bottom: 10px;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .quantity input:focus {
@@ -51,7 +51,7 @@ textarea {
 	-o-user-select: none;
 	user-select: none;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 28px;
 }
 
 .quantity-button:hover {
@@ -96,12 +96,13 @@ textarea {
 div.wrapper {
 	position: absolute;
   display: grid;
-  grid-template-columns: repeat(2, 7fr);
+  grid-template-columns: repeat(3, 9fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(auto, auto);
 	padding: 10px;
-	border: solid 2px grey;
+	border: solid 2px Black;
 	border-radius: 5px;
+	background-color: #a3a3a3;
 }
 
 div.counter {
@@ -120,20 +121,20 @@ div #honeycomb {
   grid-row: 3;
 }
 div #hive {
-  grid-column: 1;
-  grid-row: 4;
-}
-div #minjo {
-  grid-column: 1;
-  grid-row: 5;
-}
-div #cheato-page {
   grid-column: 2;
   grid-row: 2;
 }
-div #treble {
+div #minjo {
   grid-column: 2;
   grid-row: 3;
+}
+div #cheato-page {
+  grid-column: 1;
+  grid-row: 4;
+}
+div #treble {
+  grid-column: 1;
+  grid-row: 5;
 }
 div #mumbo-pad {
   grid-column: 2;
@@ -150,4 +151,10 @@ div #text-box {
 div #clear-button {
 	grid-column: 1;
   grid-row: 7;
+}
+
+div #move-list {
+	grid-column: 3;
+	grid-row: 1 / span 9;
+
 }
