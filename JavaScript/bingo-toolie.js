@@ -73,3 +73,15 @@ function app () {
         }
       });
 }
+
+function wipe () {
+  jQuery('.quantity').each(function () {
+    var counter = jQuery(this);
+    input = counter.find('input[type="number"]');
+    min = input.attr('min');
+    counter.find("input").val(min);
+    counter.find("input").trigger("change");
+  });
+  jQuery('textarea#notes').val('');
+  console.log('Cleared all');
+}

@@ -11,22 +11,27 @@
     <link rel="icon" type="image/png" href="/images/icon.png">
     <title>Bingo-Toolie</title>
 </head>
-<body onload=app()>
+<body class="bingo-toolie" onload=app()>
   <div class="wrapper">
-    <div id="glowbo" class="counter quantity" style="display: inline;"><input type="number" min="0" max="9" step="1" value="0"></div>
-    <div id="honeycomb" class="counter quantity" style="display: inline;"><input type="number" min="0" max="9" step="1" value="0"></div>
-    <div id="hive" class="counter quantity" style="display: inline;"><input type="number" min="0" max="9" step="1" value="0"></div>
-    <div id="minjo" class="counter quantity" style="display: inline;"><input type="number" min="0" max="9" step="1" value="0"></div>
-    <div id="cheato-page" class="counter quantity" style="display: inline;"><input type="number" min="0" max="9" step="1" value="0"></div>
-    <div id="treble" class="counter quantity" style="display: inline;"><input type="number" min="0" max="9" step="1" value="0"></div>
-    <div id="mumbo-pad" class="counter quantity" style="display: inline;"><input type="number" min="0" max="9" step="1" value="0"></div>
-    <div id="boss" class="counter quantity" style="display: inline;"><input type="number" min="0" max="9" step="1" value="0"></div>
+    <div id="title"><h1>Bingo-Toolie</h1></div>
+    <div id="glowbo" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
+    <div id="honeycomb" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
+    <div id="hive" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
+    <div id="minjo" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
+    <div id="cheato-page" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
+    <div id="treble" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
+    <div id="mumbo-pad" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
+    <div id="boss" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
+
+    <div id="text-box">
+      <textarea id="notes" name="notes" placeholder="Write notes here." rows="10" cols="50"></textarea>
+    </div>
+
+    <div id="clear-button">
+      <button type="button" onclick="wipe()">Clear all</button>
+    </div>
 
   </div>
-  <textarea id="notes" name="notes" rows="4" cols="75">
-  Write notes here.
-  </textarea>
-
 
 </body>
 </html>

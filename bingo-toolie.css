@@ -1,8 +1,24 @@
+body.bingo-toolie {
+	background-color: #999999;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+
+}
+
+textarea {
+	font-size: 18px;
+}
+
 /* Counters */
 .quantity {
 	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
+	margin-left: 10px;
+
 }
 
 .quantity input[type=number] {
@@ -10,10 +26,13 @@
 }
 
 .quantity input {
-	width: 60px;
+	width: 50px;
+	text-align: center;
 	padding: 0px;
-	padding-left: 10px;
+	padding-left: 0px; /* use this if input is not centered */
 	margin-bottom: 10px;
+	font-weight: normal;
+	font-size: 20px;
 }
 
 .quantity input:focus {
@@ -23,76 +42,112 @@
 .quantity-button {
 	cursor: pointer;
 	border: solid 1px solid #eee;
-	width: 26px;
+	border-radius: 100%;
+	width: 30px; /* previously 26px */
 	text-align: center;
-	color: #333;
+	color: black;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.quantity-button:hover {
+	background-color: LightGrey;
 }
 
 .quantity-button.quantity-up,
 .quantity-button.quantity-down,
 .quantity input {
-	border: solid 1px #ccc;
+	border: solid 1px grey;
 	display: inline-block;
-	height: 42px;
-	line-height: 40px;
+	height: 50px; /* previously 42px ... this has to be 2px more than the one below */
+	line-height: 50px; /* previously 40px */
 }
 
-.quantity-button.quantity-up {}
+.quantity input {
+	border-radius: 10px;
+}
+
+.quantity-button.quantity-up {
+	/*border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;*/
+	border: none;
+
+}
 
 .quantity-button.quantity-down {
-	float: left
+	float: left;
+	/*border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;*/
+	border: none;
+
 }
 
 .icon {
-	float: left
+	float: left;
+	padding-right: 25px;
 }
 
 /* CSS Grid */
+
 div.wrapper {
+	position: absolute;
   display: grid;
-  grid-template-columns: repeat(4, 4fr);
+  grid-template-columns: repeat(2, 7fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(auto, auto);
+	padding: 10px;
+	border: solid 2px grey;
+	border-radius: 5px;
 }
 
 div.counter {
   padding: 4px;
-  background-color: white;
 }
-
+div #title {
+	grid-column: 1 / span 2;
+  grid-row: 1;
+}
 div #glowbo {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
 }
 div #honeycomb {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 3;
 }
 div #hive {
   grid-column: 1;
-  grid-row: 3;
+  grid-row: 4;
 }
 div #minjo {
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 5;
 }
 div #cheato-page {
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 2;
 }
 div #treble {
   grid-column: 2;
-  grid-row: 2;
+  grid-row: 3;
 }
 div #mumbo-pad {
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 4;
 }
 div #boss {
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 5;
+}
+div #text-box {
+	grid-column: 1 / span 2;
+  grid-row: 6;
+}
+div #clear-button {
+	grid-column: 1;
+  grid-row: 7;
 }
