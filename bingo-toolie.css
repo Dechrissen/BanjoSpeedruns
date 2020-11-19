@@ -1,0 +1,98 @@
+/* Counters */
+.quantity {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.quantity input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.quantity input {
+	width: 60px;
+	padding: 0px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.quantity input:focus {
+	outline: 0;
+}
+
+.quantity-button {
+	cursor: pointer;
+	border: solid 1px solid #eee;
+	width: 26px;
+	text-align: center;
+	color: #333;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.quantity-button.quantity-up,
+.quantity-button.quantity-down,
+.quantity input {
+	border: solid 1px #ccc;
+	display: inline-block;
+	height: 42px;
+	line-height: 40px;
+}
+
+.quantity-button.quantity-up {}
+
+.quantity-button.quantity-down {
+	float: left
+}
+
+.icon {
+	float: left
+}
+
+/* CSS Grid */
+div.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(auto, auto);
+}
+
+div.counter {
+  padding: 4px;
+  background-color: white;
+}
+
+div #glowbo {
+  grid-column: 1;
+  grid-row: 1;
+}
+div #honeycomb {
+  grid-column: 1;
+  grid-row: 2;
+}
+div #hive {
+  grid-column: 1;
+  grid-row: 3;
+}
+div #minjo {
+  grid-column: 1;
+  grid-row: 4;
+}
+div #cheato-page {
+  grid-column: 2;
+  grid-row: 1;
+}
+div #treble {
+  grid-column: 2;
+  grid-row: 2;
+}
+div #mumbo-pad {
+  grid-column: 2;
+  grid-row: 3;
+}
+div #boss {
+  grid-column: 2;
+  grid-row: 4;
+}
