@@ -27,11 +27,6 @@
 			"video": "https://www.youtube.com/embed/Mo1DubnLr7Q"
 		},
 		{
-			"name": "Stomping Plains as Solo Kazooie (Includes Clockwork Shot)",
-			"description": "How to cross Stomping Plains as solo Kazooie and collect the jiggy.",
-			"video": "https://www.youtube.com/embed/anihCeuzTV4"
-		},
-		{
 			"name": "How to Fight/2-Cycle Terry",
 			"description": "Optimal movement for defeating Terry in only two cycles.",
 			"video": "https://www.youtube.com/embed/PrRoh-wbrao"
@@ -64,8 +59,7 @@
 		},
 		{
 			"name": "Stomping Plains as Solo Kazooie (Clockwork Shot)",
-			"description": "How to collect the Stomping Plains jiggy as solo Kazooie with a clockwork egg.",
-			"video": "https://youtube.com/embed/anihCeuzTV4?start=30&end=212;"
+			"description": "How to collect the Stomping Plains jiggy as solo Kazooie with a clockwork egg."
 		}
 	],
 	"cwkwarps": [{
