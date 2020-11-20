@@ -104,7 +104,8 @@ function wipe () {
   jQuery('input:checkbox').each(function () {
     var checkbox = jQuery(this);
     checkbox.prop("checked", false);
+    checkbox.parent().css('color', '');
   });
   jQuery('textarea#notes').val('');
-  console.log('Cleared all');
+  console.log('Cleared all fields');
 }
