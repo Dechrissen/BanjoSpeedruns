@@ -1,10 +1,10 @@
 function app () {
   jQuery('<img class="icon" src="/images/bingo-toolie/glowbo.png" style="width: 64px; height: 64px;"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div>').insertAfter('.quantity input');
       jQuery('.quantity').each(function () {
-          var spinner = jQuery(this),
-          input = spinner.find('input[type="number"]'),
-          btnUp = spinner.find('.quantity-up'),
-          btnDown = spinner.find('.quantity-down'),
+          var counter = jQuery(this),
+          input = counter.find('input[type="number"]'),
+          btnUp = counter.find('.quantity-up'),
+          btnDown = counter.find('.quantity-down'),
           min = input.attr('min'),
           max = input.attr('max');
 
@@ -16,8 +16,8 @@ function app () {
               } else {
                   var newVal = oldValue + 1;
               }
-              spinner.find("input").val(newVal);
-              spinner.find("input").trigger("change");
+              counter.find("input").val(newVal);
+              counter.find("input").trigger("change");
           });
 
           // Decrement button
@@ -28,8 +28,8 @@ function app () {
               } else {
                   var newVal = oldValue - 1;
               }
-              spinner.find("input").val(newVal);
-              spinner.find("input").trigger("change");
+              counter.find("input").val(newVal);
+              counter.find("input").trigger("change");
           });
 
       });
