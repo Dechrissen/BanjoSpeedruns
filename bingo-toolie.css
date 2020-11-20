@@ -5,11 +5,24 @@ body.bingo-toolie {
 h1 {
 	text-align: center;
 	font-family: 'Arial', sans-serif;
+}
 
+#title {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 20px;
 }
 
 textarea {
 	font-size: 18px;
+}
+
+form {
+	padding: 10px;
+}
+label {
+	padding: 5px;
+	font-family: 'Arial', sans-serif;
 }
 
 /* Counters */
@@ -55,7 +68,7 @@ textarea {
 }
 
 .quantity-button:hover {
-	background-color: LightGrey;
+	background-color: #9a9a9a;
 }
 
 .quantity-button.quantity-up,
@@ -102,7 +115,7 @@ div.wrapper {
 	padding: 10px;
 	border: solid 2px Black;
 	border-radius: 5px;
-	background-color: #a3a3a3;
+	background-color: LightGrey;
 }
 
 div.counter {
@@ -144,17 +157,26 @@ div #boss {
   grid-column: 2;
   grid-row: 5;
 }
+div #train {
+  grid-column: 1;
+  grid-row: 6;
+}
+div #egg {
+  grid-column: 2;
+  grid-row: 6;
+}
 div #text-box {
 	grid-column: 1 / span 2;
-  grid-row: 6;
+  grid-row: 7;
 }
 div #clear-button {
 	grid-column: 1;
-  grid-row: 7;
+  grid-row: 8;
 }
 
 div #move-list {
 	grid-column: 3;
 	grid-row: 1 / span 9;
+	font-size: 16px;
 
 }

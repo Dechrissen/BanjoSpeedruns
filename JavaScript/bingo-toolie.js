@@ -44,6 +44,8 @@ function app () {
         var treble = '/images/bingo-toolie/treble.png';
         var mumbopad = '/images/bingo-toolie/mumbo-pad.png';
         var boss = '/images/bingo-toolie/boss.png';
+        var train = '/images/bingo-toolie/train.png';
+        var egg = '/images/bingo-toolie/egg.png';
         var icon = jQuery(this);
         switch ((icon).closest('.counter').attr('id')) {
           case 'glowbo':
@@ -70,8 +72,25 @@ function app () {
           case 'boss':
             icon.attr('src', boss);
             break;
+          case 'train':
+            icon.attr('src', train);
+            break;
+          case 'egg':
+            icon.attr('src', egg);
+            break;
         }
       });
+}
+
+function toggleColor (box) {
+  console.log("check")
+  if (box.checked == true) {
+    console.log("true")
+    box.parentNode.style.color = "#FB2B31";
+  }
+  else {
+    box.parentNode.style.color = "";
+  }
 }
 
 function wipe () {
@@ -81,6 +100,10 @@ function wipe () {
     min = input.attr('min');
     counter.find("input").val(min);
     counter.find("input").trigger("change");
+  });
+  jQuery('input:checkbox').each(function () {
+    var checkbox = jQuery(this);
+    checkbox.prop("checked", false);
   });
   jQuery('textarea#notes').val('');
   console.log('Cleared all');
