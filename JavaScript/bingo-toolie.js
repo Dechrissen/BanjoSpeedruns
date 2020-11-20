@@ -83,9 +83,7 @@ function app () {
 }
 
 function toggleColor (box) {
-  console.log("check")
   if (box.checked == true) {
-    console.log("true")
     box.parentNode.style.color = "#FB2B31";
   }
   else {
