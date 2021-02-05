@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Derek Andersen">
+    <meta name="description" content="Website for the Banjo-Kazooie speedrunning community. A central hub for all things Banjo-Kazooie speedrun related. A compendium of documented tricks, tutorials, glitches, routes, and resources.">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <title>Banjo-Kazooie Bitclips | Banjo Speedruns</title>
+</head>
+
+<body>
+  <p style="font-size: .8em;"><a href="/home.html">← Back to Homepage</a></p>
+
+  <h1 class="title">Banjo-Kazooie Bitclips</h1>
+
+  <div class="navwrapper">
+      <div class="navbox">
+          <ol id="boxlist">
+            <li><a href="#what-is-a-bitclip-float-clip-">What is a Bitclip?</a></li>
+            <li><a href="#how-are-bitclips-found-">How are Bitclips Found?</a></li>
+            <li><a href="#general-information-on-bk-bitclip-mechanics">General Information on BK Bitclip Mechanics</a></li>
+          </ol>
+      </div>
+  </div>
+
+<h2 id="what-is-a-bitclip-float-clip-">What is a Bitclip/Float Clip?</h2>
+<p>The floor in BK is entirely made up of triangles. The game uses a barycentric algorithm to tell if Banjo is above any triangle. However, if you&#39;re at very specific points on the seams of some triangles, the algorithm will fail to detect Banjo on either triangle adjacent to him, purely due to rounding error. This creates effective gaps in collision that you can fall through.  </p>
+<p>The floor gaps are about 0.00001 units wide. For reference, banjo moves at 700 units per second in talon trot. For further reference, the seam used for Ninpalk skip is 1 unit wide.  </p>
+<p>If you are over one of these floor gaps, banjo will start falling through the floor. If you pass through the floor in one frame you can fall out of bounds, but if you are in the floor on a frame then the game will detect it and eject banjo upwards. The easiest way to pass through the floor gap in one frame is to beak bust (giving you enough speed to pass through). Other ways to pass through are to jump from a high ledge or by playing on PAL and doing a very precise jump + lag frame combination.  </p>
+<p>The ejecting mechanism works differently in Tooie. There are some gaps which hook banjo without ejecting him until he has enough speed to pass through in one frame. This makes bit clips more useful in tooie RTA as you can flutter out of them and ground pound to get back in bounds behind doors and walls.</p>
+<h2 id="how-are-bitclips-found-">How are Bitclips Found?</h2>
+<p>The first ever bitclip in a Banjo game was found by accident in Banjo-Tooie by FalconxFalcon. He found himself randomly clipping out of bounds while not paying attention to the game and holding a slight angle on the joystick outside of a loading zone. A recreation of the first bitclip can be found here: <a href="https://youtu.be/tad_ZHNFNNE">https://youtu.be/tad_ZHNFNNE</a>  </p>
+<p>The8bitbeast then analyzed the clip in depth (hence the name BITclips) to figure out the science behind what happened and why it happened/how it works. He found that they are easier to do in some places by accident in Banjo-Tooie, but they are possible in Banjo-Kazooie as well, although they work a bit differently (refer to the previous section).</p>
+<p>The first useful RTA bitclip was RingRush’s Hag 1 early clip in Banjo-Tooie, followed by his WitchyWorld early clip shortly after. The8bitbeast then extended RTA setups to Banjo-Kazooie where he found the first setup for Mad Monster Mansion Early and then Click Clock Wood Early. Since then The8bitbeast and RingRush have been optimizing and developing bitclip setups with the tools at their arsenal.  </p>
+<p>Modern day, bitclips are found by looking for the seams where the floor triangles meet. The seams are easy enough to find by using memory addresses to find the coordinates of the vertices of the floor triangles. About one in every nine seams works for bitclips. We can then hack Banjo’s position to be exactly along the seam to check for potential bitclip spots along the seam. Or alternatively the bitclip spots can be found mathematically.  </p>
+<p>After the clipping point is found we then manually test out a handful of different movement options to get somewhat near the spot. Once we are near the spot, we can then use a basic movement simulator to test out millions of combinations of basic movement options (moves will vary depending on BK/BT) and hopefully come out with a simple enough RTA method of getting to the clip spot.  </p>
+<p>Finally, once a setup is found it is tested on console to ensure that there are no lag discrepancies that might throw things off.</p>
+<h2 id="general-information-on-bk-bitclip-mechanics">General Information on BK Bitclip Mechanics</h2>
+<p>For bitclips we need a 100% consistent method of getting to the clip spots, if we move even 0.00001 units too far in any direction then it wont work. To do this we have a variety of different movement options and a variety of different direction/angle change options we can use.  </p>
+<p>This video goes over both movement options and angle/direction change options, to give a visual along with a slightly less in-depth explanation: <a href="https://youtu.be/OBGkHdv90l4">https://youtu.be/OBGkHdv90l4</a></p>
+<h3 id="movement-options">Movement Options</h3>
+<ul style="line-height: 190%; list-style-type: square;">
+<li><p><strong>Talon trot pause</strong> – This is the fastest form of movement we can do to consistently get close to our Bitclip point. It&#39;s most efficiently used when you have to travel a far distance to get to the general area where the bitclip will occur. For example, going from the loading zone to the stairs for MMM early or going from the puzzle switch to the shockpad for CCW early. The way we do this is by buffering a cardinal direction on the joystick (up, down, left, or right) while we get in talon trot so we’re holding that direction fully by the time we start moving, and then pausing on a specific frame. This pause is generally the hardest part about bitclips setup because if you miss the pause you must go all the way back and try it again.</p>
+</li>
+<li><p><strong>Beakbarges</strong> – Beakbarging is a good way of moving consistently. For all cases we either do a short beakbarge or long beakbarge (anything in between would be inconsistent. After a short or long beakbarge, Banjo will fully stop moving right about when he faces his nose to his right. If we hold Z after a beakbarge until banjo peaks his nose up, we can move a bit more distance which can be useful in some places.</p>
+</li>
+<li><p><strong>Claw Swipes (bearpunches)</strong> – Just like beakbarges, bearpunches are good for moving a specific amount of distance. The main difference is that there&#39;s no long or short bear punches, so this movement is pretty set. Just like beakbarges, banjo will fully stop moving when his nose is facing to his right. You can hold Z after a bearpunch to go a tiny bit farther and banjo will fully stop moving when he peaks up.</p>
+</li>
+<li><p><strong>Punch Cancels</strong> – This is the most crucial form of movement for bitclips. A punch cancel is when you do a bearpunch but then jump after 1 frame of movement. This is crucial because this is the shortest form of movement we can use to inch our way towards the clip spots. Generally, the strategy most people use is to press B then A as fast as they can. This will usually result in you doing a short hop after 1 frame of movement, or just doing a stationary short hop. Doing a short hop is important. While punch cancelling it&#39;s hard to tell if you get the punch cancel correctly if you look at banjo since you move such a short distance. If you do a short hop in general, the camera wont change at all, whereas if you do a big jump by holding A then the camera will start to change. This means if you do a short hop right after 1 frame of a bearpunch, the camera will move very slightly, so everything in the background will shift a tiny bit. This can be super helpful to tell if you got the punch cancel correctly or not.  </p>
+</li>
+</ul>
+<p>These are all our options for movement when it comes to bitclip setups. However, there is one more factor we need to consider for approaching the clip points – the direction we face. There are generally 2 ways of changing our direction/angle that we use for all setups.</p>
+<h3 id="direction-angle-change-options">Direction/Angle Change Options</h3>
+<p>Our first method is just by holding a cardinal direction on the joystick while crouching. This is straightforward, but it can only be done correctly if the camera is fully set otherwise the angle you face will be very slightly different. It is also worth noting you must wait for the camera to stop moving completely if you plan to do a backflip right after.</p>
+<p>The second method is by using what we call <strong>twirly whirlies</strong>. This is the method we use that gives us the most precise directions so there are a lot of different aspects to consider and properties to learn.  </p>
+<p>To do a twirly whirly, you press C-up and buffer either right or left on the joystick while you get into first person - similar to how we buffer a joystick input while we get in talon trot. Then the camera will continuously change 3 degrees per frame and your goal is to pause on a specific frame to get a specific angle. Then you would let go of all your inputs, unpause, get out of first person, then do whatever movement input is next in your setup.  </p>
+<p>You can continuously turn right without any issue, but you cannot continuously turn left otherwise your angle will change a bit on a miniscule level every <strong>full loop</strong> causing your angle to be off just slightly. Now this doesn’t mean you have to continuously hold right and pause on every <strong>full loop</strong>, what you can do instead is hold right to get to the angle you want to pause at, and if you fail then you can buffer left while unpausing, go back to the left so you go a bit past the angle you want, pause again, buffer right while you unpause, then attempt to get the right angle again while turning right. This is faster than making a full loop for every attempt (In that example left and right are interchangeable, you can try and get your pause while holding right or left - it doesn&#39;t matter). Point is to just avoid doing a full loop (especially while holding left). (example gif: <a href="https://gyazo.com/3c0d575c0b0dd5872cfc200ecd7a629c">https://gyazo.com/3c0d575c0b0dd5872cfc200ecd7a629c</a>)  </p>
+<p>It’s worth noting that if you’re going left/right at full speed, it&#39;s ok if you accidentally move the camera up or down a tiny bit. It will mess with your visual cues a bit but will still work if you can still pause on the right angles.  </p>
+<p>Another thing to keep in mind is the possibility of getting a lag frame. A lag frame can happen if Grunty talks while you turn, or it could spontaneously happen while you face a laggy part of the room you are in. A lag frame changes the angle you are on by 1.5 (keep in mind normally you turn 3 degrees per frame) so the pattern is thrown off and it can make it impossible to get the right angle. Fortunately, you can fix this sometimes by trying to force another lag frame. The best way to do this is to purposely face towards a laggy part of the room and pause, then sometimes you’ll get another lag frame and the patterns will revert back to normal (1.5+1.5=3). Unfortunately, there isn’t really a way to tell if you got a lag frame other than being able to recognize when your pauses are unusually off.  </p>
+<p>Finally, there will be some instances where you must pause very shortly after getting into C-up. In some of these cases, your moving angle (the actual angle Banjo is facing) will be changing at a constant speed like normal, but your facing angle (the angle that the camera shows you) will still be accelerating to the normal speed it turns at. This just means that if you have to pause almost instantly, and you get it first try, your visual cues would be a tiny bit different compared to if you were to get it on another attempt when your camera is moving at a constant speed. Most tutorials/documents will show you both cues, so you won’t have to worry. </p>
+<h2 id="bgs-early">BGS Early</h2>
+<h3 id="coordinates-written-setup">Coordinates + Written setup</h3>
+<table>
+  <tr>
+    <th>Coordinates (assumes practice ROM, Y coordinate might differ in some situations but shouldn’t matter)</th>
+    <th>Instructions once you are at the corresponding coordinates</th>
+  </tr>
+  <tr>
+    <td>X: -2000.000000<br>
+      Y: 76.000000<br>
+      Z: -3056.000000<br>
+      Facing Angle: 0.009000<br>
+      Moving Angle: 0.009000
+    </td>
+    <td>Full beakbarge (hold B but not Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1999.925903<br>
+Y: ~5.000000<br>
+Z: -2580.382812<br>
+Facing Angle: 0.009000<br>
+Moving Angle: 0.009000
+
+    </td>
+    <td>Short beakbarge (tap B)</td>
+  </tr>
+  <tr>
+    <td>X: -1999.891601<br>
+Y: ~5.000000<br>
+Z: -2358.911621<br>
+Facing Angle: 0.009000<br>
+Moving Angle: 0.009000
+
+    </td>
+    <td>Bearpunch (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1999.872314<br>
+Y: ~5.000000<br>
+Z: -2236.245361<br>
+Facing Angle: 0.009000<br>
+Moving Angle: 0.009000
+
+    </td>
+    <td>Wait until the camera stops moving, then crouch turn straight right</td>
+  </tr>
+  <tr>
+    <td>Same XYZ<br>
+Facing Angle: 87.740906<br>
+Moving Angle: 87.740906
+
+    </td>
+    <td>Bearpunch (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1877.301147<br>
+Y: ~5.000000<br>
+Z: -2231.409912<br>
+Facing Angle: 87.740906<br>
+Moving Angle: 87.740906
+
+
+    </td>
+    <td>Bearpunch (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1754.729980<br>
+Y: ~5.000000<br>
+Z: -2226.574462<br>
+Facing Angle: 87.740906<br>
+Moving Angle: 87.740906
+
+
+    </td>
+    <td>Twirly left to 144 Degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1753.837158<br>
+Y: ~5.000000<br>
+Z: -2227.837402<br>
+Facing Angle: 144.740905<br>
+Moving Angle: 144.740905
+
+
+    </td>
+    <td>Twirly right to 75 Degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1752.338134<br>
+Y: ~5.000000<br>
+Z: -2227.456542<br>
+Facing Angle: 75.740905<br>
+Moving Angle: 75.740905
+
+
+
+    </td>
+    <td>One more punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1750.839111<br>
+Y: ~5.000000<br>
+Z: -2227.075683<br>
+Facing Angle: 75.740905<br>
+Moving Angle: 75.740905
+
+
+
+    </td>
+    <td>Twirly right to 342 Degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1751.297973<br>
+Y: ~5.000000<br>
+Z: -2225.598632<br>
+Facing Angle: 342.740905<br>
+Moving Angle: 342.740905
+
+
+
+    </td>
+    <td>One more punch cancel and beakbust at the peak of your jump to clip in</td>
+  </tr>
+  <tr>
+    <td colspan="2">Once you’re in, you want to walk straight right a bit then roll so you reach the end of the roll after you passed the wall. Once you’re past the wall, do a short jump flutter. While you’re jump fluttering tap C-let to get the camera to flip, while the camera is flipping switch your joystick angle from straight right to straight left. When you land the flutter do one more short flutter, then do a big jump followed by a flutter to get you as far as you can before you take another hit. Once you take a hit do the same series of movement (walk a bit then roll, followed by 2 short flutters then 1 big flutter) to take a hit right next to the tunnel leading to the FP early loading zone. After you take a hit, you want to walk off the edge and peck toward the tunnel entrance and mash Z to beakbust right after your peck finishes. This should get you in the water where you will mash B and try to take off in the direction of the honeyhive box behind BGS. Alternatively you can try to just jump off the edge and time a flutter to get in the water, whichever way works best for you. Once you've taken off you want to start swimming in the direction of the honeyhive, then right before you reach it you want to sharply hold down to surface right before the honeyhive, then mash B so you land under the platform. After that, hold R and roll in the direction of the loading zone then hop in.
+    </td>
+  </tr>
+</table>
+
+<h3 id="videos">Videos</h3>
+
+<p>BGS early TAS demonstration by RingRush:</p>
+<iframe src="https://youtube.com/embed/o-TForFdkOY" width="480" height="270"></iframe>
+<p>BGS early Video Tutorial by Azmi:</p>
+<iframe src="https://youtube.com/embed/Fn-1xqKTiRM" width="480" height="270"></iframe>
+
+
+
+
+<footer>
+  <br>
+  <script type="text/javascript" src="/JavaScript/footer.js"></script>
+</footer>
+
+
+</body>
+
+</html>
