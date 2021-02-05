@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Derek Andersen">
+    <meta name="description" content="Website for the Banjo-Kazooie speedrunning community. A central hub for all things Banjo-Kazooie speedrun related. A compendium of documented tricks, tutorials, glitches, routes, and resources.">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="icon" type="image/png" href="/images/icon.png">
+    <title>Banjo-Kazooie Bitclips | Banjo Speedruns</title>
+</head>
+
+<body>
+  <p style="font-size: .8em;"><a href="/home.html">← Back to Homepage</a></p>
+
+  <h1 class="title">Banjo-Kazooie Bitclips</h1>
+
+  <div class="navwrapper">
+      <div class="navbox">
+          <h4>Table of Contents</h2>
+          <ol id="boxlist">
+            <li><a href="#what-is-a-bitclip">What is a Bitclip?</a></li>
+            <li><a href="#how-are-bitclips-found">How are Bitclips Found?</a></li>
+            <li><a href="#general-information-on-bk-bitclip-mechanics">General Information on BK Bitclip Mechanics</a></li>
+            <ul>
+              <li><a href="#movement-options">Movement options</a></li>
+              <li><a href="#direction-angle-change-options">Direction/Angle change options</li>
+            </ul>
+            <li><a href="#bgs-early">BGS Early</a></li>
+            <ul>
+              <li><a href="#bgs-setup">Coordinates + written setup</a></li>
+              <li><a href="#bgs-videos">Videos</a></li>
+            </ul>
+            <li><a href="#mmm-early">MMM Early</a></li>
+            <ul>
+              <li><a href="#mmm-setup-early">Coordinates + written setup for Early Frame</a></li>
+              <li><a href="#mmm-setup-later">Coordinates + written setup for Later Frame</a></li>
+              <li><a href="#mmm-videos">Videos</a></li>
+              <li><a href="#mmm-cue-cards">Cue cards</a></li>
+            </ul>
+            <li><a href="#ccw-early">CCW Early</a></li>
+            <ul>
+              <li><a href="#ccw-setup-a">Coordinates + written setup for Setup A</a></li>
+              <li><a href="#ccw-setup-b">Coordinates + written setup for Setup B</a></li>
+              <li><a href="#ccw-setup-c">Coordinates + written setup for Setup C</a></li>
+              <li><a href="#ccw-videos">Videos</a></li>
+              <li><a href="#ccw-cue-cards">Cue cards</a></li>
+            </ul>
+          </ol>
+      </div>
+  </div>
+
+<h2 class="section" id="what-is-a-bitclip">What is a Bitclip/Float Clip?</h2>
+<p>The floor in BK is entirely made up of triangles. The game uses a barycentric algorithm to tell if Banjo is above any triangle. However, if you&#39;re at very specific points on the seams of some triangles, the algorithm will fail to detect Banjo on either triangle adjacent to him, purely due to rounding error. This creates effective gaps in collision that you can fall through.  </p>
+<p>The floor gaps are about 0.00001 units wide. For reference, banjo moves at 700 units per second in talon trot. For further reference, the seam used for Ninpalk skip is 1 unit wide.  </p>
+<p>If you are over one of these floor gaps, banjo will start falling through the floor. If you pass through the floor in one frame you can fall out of bounds, but if you are in the floor on a frame then the game will detect it and eject banjo upwards. The easiest way to pass through the floor gap in one frame is to beak bust (giving you enough speed to pass through). Other ways to pass through are to jump from a high ledge or by playing on PAL and doing a very precise jump + lag frame combination.  </p>
+<p>The ejecting mechanism works differently in Tooie. There are some gaps which hook banjo without ejecting him until he has enough speed to pass through in one frame. This makes bit clips more useful in tooie RTA as you can flutter out of them and ground pound to get back in bounds behind doors and walls.</p>
+<h2 class="section" id="how-are-bitclips-found">How are Bitclips Found?</h2>
+<p>The first ever bitclip in a Banjo game was found by accident in Banjo-Tooie by FalconxFalcon. He found himself randomly clipping out of bounds while not paying attention to the game and holding a slight angle on the joystick outside of a loading zone. A recreation of the first bitclip can be found here: <a href="https://youtu.be/tad_ZHNFNNE">https://youtu.be/tad_ZHNFNNE</a>  </p>
+<p>The8bitbeast then analyzed the clip in depth (hence the name BITclips) to figure out the science behind what happened and why it happened/how it works. He found that they are easier to do in some places by accident in Banjo-Tooie, but they are possible in Banjo-Kazooie as well, although they work a bit differently (refer to the previous section).</p>
+<p>The first useful RTA bitclip was RingRush’s Hag 1 early clip in Banjo-Tooie, followed by his WitchyWorld early clip shortly after. The8bitbeast then extended RTA setups to Banjo-Kazooie where he found the first setup for Mad Monster Mansion Early and then Click Clock Wood Early. Since then The8bitbeast and RingRush have been optimizing and developing bitclip setups with the tools at their arsenal.  </p>
+<p>Modern day, bitclips are found by looking for the seams where the floor triangles meet. The seams are easy enough to find by using memory addresses to find the coordinates of the vertices of the floor triangles. About one in every nine seams works for bitclips. We can then hack Banjo’s position to be exactly along the seam to check for potential bitclip spots along the seam. Or alternatively the bitclip spots can be found mathematically.  </p>
+<p>After the clipping point is found we then manually test out a handful of different movement options to get somewhat near the spot. Once we are near the spot, we can then use a basic movement simulator to test out millions of combinations of basic movement options (moves will vary depending on BK/BT) and hopefully come out with a simple enough RTA method of getting to the clip spot.  </p>
+<p>Finally, once a setup is found it is tested on console to ensure that there are no lag discrepancies that might throw things off.</p>
+<h2 class="section" id="general-information-on-bk-bitclip-mechanics">General Information on BK Bitclip Mechanics</h2>
+<p>For bitclips we need a 100% consistent method of getting to the clip spots, if we move even 0.00001 units too far in any direction then it wont work. To do this we have a variety of different movement options and a variety of different direction/angle change options we can use.  </p>
+<p>This video goes over both movement options and angle/direction change options, to give a visual along with a slightly less in-depth explanation: <a href="https://youtu.be/OBGkHdv90l4">https://youtu.be/OBGkHdv90l4</a></p>
+<h3 id="movement-options">Movement Options</h3>
+<ul style="line-height: 190%; list-style-type: square;">
+<li><p><strong>Talon trot pause</strong> – This is the fastest form of movement we can do to consistently get close to our Bitclip point. It&#39;s most efficiently used when you have to travel a far distance to get to the general area where the bitclip will occur. For example, going from the loading zone to the stairs for MMM early or going from the puzzle switch to the shockpad for CCW early. The way we do this is by buffering a cardinal direction on the joystick (up, down, left, or right) while we get in talon trot so we’re holding that direction fully by the time we start moving, and then pausing on a specific frame. This pause is generally the hardest part about bitclips setup because if you miss the pause you must go all the way back and try it again.</p>
+</li>
+<li><p><strong>Beakbarges</strong> – Beakbarging is a good way of moving consistently. For all cases we either do a short beakbarge or long beakbarge (anything in between would be inconsistent. After a short or long beakbarge, Banjo will fully stop moving right about when he faces his nose to his right. If we hold Z after a beakbarge until banjo peaks his nose up, we can move a bit more distance which can be useful in some places.</p>
+</li>
+<li><p><strong>Claw Swipes (bearpunches)</strong> – Just like beakbarges, bearpunches are good for moving a specific amount of distance. The main difference is that there&#39;s no long or short bear punches, so this movement is pretty set. Just like beakbarges, banjo will fully stop moving when his nose is facing to his right. You can hold Z after a bearpunch to go a tiny bit farther and banjo will fully stop moving when he peaks up.</p>
+</li>
+<li><p><strong>Punch Cancels</strong> – This is the most crucial form of movement for bitclips. A punch cancel is when you do a bearpunch but then jump after 1 frame of movement. This is crucial because this is the shortest form of movement we can use to inch our way towards the clip spots. Generally, the strategy most people use is to press B then A as fast as they can. This will usually result in you doing a short hop after 1 frame of movement, or just doing a stationary short hop. Doing a short hop is important. While punch cancelling it&#39;s hard to tell if you get the punch cancel correctly if you look at banjo since you move such a short distance. If you do a short hop in general, the camera wont change at all, whereas if you do a big jump by holding A then the camera will start to change. This means if you do a short hop right after 1 frame of a bearpunch, the camera will move very slightly, so everything in the background will shift a tiny bit. This can be super helpful to tell if you got the punch cancel correctly or not.  </p>
+</li>
+</ul>
+<p>These are all our options for movement when it comes to bitclip setups. However, there is one more factor we need to consider for approaching the clip points – the direction we face. There are generally 2 ways of changing our direction/angle that we use for all setups.</p>
+<h3 id="direction-angle-change-options">Direction/Angle Change Options</h3>
+<p>Our first method is just by holding a cardinal direction on the joystick while crouching. This is straightforward, but it can only be done correctly if the camera is fully set otherwise the angle you face will be very slightly different. It is also worth noting you must wait for the camera to stop moving completely if you plan to do a backflip right after.</p>
+<p>The second method is by using what we call <strong>twirly whirlies</strong>. This is the method we use that gives us the most precise directions so there are a lot of different aspects to consider and properties to learn.  </p>
+<p>To do a twirly whirly, you press C-up and buffer either right or left on the joystick while you get into first person - similar to how we buffer a joystick input while we get in talon trot. Then the camera will continuously change 3 degrees per frame and your goal is to pause on a specific frame to get a specific angle. Then you would let go of all your inputs, unpause, get out of first person, then do whatever movement input is next in your setup.  </p>
+<p>You can continuously turn right without any issue, but you cannot continuously turn left otherwise your angle will change a bit on a miniscule level every <strong>full loop</strong> causing your angle to be off just slightly. Now this doesn’t mean you have to continuously hold right and pause on every <strong>full loop</strong>, what you can do instead is hold right to get to the angle you want to pause at, and if you fail then you can buffer left while unpausing, go back to the left so you go a bit past the angle you want, pause again, buffer right while you unpause, then attempt to get the right angle again while turning right. This is faster than making a full loop for every attempt (In that example left and right are interchangeable, you can try and get your pause while holding right or left - it doesn&#39;t matter). Point is to just avoid doing a full loop (especially while holding left). Example:  </p>
+<img src="/images/mmm-early.gif" class="tab game-gif" style="margin-left: auto; margin-right: auto; display: block;">
+<p>It’s worth noting that if you’re going left/right at full speed, it&#39;s ok if you accidentally move the camera up or down a tiny bit. It will mess with your visual cues a bit but will still work if you can still pause on the right angles.  </p>
+<p>Another thing to keep in mind is the possibility of getting a lag frame. A lag frame can happen if Grunty talks while you turn, or it could spontaneously happen while you face a laggy part of the room you are in. A lag frame changes the angle you are on by 1.5 (keep in mind normally you turn 3 degrees per frame) so the pattern is thrown off and it can make it impossible to get the right angle. Fortunately, you can fix this sometimes by trying to force another lag frame. The best way to do this is to purposely face towards a laggy part of the room and pause, then sometimes you’ll get another lag frame and the patterns will revert back to normal (1.5+1.5=3). Unfortunately, there isn’t really a way to tell if you got a lag frame other than being able to recognize when your pauses are unusually off.  </p>
+<p>Finally, there will be some instances where you must pause very shortly after getting into C-up. In some of these cases, your moving angle (the actual angle Banjo is facing) will be changing at a constant speed like normal, but your facing angle (the angle that the camera shows you) will still be accelerating to the normal speed it turns at. This just means that if you have to pause almost instantly, and you get it first try, your visual cues would be a tiny bit different compared to if you were to get it on another attempt when your camera is moving at a constant speed. Most tutorials/documents will show you both cues, so you won’t have to worry. </p>
+<h2 class="section" id="bgs-early">BGS Early</h2>
+<h3 id="bgs-setup">Coordinates + Written setup</h3>
+<table>
+  <tr>
+    <th>Coordinates (assumes practice ROM, Y coordinate might differ in some situations but shouldn’t matter)</th>
+    <th>Instructions once you are at the corresponding coordinates</th>
+  </tr>
+  <tr>
+    <td>X: -2000.000000<br>
+      Y: 76.000000<br>
+      Z: -3056.000000<br>
+      Facing Angle: 0.009000<br>
+      Moving Angle: 0.009000
+    </td>
+    <td>Full beakbarge (hold B but not Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1999.925903<br>
+      Y: ~5.000000<br>
+      Z: -2580.382812<br>
+      Facing Angle: 0.009000<br>
+      Moving Angle: 0.009000
+    </td>
+    <td>Short beakbarge (tap B)</td>
+  </tr>
+  <tr>
+    <td>X: -1999.891601<br>
+      Y: ~5.000000<br>
+      Z: -2358.911621<br>
+      Facing Angle: 0.009000<br>
+      Moving Angle: 0.009000
+    </td>
+    <td>Bearpunch (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1999.872314<br>
+      Y: ~5.000000<br>
+      Z: -2236.245361<br>
+      Facing Angle: 0.009000<br>
+      Moving Angle: 0.009000
+    </td>
+    <td>Wait until the camera stops moving, then crouch turn straight right</td>
+  </tr>
+  <tr>
+    <td>Same XYZ<br>
+      Facing Angle: 87.740906<br>
+      Moving Angle: 87.740906
+    </td>
+    <td>Bearpunch (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1877.301147<br>
+      Y: ~5.000000<br>
+      Z: -2231.409912<br>
+      Facing Angle: 87.740906<br>
+      Moving Angle: 87.740906
+    </td>
+    <td>Bearpunch (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1754.729980<br>
+      Y: ~5.000000<br>
+      Z: -2226.574462<br>
+      Facing Angle: 87.740906<br>
+      Moving Angle: 87.740906
+    </td>
+    <td>Twirly left to 144 Degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1753.837158<br>
+      Y: ~5.000000<br>
+      Z: -2227.837402<br>
+      Facing Angle: 144.740905<br>
+      Moving Angle: 144.740905
+    </td>
+    <td>Twirly right to 75 Degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1752.338134<br>
+      Y: ~5.000000<br>
+      Z: -2227.456542<br>
+      Facing Angle: 75.740905<br>
+      Moving Angle: 75.740905
+    </td>
+    <td>One more punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1750.839111<br>
+      Y: ~5.000000<br>
+      Z: -2227.075683<br>
+      Facing Angle: 75.740905<br>
+      Moving Angle: 75.740905
+    </td>
+    <td>Twirly right to 342 Degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1751.297973<br>
+      Y: ~5.000000<br>
+      Z: -2225.598632<br>
+      Facing Angle: 342.740905<br>
+      Moving Angle: 342.740905
+    </td>
+    <td>One more punch cancel and beakbust at the peak of your jump to clip in</td>
+  </tr>
+  <tr>
+    <td colspan="2">Once you’re in, you want to walk straight right a bit then roll so you reach the end of the roll after you passed the wall. Once you’re past the wall, do a short jump flutter. While you’re jump fluttering tap C-let to get the camera to flip, while the camera is flipping switch your joystick angle from straight right to straight left. When you land the flutter do one more short flutter, then do a big jump followed by a flutter to get you as far as you can before you take another hit. Once you take a hit do the same series of movement (walk a bit then roll, followed by 2 short flutters then 1 big flutter) to take a hit right next to the tunnel leading to the FP early loading zone. After you take a hit, you want to walk off the edge and peck toward the tunnel entrance and mash Z to beakbust right after your peck finishes. This should get you in the water where you will mash B and try to take off in the direction of the honeyhive box behind BGS. Alternatively you can try to just jump off the edge and time a flutter to get in the water, whichever way works best for you. Once you've taken off you want to start swimming in the direction of the honeyhive, then right before you reach it you want to sharply hold down to surface right before the honeyhive, then mash B so you land under the platform. After that, hold R and roll in the direction of the loading zone then hop in.
+    </td>
+  </tr>
+</table>
+
+<h3 id="bgs-videos">Videos</h3>
+
+<p>BGS early TAS demonstration by RingRush:</p>
+<iframe src="https://youtube.com/embed/o-TForFdkOY" width="480" height="270"></iframe>
+<p>BGS early Video Tutorial by Azmi:</p>
+<iframe src="https://youtube.com/embed/Fn-1xqKTiRM" width="480" height="270"></iframe>
+
+<h2 class="section" id="mmm-early">MMM Early</h2>
+<h3 id="mmm-setup-early">Coordinates + Written setup for Early Frame</h3>
+
+<table>
+  <tr>
+    <th>Coordinates (assumes practice ROM, Y coordinate might differ in some situations but shouldn’t matter)</th>
+    <th>Instructions once you are at the corresponding coordinates</th>
+  </tr>
+  <tr>
+    <td>X: 300.000000<br>
+      Y: -807.276672<br>
+      Z: 6494.000000<br>
+      Facing Angle: 181.583999<br>
+      Moving Angle: 181.583999
+    </td>
+    <td>Talon trot straight forward to the next set of coordinates. Audio cue is 4 intervals of 10 clucks after the slide, then pause right after the 48th cluck. Visual cue is pause right when the black dot is at the bottom of the screen.</td>
+  </tr>
+  <tr>
+    <td>X: 350.750488<br>
+      Y: 0.000000<br>
+      Z: 234.461181<br>
+      Facing Angle: 358.442016<br>
+      Moving Angle: 358.442016
+    </td>
+    <td>Wait until Banjo looks to his right, left, then forward and do a backflip straight left and mash C-up while landing</td>
+  </tr>
+  <tr>
+    <td>X: 111.135856<br>
+      Y: 229.000000<br>
+      Z: 242.071884<br>
+      Facing Angle: 269.432983<br>
+      Moving Angle: 269.432983
+    </td>
+    <td>Twirl left to 284 degrees then do one short beakbarge (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -103.345664<br>
+      Y: 229.000000<br>
+      Z: 297.272888<br>
+      Facing Angle: 284.432983<br>
+      Moving Angle: 284.432983
+    </td>
+    <td>Wait for banjo to face his right then twirly right to 197 degrees then do one punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -103.809028<br>
+      Y: 229.000000<br>
+      Z: 295.797271<br>
+      Facing Angle: 197.432983<br>
+      Moving Angle: 197.432983
+    </td>
+    <td>Get in talon trot and twirly right to 287 degrees (in talon trot) then get out of talon trot and do one punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -102.333404<br>
+      Y:229.000000<br>
+      Z:295.333892<br>
+      Facing Angle: 107.432983 (not in talon trot)<br>
+      Moving Angle: 107.432983
+    </td>
+    <td>Twirl right to 92 degrees and do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -100.788131<br>
+      Y: 229.000000<br>
+      Z: 295.268.249<br>
+      Facing Angle: 92.432983<br>
+      Moving Angle: 92.432983
+    </td>
+    <td>Do another punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -99.242858<br>
+      Y: 229.000000<br>
+      Z: 295.202606<br>
+      Facing Angle: 92.432983<br>
+      Moving Angle: 92.432983
+    </td>
+    <td>One final punch cancel and beakbust at the peak of your jump</td>
+  </tr>
+</table>
+
+<h3 id="mmm-setup-later">Coordinates + Written setup for Later Frame</h3>
+
+<table>
+  <tr>
+    <th>Coordinates (assumes practice ROM, Y coordinate might differ in some situations but shouldn’t matter)</th>
+    <th>Instructions once you are at the corresponding coordinates</th>
+  </tr>
+  <tr>
+    <td>X: 300.000000<br>
+      Y: -807.276672<br>
+      Z: 6494.000000<br>
+      Facing Angle: 181.583999<br>
+      Moving Angle: 181.583999
+    </td>
+    <td>Talon trot straight forward to the next set of coordinates. Audio cue is 4 intervals of 10 clucks after the slide, then pause right after the 48 clucks. Visual cue is pause right when the black dot is at the bottom of the screen.</td>
+  </tr>
+  <tr>
+    <td>X: 350.977722<br>
+      Y: ~0.000000<br>
+      Z: 211.128997<br>
+      Facing Angle: 359.442016<br>
+      Moving Angle: 359.442016
+    </td>
+    <td>Wait until Banjo looks to his right and faces forward, then crouch turn straight right (angle: 89.450988). Wait until banjo faces right, left, then forward again while crouching to ensure the camera is stable, then backflip straight left and mash in and out of C-up to land efficiently.</td>
+  </tr>
+  <tr>
+    <td>X: 111.503303<br>
+      Y: 229.000000<br>
+      Z: 219.693145<br>
+      Facing Angle: 269.432983<br>
+      Moving Angle: 269.432983
+    </td>
+    <td>Wait for Banjo to look to his right, left, then forward for the camera to stabilize, then crouch turn straight down and do <b>one punch cancel</b></td>
+  </tr>
+  <tr>
+    <td>X: 111.443313<br>
+      Y: 229.000000<br>
+      Z: 221.238647<br>
+      Facing Angle: 357.777099<br>
+      Moving Angle: 357.777099
+    </td>
+    <td>Twirly right to 337 degree then do one punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 110.759859<br>
+      Y: 229.000000<br>
+      Z: 222.626129<br>
+      Facing Angle: 333.777099<br>
+      Moving Angle: 333.777099
+    </td>
+    <td>Twirly right to 282 degree then do one punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 109.251525<br>
+      Y: 229.000000<br>
+      Z: 222.968185<br>
+      Facing Angle: 282.777099<br>
+      Moving Angle: 282.777099
+    </td>
+    <td>Twirly left to 36 degree then do one punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 110.177520<br>
+      Y: 229.000000<br>
+      Z: 224.207015<br>
+      Facing Angle: 36.777099<br>
+      Moving Angle: 36.777099
+    </td>
+    <td>Twirly left to 90 degree then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 111.724044<br>
+      Y: 229.000000<br>
+      Z: 224.186035<br>
+      Facing Angle: 90.777099<br>
+      Moving Angle: 90.777099
+    </td>
+    <td>Do another punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 113.270568<br>
+      Y: 229.000000<br>
+      Z: 224.165064<br>
+      Facing Angle: 90.777099<br>
+      Moving Angle: 90.777099
+    </td>
+    <td>One final punch cancel and beakbust at the peak of your jump</td>
+  </tr>
+</table>
+
+<h3 id="mmm-videos">Videos</h3>
+
+<p>MMM Early Early Frame TAS demonstration by RingRush:</p>
+<iframe src="https://youtube.com/embed/MZAwJd9HU-E" width="480" height="270"></iframe>
+<p>MMM Early Later Frame TAS demonstration by RingRush:</p>
+<iframe src="https://youtube.com/embed/stPy7FHHuig" width="480" height="270"></iframe>
+<p>MMM Early Early Frame Video Tutorial by Azmi:</p>
+<iframe src="https://youtube.com/embed/NO7gsE37OMA" width="480" height="270"></iframe>
+<p>MMM Early Later Frame Video Tutorial by Azmi:</p>
+<iframe src="https://youtube.com/embed/iRyEnJuJbnU" width="480" height="270"></iframe>
+
+<h3 id="mmm-cue-cards">Cue Cards</h3>
+<p>These visual cue cards are meant to be looked at during runs starting out since memorizing every step of every setup
+  can be difficult. They contain all the pause confirmation screens and some helpful advice on visual cues.</p>
+<p><a href="http://bit.ly/2WuDJhy">Setup 1 cue cards by Trynan</a></p>
+<p><a href="http://bit.ly/34miYcf">Setup 2 cue cards by Trynan</a></p>
+
+<h2 class="section" id="ccw-early">CCW Early</h2>
+<h3 id="ccw-setup-a">Coordinates + Written Setup for Setup A</h3>
+
+<table>
+  <tr>
+    <th>Coordinates (assumes practice ROM, Y coordinate might differ in some situations but shouldn’t matter)</th>
+    <th>Instructions once you are at the corresponding coordinates</th>
+  </tr>
+  <tr>
+    <td>X: -2096.000000<br>
+      Y: 814.000000<br>
+      Z: 785.000000<br>
+      Facing Angle: 108.000000<br>
+      Moving Angle: 108.000000<br>
+    </td>
+    <td>After the puzzle switch cutscene do 1 bearpunch</td>
+  </tr>
+  <tr>
+    <td>X: -1995.793457<br>
+      Y: 799.999938<br>
+      Z: 752.441162<br>
+      Facing Angle: 108.000000<br>
+      Moving Angle: 108.000000
+    </td>
+    <td>After Banjo faces his right, do a full beakbarge (hold B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1336.160400<br>
+      Y: -0.000003<br>
+      Z: 547.861145<br>
+      Facing Angle: 108.000000<br>
+      Moving Angle: 108.000000
+    </td>
+    <td>Once banjo faces to his right get in talon trot while buffering straight right. Audio cue is 5 intervals of 10 clucks, then pause right after the 54th cluck. Visual cue is the black spot in the green moss at the top of CCW (see tutorial videos)</td>
+  </tr>
+  <tr>
+    <td>X: 125.843078<br>
+      Y: 999.999938<br>
+      Z: -4147.593261<br>
+      Facing Angle: 227.218444<br>
+      Moving Angle: 227.218444
+    </td>
+    <td>Unpause and do a short beakbarge (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -36.705371<br>
+      Y: 1008.010375<br>
+      Z: -4298.018554<br>
+      Facing Angle: 227.218444<br>
+      Moving Angle: 227.218444
+    </td>
+    <td>Shockpad jump straight left (hold Z + left+ A during the charge up) and let go of left while you slide</td>
+  </tr>
+  <tr>
+    <td>X: -160.812866<br>
+      Y: 1600.000000<br>
+      Z: -3596.107910<br>
+      Facing Angle: 2.483734<br>
+      Moving Angle: 2.483734
+    </td>
+    <td>Once you come to a full stop, twirly left to 134 degrees then do a short beakbarge (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -2.804376<br>
+      Y: 1600.000000<br>
+      Z: -3751.294433<br>
+      Facing Angle: 134.483734<br>
+      Moving Angle: 134.483734
+    </td>
+    <td>Do one punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1.700906<br>
+      Y: 1600.000122<br>
+      Z: -3752.378173<br>
+      Facing Angle: 134.483734<br>
+      Moving Angle: 134.483734
+    </td>
+    <td>Twirly left to 194 degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X:  -2.087736<br>
+      Y: 1600.000122<br>
+      Z: -3753.875732<br>
+      Facing Angle: 194.483734<br>
+      Moving Angle: 194.483734
+    </td>
+    <td>Do one more punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -2.474566<br>
+      Y: 1600.000122<br>
+      Z: -3755.373291<br>
+      Facing Angle: 194.483734<br>
+      Moving Angle: 194.483734
+    </td>
+    <td>Twirly right to 92 degrees then do one punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -0.929351<br>
+      Y: 1600.000122<br>
+      Z: -3755.440429<br>
+      Facing Angle: 92.483734<br>
+      Moving Angle: 92.483734
+    </td>
+    <td>Get in talon trot and turn right to 17 Degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -0.464677<br>
+      Y: 1600.000122<br>
+      Z: -3753.965332<br>
+      Facing Angle: 17.483734<br>
+      Moving Angle: 17.483734
+    </td>
+    <td>Do one more punch cancel and beakbust at the peak of your jump</td>
+  </tr>
+</table>
+
+<h3 id="ccw-setup-b">Coordinates + Written Setup for Setup B</h3>
+
+<table>
+  <tr>
+    <th>Coordinates (assumes practice ROM, Y coordinate might differ in some situations but shouldn’t matter)</th>
+    <th>Instructions once you are at the corresponding coordinates</th>
+  </tr>
+  <tr>
+    <td>X: -2096.000000<br>
+      Y: 814.000000<br>
+      Z: 785.000000<br>
+      Facing Angle: 108.000000<br>
+      Moving Angle: 108.000000<br>
+    </td>
+    <td>After the puzzle switch cutscene do 1 bearpunch</td>
+  </tr>
+  <tr>
+    <td>X: -1995.793457<br>
+      Y: 799.999938<br>
+      Z: 752.441162<br>
+      Facing Angle: 108.000000<br>
+      Moving Angle: 108.000000
+    </td>
+    <td>After Banjo faces his right, do a full beakbarge (hold B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1336.160400<br>
+      Y: -0.000003<br>
+      Z: 547.861145<br>
+      Facing Angle: 108.000000<br>
+      Moving Angle: 108.000000
+    </td>
+    <td>Once banjo faces to his right get in talon trot while buffering straight right. Audio cue is 5 intervals of 10 clucks, then pause right after the 54th cluck. Visual cue is the black spot in the green moss at the top of CCW (see tutorial videos)</td>
+  </tr>
+  <tr>
+    <td>X: 146.043273<br>
+      Y: 999.999938<br>
+      Z: -4139.197753<br>
+      Facing Angle: 226.985748<br>
+      Moving Angle: 226.985748
+    </td>
+    <td>Unpause and do a short beakbarge (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -15.892944<br>
+      Y: 1009.093200<br>
+      Z: -4290.279785<br>
+      Facing Angle: 226.985748<br>
+      Moving Angle: 226.985748
+    </td>
+    <td>Shockpad jump straight left (hold Z + left+ A during the charge up) then drop all your inputs right after Banjo does a small turn at the end</td>
+  </tr>
+  <tr>
+    <td>X: -172.727401<br>
+      Y: 1600.000000<br>
+      Z: -3599.532958<br>
+      Facing Angle: 352.365051<br>
+      Moving Angle: 352.365051<br>
+    </td>
+    <td>Twirly left to 127 degrees then do a short beakbarge (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: 3.294567<br>
+      Y: 1600.000000<br>
+      Z: -3733.941406<br>
+      Facing Angle: 127.365051<br>
+      Moving Angle: 127.365051
+    </td>
+    <td>Twirly right to 88 degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 4.840605<br>
+      Y: 1600.000000<br>
+      Z: -3733.897216<br>
+      Facing Angle: 88.365051<br>
+      Moving Angle: 88.365051
+    </td>
+    <td>Twirly left to 226 degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 3.721202<br>
+      Y:1600.000122<br>
+      Z: -3734.964599<br>
+      Facing Angle: 226.365051<br>
+      Moving Angle: 226.365051
+    </td>
+    <td>Do another punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 2.601799<br>
+      Y: 1600.000122<br>
+      Z: -3736.031982<br>
+      Facing Angle: 226.365051<br>
+      Moving Angle: 226.365051
+    </td>
+    <td>Do one more punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 1.482397<br>
+      Y: 1600.000122<br>
+      Z: -3737.099365<br>
+      Facing Angle: 226.365051<br>
+      Moving Angle: 226.365051
+    </td>
+    <td>Get in talon trot and turn left to 331 Degrees (in talon trot) then get out of talon trot and do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: 0.741191<br>
+      Y: 1600.000122<br>
+      Z: -3735.741943<br>
+      Facing Angle: 331.365051<br>
+      Moving Angle: 331.365051
+    </td>
+    <td>Do one more punch cancel and beakbust at the peak of your jump</td>
+  </tr>
+</table>
+
+<h3 id="ccw-setup-c">Coordinates + Written Setup for Setup C</h3>
+
+<table>
+  <tr>
+    <th>Coordinates (assumes practice ROM, Y coordinate might differ in some situations but shouldn’t matter)</th>
+    <th>Instructions once you are at the corresponding coordinates</th>
+  </tr>
+  <tr>
+    <td>X: -2096.000000<br>
+      Y: 814.000000<br>
+      Z: 785.000000<br>
+      Facing Angle: 108.000000<br>
+      Moving Angle: 108.000000<br>
+    </td>
+    <td>After the puzzle switch cutscene do 1 bearpunch</td>
+  </tr>
+  <tr>
+    <td>X: -1995.793457<br>
+      Y: 799.999938<br>
+      Z: 752.441162<br>
+      Facing Angle: 108.000000<br>
+      Moving Angle: 108.000000
+    </td>
+    <td>After Banjo faces his right, do a full beakbarge (hold B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -1336.160400<br>
+      Y: -0.000003<br>
+      Z: 547.861145<br>
+      Facing Angle: 108.000000<br>
+      Moving Angle: 108.000000
+    </td>
+    <td>Once banjo faces to his right get in talon trot while buffering straight right. Audio cue is 5 intervals of 10 clucks, then pause right after the 54th cluck. Visual cue is the black spot in the green moss at the top of CCW (see tutorial videos)</td>
+  </tr>
+  <tr>
+    <td>X: 166.467437<br>
+      Y: 999.999938<br>
+      Z: -4131.429199<br>
+      Facing Angle: 226.649902<br>
+      Moving Angle: 226.649902
+    </td>
+    <td>Unpause and do a short beakbarge (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: 5.419607<br>
+      Y: 1006.542785<br>
+      Z: -4283.458007<br>
+      Facing Angle: 226.649902<br>
+      Moving Angle: 226.649902
+    </td>
+    <td>Shockpad jump straight left (hold Z + left+ A during the charge up) then drop all your inputs right after Banjo does a small turn at the end</td>
+  </tr>
+  <tr>
+    <td>X: 0191.646499<br>
+      Y: 1600.000000<br>
+      (from here on out it your Y differs a bit its fine)<br>
+      Z: -3604.247214<br>
+      Facing Angle: 350.003356<br>
+      Moving Angle: 350.003356
+    </td>
+    <td>Twirly right to 122 degrees then do a short beakbarge (tap B don’t hold Z)</td>
+  </tr>
+  <tr>
+    <td>X: -3.835106<br>
+      Y: 1600.000000<br>
+      Z: -3721.519873<br>
+      Facing Angle: 122.003356<br>
+      Moving Angle: 122.003356
+    </td>
+    <td>Do one punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -2.523505<br>
+      Y: 1600.000122<br>
+      Z: -3722.439453<br>
+      Facing Angle: 122.003356<br>
+      Moving Angle: 122.003356
+    </td>
+    <td>Twirly left to 152 degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1.797468<br>
+      Y: 1600.000122<br>
+      Z: -3723.805175<br>
+      Facing Angle: 152.003356<br>
+      Moving Angle: 152.003356
+    </td>
+    <td>Twirly left to 197 degrees then do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -2.249757<br>
+      Y: 1600.000122<br>
+      Z: -3725.284179<br>
+      Facing Angle: 197.003356<br>
+      Moving Angle: 197.003356
+    </td>
+    <td>Get in talon trot and turn left to 209 Degrees (in talon trot) then get out of talon trot and do a punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -1.499838<br>
+      Y: 1600.000122<br>
+      Z: -3723.931396<br>
+      Facing Angle: 29.003356<br>
+      Moving Angle: 29.003356
+    </td>
+    <td>Do another punch cancel</td>
+  </tr>
+  <tr>
+    <td>X: -0.749919<br>
+      Y: 1600.000122<br>
+      Z: -3722.578613<br>
+      Facing Angle: 29.003356<br>
+      Moving Angle: 29.003356
+    </td>
+    <td>Do one more punch cancel and beakbust at the peak of your jump</td>
+  </tr>
+</table>
+
+<h3 id="ccw-videos">Videos</h3>
+
+<p>CCW Early Setup A Tutorial by Azmi:</p>
+<iframe src="https://youtube.com/embed/qZEwfDN4pf8" width="480" height="270"></iframe>
+<p>CCW Early Setup B Tutorial by Azmi:</p>
+<iframe src="https://youtube.com/embed/E1wf0fcuDYQ" width="480" height="270"></iframe>
+<p>CCW Early Setup C Tutorial by Azmi:</p>
+<iframe src="https://youtube.com/embed/pMGBn4uDFkI" width="480" height="270"></iframe>
+
+<h3 id="ccw-cue-cards">Cue Cards</h3>
+<p>These cue cards are meant to be looked at during runs starting out since memorizing every step of every setup
+  is difficult. Each folder contains images with a step by step process explained through images,
+  diagrams, and short descriptions. The idea is to open the first of each image during a run, and once you
+  know which setup you have, you can open the corresponding image and just press the right arrow key to go
+  to the next image in the folder until you’ve completed all the steps.</p>
+<p><a href="http://bit.ly/37ydHjL">CCW Early setup A, B, and C cue cards by Azmi</a></p>
+
+<footer>
+  <br>
+  <script type="text/javascript" src="/JavaScript/footer.js"></script>
+</footer>
+
+
+</body>
+
+</html>
