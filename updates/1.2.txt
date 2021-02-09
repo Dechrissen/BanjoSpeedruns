@@ -1,0 +1,15 @@
+BanjoSpeedruns Update 1.2
+-------------------------
+
+Release date: [release date here]
+
+Changelog:
+
+- add Bingo-Toolie web companion
+- add BT bingo redirect page
+- updates to URL nomenclature:
+  - /bklevels/ttc --> /bk/levels/ttc
+  - /btversions --> /bt/versions
+  - etc.
+- add BK bitclips page
+- reorganize homepage, remove BP/GR/NB panels until they're needed
