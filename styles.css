@@ -237,6 +237,7 @@ div.gr {
   grid-row: 2;
   background-color: #D6ADD6;
   border-color: #6b566b;
+  display: none;
 }
 
 div.bp {
@@ -244,6 +245,7 @@ div.bp {
   grid-row: 2;
   background-color: LightGrey;
   border-color: DarkSlateGrey;
+  display: none;
 }
 
 div.nb {
@@ -251,6 +253,7 @@ div.nb {
   grid-row: 2;
   background-color: #E4D2BA;
   border-color: #72695d;
+  display: none;
 }
 
 div.info {

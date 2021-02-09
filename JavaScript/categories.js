@@ -1,12 +1,12 @@
 var url = window.location.href;
-//var url = "https://banjospeedruns.com/btcategories/nodcwbc"; // test url
+//var url = "https://banjospeedruns.com/bt/categories/nodcwbc"; // test url
 var game = url.split("/")[3];
 var gamename;
 switch (game) {
-  case "bkcategories":
+  case "bk":
     gamename = "Banjo-Kazooie";
     break;
-  case "btcategories":
+  case "bt":
     gamename = "Banjo-Tooie";
     break;
 }
@@ -14,7 +14,7 @@ var category;
 var categorycode = url.split("/").pop().split("#")[0];
 
 async function injectCategoryData () {
-  category = await fetch("/"+game+"/"+categorycode+".json");
+  category = await fetch("/"+game+"/categories/"+categorycode+".json");
 
   // check if category code JSON exists, and return 404 if not
   if (category.ok == false) {
