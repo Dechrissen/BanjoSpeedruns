@@ -1,12 +1,12 @@
 var url = window.location.href;
-//var url = "https://banjospeedruns.com/bklevels/sm"; // test url
+//var url = "https://banjospeedruns.com/bk/levels/sm"; // test url
 var game = url.split("/")[3];
 switch (game) {
-  case "btlevels":
+  case "bt":
     var sections = ["general", "cwkshots", "cwkwarps", "outofbounds"];
     var sectionNames = ["General Tricks", "Clockwork Shots", "Clockwork Warps", "Out of Bounds"];
     break;
-  case "bklevels":
+  case "bk":
     var sections = ["general", "outofbounds"];
     var sectionNames = ["General Tricks", "Out of Bounds"];
     break;
@@ -16,7 +16,7 @@ var levelcode = url.split("/").pop().split("#")[0];
 
 async function injectLevelData () {
   // get current level from URL
-  level = await fetch("/"+game+"/"+levelcode+".json");
+  level = await fetch("/"+game+"/levels/"+levelcode+".json");
 
   // check if level code JSON exists, and return 404 if not
   if (level.ok == false) {
@@ -26,7 +26,7 @@ async function injectLevelData () {
   level = await level.json();
 
   // set page name, title and description to current level
-  document.title = level.title + " – Banjo Speedruns";
+  document.title = level.title + " | Banjo Speedruns";
   document.getElementById("levelname").innerHTML = level.title;
   document.getElementById("description").innerHTML = level.description;
 

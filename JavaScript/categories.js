@@ -24,7 +24,7 @@ async function injectCategoryData () {
   category = await category.json();
 
   // set page name, title, description, and add Speedrun.com link for current category
-  document.title = gamename + " " + category.title + " – Banjo Speedruns";
+  document.title = gamename + " " + category.title + " | Banjo Speedruns";
   document.getElementById("gamename").innerHTML = gamename;
   document.getElementById("categoryname").innerHTML = category.title;
   document.getElementById("description").innerHTML = category.description;
