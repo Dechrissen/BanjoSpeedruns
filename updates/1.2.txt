@@ -9,6 +9,7 @@ Changelog:
 - add BT bingo redirect page
 - updates to URL nomenclature:
   - /bklevels/ttc --> /bk/levels/ttc
+  - /bkcategories/100 --> /bk/categories/100
   - /btversions --> /bt/versions
   - etc.
 - add BK bitclips page
