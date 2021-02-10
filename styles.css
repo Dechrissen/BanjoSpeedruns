@@ -11,22 +11,31 @@
   font-weight: normal;
 }
 
-
+html {
+  background-color: #35383F;
+}
 body.home {
   background-color: #35383F;
   margin-left: 15%;
   margin-right: 15%;
+  margin-bottom: 0px;
   font-family: 'Noto Sans', sans-serif;
   font-size: 1em;
+  box-shadow: none;
 }
 
 body {
-  background-color: #35383F;
+  background-color: white;
   margin-left: 24%;
   margin-right: 24%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 20px;
+  padding-bottom: 100px;
   font-family: 'Noto Sans', sans-serif;
   font-size: .95em;
   line-height: 140%;
+  box-shadow: -5px -1px 5px 0px white, 5px -1px 5px 0px white;
 }
 
 .button {
@@ -88,6 +97,7 @@ hr {
 }
 
 .title {
+  color: black;
   font-family: "Comicrazy", Times, serif;
   font-weight: normal;
   /* This stuff is for Comicrazy to render properly; could also just give title elements the comicrazy class*/
@@ -340,9 +350,13 @@ div.info {
   align-items: center;
 }
 
+footer.home-footer a {
+  color: white;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: white;
+  background-color: #35383F;
   overflow: hidden;
 
   /* Navbox centering */
@@ -356,7 +370,7 @@ div.info {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 6px 20px;
   text-decoration: none;
@@ -373,14 +387,14 @@ div.info {
 .topnav a:hover {
   background-color: transparent;
   border-bottom: 1px black;
-  color: red;
+  color: #FB2B31;
   border-radius: 0px;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   /*background-color: LightGrey;*/
-  color: red;
+  color: #FB2B31;
   border-radius: 0px;
 }
 

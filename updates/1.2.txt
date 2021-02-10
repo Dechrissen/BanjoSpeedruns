@@ -14,3 +14,4 @@ Changelog:
   - etc.
 - add BK bitclips page
 - reorganize homepage, remove BP/GR/NB panels until they're needed
+- new font (Comicrazy) for headings
