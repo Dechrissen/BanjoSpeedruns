@@ -1,20 +1,25 @@
-BanjoSpeedruns Update 1.2
+BanjoSpeedruns Version 1.2
 -------------------------
 
 Release date: [release date here]
 
 Changelog:
 
-- updates to URL nomenclature:
+- Updates to URL nomenclature:
   - /bklevels/ttc --> /bk/levels/ttc
   - /bkcategories/100 --> /bk/categories/100
   - /btversions --> /bt/versions
   - etc.
-- add Bingo-Toolie web companion (new URL is /bt/bingo-toolie)
-- add BT bingo redirect page (/bt/bingo)
-- add BK category extensions redirect page (/bk/category-extensions)
-- add BT category extensions redirect page (/bt/category-extensions)
-- add BK bitclips page (/bk/bitclips)
-- reorganize homepage, remove BP/GR/NB panels until they're needed
-- add new font (Comicrazy) for headings
-- add dark theme
+- Add Bingo-Toolie web companion (new URL is /bt/bingo-toolie)
+- Add BT bingo redirect page (/bt/bingo)
+- Add BK category extensions redirect page (/bk/category-extensions)
+- Add BT category extensions redirect page (/bt/category-extensions)
+- Add BK bitclips page (/bk/bitclips)
+- Reorganize homepage, remove BP/GR/NB panels until they're needed
+- Add new font (Comicrazy) for headings
+- Add dark theme
+- Other style changes (headings, fonts, links, colors, etc.)
+- Add endpoints for version changelogs (like this one) (e.g. /updates/1.2 for version 1.2 notes). Current version will now be clickable in footer sitewide
+- Compress gifs sitewide for faster load times with the pages that use them
+- Add 'Cool Tools' page: a collection of commonly-used tools and web apps
+- Many other small changes sitewide

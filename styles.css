@@ -114,7 +114,7 @@ hr {
 
 .section {
   font-family: "Comicrazy", Times, serif;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.6em;
   /* This stuff is for Comicrazy to render properly; could also just give section elements the comicrazy class*/
   -webkit-font-smoothing: antialiased;
@@ -256,7 +256,8 @@ div.wrapper {
 
 div.panel {
   border: 2px solid;
-  padding: 4px;
+  padding: 10px;
+  padding-top: 0px;
   background-color: #D8D8D8;
   border-radius: 10px;
 }
