@@ -23,3 +23,4 @@ Changelog:
 - Compress gifs sitewide for faster load times with the pages that use them
 - Add 'Cool Tools' page: a collection of commonly-used tools and web apps
 - Many other small changes sitewide
+- Add feature: trick linking. Now you can link specific tricks in URLs! (e.g. /bk/levels/rbb#Boom_Box_Quick_Kill will now link to the RBB page and scroll the linked trick into view)
