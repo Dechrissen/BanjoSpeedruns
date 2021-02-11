@@ -354,24 +354,9 @@ footer.home-footer a {
   color: white;
 }
 
-body.home .topnav {
-  background-color: #35383F;
-}
-
-body.home .topnav a {
-  color: white;
-}
-
-body.home .topnav a:hover {
-  color: #FB2B31;
-}
-body.home .topnav a.active {
-  color: #FB2B31;
-}
-
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: white;
+  background-color: #35383F;
   overflow: hidden;
 
   /* Navbox centering */
@@ -385,7 +370,7 @@ body.home .topnav a.active {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 6px 20px;
   text-decoration: none;
