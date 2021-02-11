@@ -18,13 +18,13 @@
 - [x] Make meta description tags more descriptive
 - [ ] Archive videos
 - [ ] Add a glossary-type section for listing links to pages for various important things like DCW, FFM, Jinjo manip, float clips, quickdives, Clockwork warps, etc.
-- [ ] Add "not affiliated with Rare etc." to Legal page
-- [ ] Change all homepage panels to alternating red/blue w/ yellow outline
+- [x] Add "not affiliated with Rare etc." to Legal page
+- ~~[ ] Change all homepage panels to alternating red/blue w/ yellow outline~~
 - [ ] Add bit clip line app
-- [ ] Remove old Xbox doc and add new one
-- [ ] `/home` redirect to `/home.html` etc. for each page in nginx conifg
+- [x] Remove old Xbox doc and add new one
+- [x] `/home` redirect to `/home.html` etc. for each page in nginx conifg
 - [ ] Responsive design for mobile layout
-- [ ] Update style & fonts
+- [x] Update style & fonts
 - [ ] 'Tournament Archive' section for past tournaments uploaded to YouTube
 
 

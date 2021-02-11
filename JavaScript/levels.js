@@ -100,8 +100,20 @@ async function injectLevelData () {
     }
   }
   populateNavBox();
+  checkURLForHash();
 }
 
+function checkURLForHash () {
+  var url = window.location.href;
+  var hash = url.split('#');
+  if (hash.length == 1) {
+    return;
+  }
+  else {
+    var bookmark = hash[1];
+    document.getElementById(bookmark).scrollIntoView({behavior: 'smooth', alignToTop: true}); //TODO fix this scroll acting weird in Firefox
+  }
+}
 
 function populateNavBox () {
   var index;
