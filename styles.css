@@ -1,19 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); /* Noto Sans */
 
-@font-face {
-  font-family: "Comicrazy";
-  src: url("/fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.eot"); /* IE9*/
-  src: url("/fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("/fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.woff2") format("woff2"), /* chrome、firefox */
-  url("/fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.woff") format("woff"), /* chrome、firefox */
-  url("/fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url("/fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.svg#CCComicrazy Regular") format("svg"); /* iOS 4.1- */
-  font-weight: normal;
-}
-
-
 body.home {
-  background-color: #35383F;
+  background-color: white;
   margin-left: 15%;
   margin-right: 15%;
   font-family: 'Noto Sans', sans-serif;
@@ -21,7 +9,7 @@ body.home {
 }
 
 body {
-  background-color: #35383F;
+  background-color: white;
   margin-left: 24%;
   margin-right: 24%;
   font-family: 'Noto Sans', sans-serif;
@@ -63,17 +51,10 @@ hr {
   margin-left: 40px;
 }
 
-.comicrazy {
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .panelname {
-  font-family: "Comicrazy", Times, serif;
-  font-weight: normal;
-  font-size: 1.5em;
-  text-align: center;
+  font-family: "Charter", Times, serif;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .panelsection {
@@ -81,19 +62,9 @@ hr {
   font-weight: bold;
 }
 
-.panel-list {
-  list-style-position: outside;
-  list-style-type: "▸ ";
-
-}
-
 .title {
-  font-family: "Comicrazy", Times, serif;
-  font-weight: normal;
-  /* This stuff is for Comicrazy to render properly; could also just give title elements the comicrazy class*/
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Charter", Times, serif;
+  font-weight: bold;
 }
 
 #levelname {
@@ -102,13 +73,9 @@ hr {
 
 
 .section {
-  font-family: "Comicrazy", Times, serif;
+  font-family: "Charter", Times, serif;
   font-weight: bold;
   font-size: 1.6em;
-  /* This stuff is for Comicrazy to render properly; could also just give section elements the comicrazy class*/
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .trick {
@@ -247,7 +214,7 @@ div.panel {
   border: 2px solid;
   padding: 4px;
   background-color: #D8D8D8;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 
@@ -298,34 +265,34 @@ div.info {
 
 @font-face {
     font-family: 'OpenSans';
-    src: '/fonts/OpenSans-Regular.ttf');
+    src: './Fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
     font-family: 'OpenSans';
-    src: '/fonts/OpenSans-Bold.ttf');
+    src: './Fonts/OpenSans-Bold.ttf');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'SourceSerifPro';
-    src: '/fonts/SourceSerifPro-Regular.ttf');
+    src: './Fonts/SourceSerifPro-Regular.ttf');
 }
 
 @font-face {
     font-family: 'SourceSerifPro';
-    src: '/fonts/SourceSerifPro-Bold.ttf');
+    src: './Fonts/SourceSerifPro-Bold.ttf');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'Charter';
-    src: '/fonts/charter_regular-webfont.ttf');
+    src: './Fonts/charter_regular-webfont.ttf');
 }
 
 @font-face {
     font-family: 'Charter';
-    src: '/fonts/charter_bold-webfont.ttf');
+    src: './Fonts/charter_bold-webfont.ttf');
     font-weight: bold;
 }
 
@@ -361,27 +328,21 @@ div.info {
   padding: 6px 20px;
   text-decoration: none;
   font-size: 19px;
-  font-family: 'Comicrazy', serif;
-  font-weight: normal;
-  /* This stuff is for Comicrazy to render properly; could also just give these 'a' elements the comicrazy class*/
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Charter', serif;
+  font-weight: bold;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: transparent;
-  border-bottom: 1px black;
-  color: red;
-  border-radius: 0px;
+  background-color: #ddd;
+  color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  /*background-color: LightGrey;*/
-  color: red;
-  border-radius: 0px;
+  background-color: LightSlateGrey;
+  color: white;
+  border-radius: 3px;
 }
 
 /* PROGRESS BAR STUFF */
