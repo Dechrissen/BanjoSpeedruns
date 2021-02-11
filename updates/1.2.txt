@@ -5,13 +5,16 @@ Release date: [release date here]
 
 Changelog:
 
-- add Bingo-Toolie web companion
-- add BT bingo redirect page
 - updates to URL nomenclature:
   - /bklevels/ttc --> /bk/levels/ttc
   - /bkcategories/100 --> /bk/categories/100
   - /btversions --> /bt/versions
   - etc.
-- add BK bitclips page
+- add Bingo-Toolie web companion (new URL is /bt/bingo-toolie)
+- add BT bingo redirect page (/bt/bingo)
+- add BK category extensions redirect page (/bk/category-extensions)
+- add BT category extensions redirect page (/bt/category-extensions)
+- add BK bitclips page (/bk/bitclips)
 - reorganize homepage, remove BP/GR/NB panels until they're needed
-- new font (Comicrazy) for headings
+- add new font (Comicrazy) for headings
+- add dark theme
