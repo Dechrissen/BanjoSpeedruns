@@ -100,7 +100,8 @@ hr {
 
 .panel-list {
   list-style-position: outside;
-  list-style-type: "▸ ";
+  list-style-type: "♫ ";
+  /*list-style-type: "▸ ";*/
 
 }
 
@@ -180,7 +181,7 @@ body.home ul.panel-list a:active {
 }
 
 ul {
-  list-style: none;
+  list-style: '♫ ';
 }
 
 
@@ -230,10 +231,16 @@ div.navwrapper {
 div.navbox {
   grid-column: 1;
   grid-row: 1;
-  border: 1px solid;
+  border: 3px solid;
   border-radius: 5px;
   padding: 2px;
-  background-color: FloralWhite;
+  background-color: lightgrey;
+}
+div.navbox a:link {
+  color: black;
+}
+div.navbox a:visited {
+  color: black;
 }
 
 

@@ -4,7 +4,7 @@ var footer = f[0];
 
 // footer list
 var footer_list = document.createElement("ul");
-footer_list.setAttribute("style", "line-height: 75%;");
+footer_list.setAttribute("style", "line-height: 75%; list-style-type: none;");
 
 // legal page link
 var legal = document.createElement("p");
