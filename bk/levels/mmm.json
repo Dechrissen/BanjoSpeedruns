@@ -9,7 +9,7 @@
 		{
 			"name": "Motzand Pattern",
 			"description": "You do not have to wait for Motzand to press the keys if you know the pattern. Do the top pattern first, skip the Motzand text, and then do the bottom pattern and quickly get on the organ and into talon trot.",
-			"image": ["/images/mmmpiano.png", "Piano Pattern"]
+			"image": ["/assets/images/mmmpiano.png", "Piano Pattern"]
 		}
 	],
 	"outofbounds": []

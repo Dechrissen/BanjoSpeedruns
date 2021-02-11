@@ -209,10 +209,14 @@ tr:nth-child(even) {
 
 .game-gif {
   width: 40%;
-  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 1rem;
 }
 .caption {
   font-style: italic;
+  text-align: center;
 }
 
 #trick-list-section {
