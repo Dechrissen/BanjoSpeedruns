@@ -53,7 +53,7 @@ Sample JSON level data, named `mm.json`, for Mumbo's Mountain:
 Fields 1 and 2 contain strings, while fields 3 and 4 contain lists of JSON objects (one object per trick in that category).
 A trick object contains 4 fields: `"name"`, `"description"`, `"video"`, and `"image"` which are self-explanatory.  
 
-[JSON template for Banjo-Kazooie levels](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/JSON_Guidelines/bkleveltemplate.json)
+[JSON template for Banjo-Kazooie levels](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/etc/JSON_Guidelines/bkleveltemplate.json)
 
 ## Banjo-Tooie
 
@@ -125,4 +125,4 @@ Sample JSON level data, named `mt.json`, for Mayahem Temple:
 Fields 1 and 2 contain strings, while fields 3-6 contain lists of JSON objects (one object per trick in that category).
 A trick object contains 4 fields: `"name"`, `"description"`, `"video"`, and `"image"` which are self-explanatory.  
 
-![JSON template for Banjo-Tooie levels](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/JSON_Guidelines/btleveltemplate.json)
+![JSON template for Banjo-Tooie levels](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/etc/JSON_Guidelines/btleveltemplate.json)

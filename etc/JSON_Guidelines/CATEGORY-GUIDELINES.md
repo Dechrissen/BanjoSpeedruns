@@ -48,4 +48,4 @@ Sample JSON category data, named `100.html`, for Banjo-Kazooie 100%:
 Fields 1 and 2 contain strings, while fields 3 and 4 contain lists of JSON objects (one object per item in that section).
 A document object contains 2 fields: `"name"` and `"link"`. A video object contains 2 fields: `"name"` and `"video"`.  
 
-[JSON template for categories](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/JSON_Guidelines/categorytemplate.json)
+[JSON template for categories](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/etc/JSON_Guidelines/categorytemplate.json)
