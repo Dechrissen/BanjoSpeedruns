@@ -510,3 +510,122 @@ body.home .topnav a.active {
   font-weight: bold;
   font-size: 120%;
 }
+
+
+@media only screen and (max-width: 418px) {
+  /* For mobile phones*/
+  body.home {
+    font-size: 115%;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body {
+    font-size: 115%;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  img.logo {
+    width: 350px;
+  }
+  p.tagline {
+    font-size: 80%;
+  }
+  .tab {
+    margin-left: 0px;
+  }
+  div.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(auto, auto);
+  }
+
+  div.panel {
+    border: 2px solid;
+    padding: 10px;
+    padding-top: 0px;
+    background-color: #D8D8D8;
+    border-radius: 10px;
+  }
+
+
+  div.bk {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #fd9598;
+    border-color: #7e4a4c;
+  }
+
+  div.bt {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: #88a7ea;
+    border-color: #445375;
+  }
+
+  div.gr {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #D6ADD6;
+    border-color: #6b566b;
+    display: none;
+  }
+
+  div.bp {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: LightGrey;
+    border-color: DarkSlateGrey;
+    display: none;
+  }
+
+  div.nb {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #E4D2BA;
+    border-color: #72695d;
+    display: none;
+  }
+
+  div.info {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #ffeeb4;
+    border-color: #7f775a;
+  }
+
+  div.navwrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(auto, auto);
+  }
+
+  div.navbox {
+    grid-column: 1;
+    grid-row: 1;
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgrey;
+  }
+  table {
+    width: 100%;
+  }
+  .title, .section {
+    text-align: left;
+    line-height: 120%;
+  }
+  .game-gif {
+    padding: 0;
+  }
+  iframe {
+    width: 75%;
+    height: 75%;
+  }
+
+
+
+}

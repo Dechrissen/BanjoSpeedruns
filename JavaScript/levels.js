@@ -129,7 +129,7 @@ function populateNavBox () {
       ul = document.getElementById("boxlist");
       ul.appendChild(li);
       // create sublist of tricks for current trick section
-      var sub_ol = document.createElement("ol");
+      var sub_ol = document.createElement("ul");
       var num;
       for (num = 0; num < level[sections[index]].length; num++) {
         var sub_li = document.createElement("li");
