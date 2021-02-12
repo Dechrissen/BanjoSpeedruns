@@ -25,7 +25,7 @@ body.home {
 }
 
 body {
-  background-color: white;
+  background-color: #E8E8E8;
   margin-left: 24%;
   margin-right: 24%;
   margin-top: 0px;
@@ -33,9 +33,9 @@ body {
   padding: 20px;
   padding-bottom: 100px;
   font-family: 'Noto Sans', sans-serif;
-  font-size: .95em;
+  font-size: 1em;
   line-height: 140%;
-  box-shadow: -5px -1px 5px 0px white, 5px -1px 5px 0px white;
+  box-shadow: -5px -1px 5px 0px #E8E8E8, 5px -1px 5px 0px #E8E8E8;
 }
 
 #back-button {
@@ -179,6 +179,9 @@ body.home ul.panel-list a:active {
 .logo a:hover {
   background-color: transparent;
 }
+img.logo {
+  width: 900px;
+}
 
 ul {
   list-style: '♫ ';
@@ -190,10 +193,16 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 85%;
+  margin: auto;
+  border: 3px solid black;
+
 }
 #table-caption {
   width: 85%;
   font-style: italic;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
 }
 
 td, th {
@@ -217,6 +226,8 @@ tr:nth-child(even) {
 .caption {
   font-style: italic;
   text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #trick-list-section {
@@ -237,7 +248,7 @@ div.navbox {
   grid-row: 1;
   border: 3px solid;
   border-radius: 5px;
-  padding: 2px;
+  padding: 5px;
   background-color: lightgrey;
 }
 div.navbox a:link {
@@ -415,7 +426,7 @@ body.home .topnav a.active {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: white;
+  background-color: #E8E8E8;
   overflow: hidden;
 
   /* Navbox centering */

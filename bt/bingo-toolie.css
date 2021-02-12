@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "Comicrazy";
+  src: url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.eot"); /* IE9*/
+  src: url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.svg#CCComicrazy Regular") format("svg"); /* iOS 4.1- */
+  font-weight: normal;
+}
+
 body.bingo-toolie {
 	background-color: #35383F;
 }
@@ -104,10 +115,53 @@ label {
 	padding-right: 25px;
 }
 
+p.level-name {
+	font-family: 'Comicrazy', Times, serif;
+	margin: 0px;
+	-webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p.needed-moves {
+	text-align: center;
+	font-family: 'Comicrazy',Times,serif;
+	-webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 /* CSS Grid */
+div.page-wrapper {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(auto, auto);
+	padding: 10px;
+}
+div #app {
+	position: absolute;
+	grid-column: 1;
+  grid-row: 1;
+}
+div #how-to-use {
+	grid-column: 3;
+  grid-row: 1;
+
+	padding-right: 20px;
+}
+div #how-to-use p, li {
+	color: lightgrey;
+	font-size: 1.3rem;
+	font-family: 'Comicrazy',Times,serif;
+	-webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 div.wrapper {
-	position: absolute;
+	/*position: absolute;*/
   display: grid;
   grid-template-columns: repeat(3, 9fr);
   grid-gap: 5px;

@@ -1,5 +1,5 @@
 var url = window.location.href;
-//var url = "https://banjospeedruns.com/bk/levels/mmm"; // test url
+//var url = "https://banjospeedruns.com/bk/levels/rbb"; // test url
 var game = url.split("/")[3];
 switch (game) {
   case "bt":

@@ -1,5 +1,6 @@
+--------------------------
 BanjoSpeedruns Version 1.2
--------------------------
+--------------------------
 
 Release date: [release date here]
 
@@ -11,16 +12,17 @@ Changelog:
   - /btversions --> /bt/versions
   - etc.
 - Add Bingo-Toolie web companion (new URL is /bt/bingo-toolie)
+- Add Bingo-Toolie 'How to use' blurb
 - Add BT bingo redirect page (/bt/bingo)
 - Add BK category extensions redirect page (/bk/category-extensions)
 - Add BT category extensions redirect page (/bt/category-extensions)
 - Add BK bitclips page (/bk/bitclips)
 - Reorganize homepage, remove BP/GR/NB panels until they're needed
 - Add new font (Comicrazy) for headings
-- Add dark theme
+- Add dark(er) theme
 - Other style changes (headings, fonts, links, colors, etc.)
 - Add endpoints for version changelogs (like this one) (e.g. /updates/1.2 for version 1.2 notes). Current version will now be clickable in footer sitewide
 - Compress gifs sitewide for faster load times with the pages that use them (thanks, wed)
+- Add feature: trick linking. Now you can link specific tricks in URLs! (e.g. /bk/levels/rbb#Boom_Box_Quick_Kill will now link to the RBB page and scroll the linked trick into view)
 - Add 'Cool Tools' page: a collection of commonly-used tools and web apps
 - Many other small changes sitewide
-- Add feature: trick linking. Now you can link specific tricks in URLs! (e.g. /bk/levels/rbb#Boom_Box_Quick_Kill will now link to the RBB page and scroll the linked trick into view)

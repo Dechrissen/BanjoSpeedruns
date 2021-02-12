@@ -12,7 +12,11 @@
     <title>Bingo-Toolie</title>
 </head>
 <body class="bingo-toolie" onload=app()>
-  <div class="wrapper">
+<div class="page-wrapper">
+
+
+
+  <div id="app" class="wrapper">
     <div id="title"><img src='/assets/bingo-toolie/bingo-toolie-logo.png' width='400px'></div>
     <div id="glowbo" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
     <div id="honeycomb" class="counter quantity" style="display: inline;"><input type="number" min="0" max="99" step="1" value="0"></div>
@@ -34,10 +38,11 @@
     </div>
 
     <div id="move-list">
-      <p style="text-align: center; font-weight: bold;">Needed moves?</p>
+      <p class="needed-moves">Needed moves?</p>
+
       <form>
 
-      <b>Isle o' Hags</b><br>
+      <p class="level-name">Isle o' Hags</p>
 
         <label for="fire-eggs"><input type="checkbox" id="fire-eggs" name="fire-eggs" onclick="toggleColor(this)"> Fire Eggs (45)</label><br>
         <label for="grenade-eggs"><input type="checkbox" id="grenade-eggs" name="grenade-eggs" onclick="toggleColor(this)"> Grenade Eggs (110)</label><br>
@@ -45,47 +50,47 @@
         <label for="clockwork-kazooie-eggs"><input type="checkbox" id="clockwork-kazooie-eggs" name="clockwork-kazooie-eggs" onclick="toggleColor(this)"> Clockwork Kazooie Eggs (315)</label><br>
         <label for="breegull-bash"><input type="checkbox" id="breegull-bash" name="breegull-bash" onclick="toggleColor(this)"> Breegull Bash (Pink S&S Egg)</label><br>
 
-      <b>Mayahem Temple</b><br>
+      <p class="level-name">Mayahem Temple</p>
 
         <label for="egg-aim"><input type="checkbox" id="egg-aim" name="egg-aim" onclick="toggleColor(this)"> Egg Aim (25)</label><br>
         <label for="breegull-blaster"><input type="checkbox" id="breegull-blaster" name="breegull-blaster" onclick="toggleColor(this)"> Breegull Blaster (30)</label><br>
         <label for="grip-grab"><input type="checkbox" id="grip-grab" name="grip-grab" onclick="toggleColor(this)"> Grip Grab (35)</label><br>
 
-      <b>Glitter Gulch Mine</b><br>
+      <p class="level-name">Glitter Gulch Mine</p>
 
         <label for="bill-drill"><input type="checkbox" id="bill-drill" name="bill-drill" onclick="toggleColor(this)"> Bill Drill (85)</label><br>
         <label for="beak-bayonet"><input type="checkbox" id="beak-bayonet" name="beak-bayonet" onclick="toggleColor(this)"> Beak Bayonet (95)</label><br>
 
-      <b>Witchyworld</b><br>
+      <p class="level-name">Witchyworld</p>
 
         <label for="split-up"><input type="checkbox" id="split-up" name="split-up" onclick="toggleColor(this)"> Split Up (160) </label><br>
         <label for="pack-whack"><input type="checkbox" id="pack-whack" name="pack-whack" onclick="toggleColor(this)"> Pack Whack (170)</label><br>
         <label for="airborne-egg-aiming"><input type="checkbox" id="airborne-egg-aiming" name="airborne-egg-aiming" onclick="toggleColor(this)"> Airborne Egg Aiming (180)</label><br>
 
-      <b>Jolly Roger's Lagoon</b><br>
+      <p class="level-name">Jolly Roger's Lagoon</p>
 
         <label for="wing-whack"><input type="checkbox" id="wing-whack" name="wing-whack" onclick="toggleColor(this)"> Wing Whack (265)</label><br>
         <label for="sub-aqua-egg-aiming"><input type="checkbox" id="sub-aqua-egg-aiming" name="sub-aqua-egg-aiming" onclick="toggleColor(this)"> Sub-Aqua Egg Aiming (275)</label><br>
         <label for="talon-torpedo"><input type="checkbox" id="talon-torpedo" name="talon-torpedo" onclick="toggleColor(this)"> Talon Torpedo (290)</label><br>
 
-      <b>Terrydactyland</b><br>
+      <p class="level-name">Terrydactyland</p>
 
         <label for="springy-step-shoes"><input type="checkbox" id="springy-step-shoes" name="springy-step-shoes" onclick="toggleColor(this)"> Springy Step Shoes (390)</label><br>
         <label for="taxi-pack"><input type="checkbox" id="taxi-pack" name="taxi-pack" onclick="toggleColor(this)"> Taxi Pack (405)</label><br>
         <label for="hatch"><input type="checkbox" id="hatch" name="hatch" onclick="toggleColor(this)"> Hatch (420) </label><br>
 
-      <b>Grunty Industries</b><br>
+      <p class="level-name">Grunty Industries</p>
 
         <label for="claw-clamber-boots"><input type="checkbox" id="claw-clamber-boots" name="claw-clamber-boots" onclick="toggleColor(this)"> Claw Clamber Boots (505)</label><br>
         <label for="snooze-pack"><input type="checkbox" id="snooze-pack" name="snooze-pack" onclick="toggleColor(this)"> Snooze Pack (525)</label><br>
         <label for="leg-spring"><input type="checkbox" id="leg-spring" name="leg-spring" onclick="toggleColor(this)"> Leg Spring (545)</label><br>
 
-      <b>Hailfire Peaks</b><br>
+      <p class="level-name">Hailfire Peaks</p>
 
         <label for="shack-pack"><input type="checkbox" id="shack-pack" name="shack-pack" onclick="toggleColor(this)"> Shack Pack (640)</label><br>
         <label for="glide"><input type="checkbox" id="glide" name="glide" onclick="toggleColor(this)"> Glide (660)</label><br>
 
-      <b>Cloud Cuckooland</b><br>
+      <p class="level-name">Cloud Cuckooland</p>
 
         <label for="sack-pack"><input type="checkbox" id="sack-pack" name="sack-pack" onclick="toggleColor(this)"> Sack Pack (765)</label><br>
 
@@ -94,6 +99,18 @@
 
   </div>
 
+  <div id="how-to-use">
+    <p>Bingo-Toolie is a companion web app for Banjo-Tooie Bingo.</p>
+    <p>It can be used for:</p>
+    <ul>
+      <li>Keeping track of collectibles for goals</li>
+      <li>Marking moves you'll need to learn for your route</li>
+      <li>Checking the Note requirement for every move</li>
+      <li>Keeping helpful notes</li>
+    </ul>
+    <p>When you're finished with a Bingo, click the 'Clear all fields' button to reset the app.</p>
+  </div>
 
+</div>
 </body>
 </html>
