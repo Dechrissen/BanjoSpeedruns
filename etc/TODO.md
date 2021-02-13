@@ -23,7 +23,7 @@
 - [ ] Add bit clip line app
 - [x] Remove old Xbox doc and add new one
 - [x] `/home` redirect to `/home.html` etc. for each page in nginx conifg
-- [ ] Responsive design for mobile layout
+- [x] Responsive design for mobile layout
 - [x] Update style & fonts
 - [ ] 'Tournament Archive' section for past tournaments uploaded to YouTube
 
@@ -42,5 +42,5 @@
 - [x] Link the BK practice ROM patch download
 - [ ] 'Generate a random page' button
 - [ ] Add clickable bookmarks to the sections in category pages
-- [ ] Move logo to menu bar for mobile layout
+- [x] Move logo to menu bar for mobile layout
 - [ ] Discord server widget/button

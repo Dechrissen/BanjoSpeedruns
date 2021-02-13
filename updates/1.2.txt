@@ -2,7 +2,7 @@
 BanjoSpeedruns Version 1.2
 --------------------------
 
-Release date: [release date here]
+Release date: February 13th, 2021
 
 Changelog:
 
@@ -24,6 +24,5 @@ Changelog:
 - Add endpoints for version changelogs (like this one) (e.g. /updates/1.2 for version 1.2 notes). Current version will now be clickable in footer sitewide
 - Compress gifs sitewide for faster load times with the pages that use them (thanks, wed)
 - Add feature: trick linking. Now you can link specific tricks in URLs! (e.g. /bk/levels/rbb#Boom_Box_Quick_Kill will now link to the RBB page and scroll the linked trick into view)
-- Add 'Cool Tools' page: a collection of commonly-used tools and web apps
-- Better responsive design for most mobile phones (this isn't perfect, but it's a lot better than what it looked like in v1.1)
-- Many other small changes sitewide
+- Better responsive design for most mobile phones (not perfect, but a lot better than v1.1)
+- Many other small changes
