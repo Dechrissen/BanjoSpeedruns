@@ -41,6 +41,6 @@
 - [ ] 'Player of the week/month/etc.' page that checks Speedrun.com to see most improved runner for a set period of time
 - [x] Link the BK practice ROM patch download
 - [ ] 'Generate a random page' button
-- [ ] Add clickable bookmarks to the sections in category pages
+- [ ] ~~Add clickable bookmarks to the sections in category pages~~
 - [x] Move logo to menu bar for mobile layout
-- [ ] Discord server widget/button
+- [ ] ~~Discord server widget/button~~
