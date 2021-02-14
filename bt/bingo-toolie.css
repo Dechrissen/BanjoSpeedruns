@@ -228,3 +228,19 @@ div #move-list {
 	grid-row: 1 / span 8;
 	font-size: 15px;
 }
+
+@media only screen and (max-width: 418px) {
+  /* For mobile phones*/
+div #how-to-use {
+  display: none;
+}
+div.page-wrapper {
+  grid-template-columns: repeat(1, 1fr);
+}
+div #app {
+	position: absolute;
+	grid-column: 1;
+  grid-row: 1;
+}
+
+}
