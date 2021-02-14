@@ -180,7 +180,8 @@ body.home ul.panel-list a:active {
   background-color: transparent;
 }
 img.logo {
-  width: 900px;
+  width: 75%;
+  margin: auto;
 }
 
 ul {
@@ -215,6 +216,12 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 /* END TABLE STUFF */
+
+.game-vid {
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
 
 .game-gif {
   width: 40%;
@@ -527,7 +534,6 @@ body.home .topnav a.active {
     margin-right: 0;
   }
   img.logo {
-    width: 350px;
   }
   p.tagline {
     font-size: 80%;
