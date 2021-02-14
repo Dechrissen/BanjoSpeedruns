@@ -22,7 +22,7 @@ Changelog:
 - Add dark(er) theme
 - Other style changes (headings, fonts, links, colors, etc.)
 - Add endpoints for version changelogs (like this one) (e.g. /updates/1.2 for version 1.2 notes). Current version will now be clickable in footer sitewide
-- Compress gifs sitewide for faster load times with the pages that use them (thanks, wed)
+- Compress gifs sitewide for faster load times with the pages that use them (thanks, wed) (these will eventually be MP4s)
 - Add feature: trick linking. Now you can link specific tricks in URLs! (e.g. /bk/levels/rbb#Boom_Box_Quick_Kill will now link to the RBB page and scroll the linked trick into view)
 - Better responsive design for most mobile phones (not perfect, but a lot better than v1.1)
 - Many other small changes
