@@ -1,28 +1,34 @@
---------------------------
-BanjoSpeedruns Version 1.2
---------------------------
+------------------------------------
+BanjoSpeedruns Version 1.2 Changelog
+------------------------------------
 
-Release date: February 13th, 2021
+[1.2] 2021-02-15
 
-Changelog:
+Added:
 
-- Updates to URL nomenclature:
+- Bingo-Toolie web companion (new URL is /bt/bingo-toolie).
+- Bingo-Toolie 'How to use' blurb.
+- Feature: trick linking. You can now link specific tricks in URLs (e.g. /bk/levels/rbb#Boom_Box_Quick_Kill will link to the RBB page and scroll the linked trick into view).
+- BT bingo redirect page (/bt/bingo).
+- BK category extensions redirect page (/bk/category-extensions).
+- BT category extensions redirect page (/bt/category-extensions).
+- BK bitclips guide (/bk/bitclips).
+- Dark(er) theme.
+- Endpoints for version changelogs (like this one) (e.g. /updates/1.2 for version 1.2 notes). Current version changelog will now be clickable in footer sitewide.
+- New font for headings (CCComicrazy).
+
+Changed:
+
+- Changes to URL nomenclature for consistency:
   - /bklevels/ttc --> /bk/levels/ttc
   - /bkcategories/100 --> /bk/categories/100
   - /btversions --> /bt/versions
   - etc.
-- Add Bingo-Toolie web companion (new URL is /bt/bingo-toolie)
-- Add Bingo-Toolie 'How to use' blurb
-- Add BT bingo redirect page (/bt/bingo)
-- Add BK category extensions redirect page (/bk/category-extensions)
-- Add BT category extensions redirect page (/bt/category-extensions)
-- Add BK bitclips page (/bk/bitclips)
-- Reorganize homepage, remove BP/GR/NB panels until they're needed
-- Add new font (Comicrazy) for headings
-- Add dark(er) theme
-- Other style changes (headings, fonts, links, colors, etc.)
-- Add endpoints for version changelogs (like this one) (e.g. /updates/1.2 for version 1.2 notes). Current version will now be clickable in footer sitewide
-- Compress GIFs and convert to MP4s for faster load times with the pages that use them (thanks, wed)
-- Add feature: trick linking. Now you can link specific tricks in URLs! (e.g. /bk/levels/rbb#Boom_Box_Quick_Kill will now link to the RBB page and scroll the linked trick into view)
-- Better responsive design for most mobile phones (not perfect, but a lot better than v1.1)
-- Many other small changes
+- Reorganized homepage, removed BP/GR/N&B panels until they are needed.
+- Better responsive design for most mobile phones (not perfect, but a lot better than v1.1).
+- Style changes (headings, fonts, links, colors, etc.).
+
+Fixed:
+
+- Compressed GIFs and converted to MP4s for faster load times with the pages that use them (thanks, wed).
+- Fixed some broken video embeds.

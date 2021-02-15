@@ -218,6 +218,7 @@ tr:nth-child(even) {
 /* END TABLE STUFF */
 
 .game-vid {
+  padding-top: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block
@@ -301,7 +302,7 @@ footer {
 div.wrapper {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  grid-gap: 10px;
+  grid-gap: 16px;
   grid-auto-rows: minmax(auto, auto);
 }
 
@@ -311,6 +312,7 @@ div.panel {
   padding-top: 0px;
   background-color: #D8D8D8;
   border-radius: 10px;
+  box-shadow: -7px 7px 3px Black;
 }
 
 
