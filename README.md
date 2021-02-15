@@ -1,4 +1,4 @@
-![banjospeedruns.com logo](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/images/banjospeedruns-logo.png)
+![banjospeedruns.com logo](https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/assets/images/banjospeedruns-logo.png)
 
 # [banjospeedruns.com](https://banjospeedruns.com/)
 *The community website for Banjo-Kazooie speedrunning.*  
