@@ -4,7 +4,7 @@ var footer = f[0];
 
 // footer list
 var footer_list = document.createElement("ul");
-footer_list.setAttribute("style", "line-height: 75%;");
+footer_list.setAttribute("style", "line-height: 75%; list-style-type: none;");
 
 // legal page link
 var legal = document.createElement("p");
@@ -39,8 +39,11 @@ ghLi.appendChild(gh);
 
 // BanjoSpeedruns current version number
 var ver = document.createElement("p");
-var verText = document.createTextNode("BanjoSpeedruns v1.1");
-ver.appendChild(verText);
+var verLink = document.createElement("a");
+verLink.setAttribute("href", "/updates/1.2");
+var verText = document.createTextNode("BanjoSpeedruns v1.2");
+verLink.appendChild(verText);
+ver.appendChild(verLink);
 var verLi = document.createElement("li");
 verLi.appendChild(ver);
 

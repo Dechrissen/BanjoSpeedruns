@@ -1,5 +1,5 @@
 var url = window.location.href;
-//var url = "https://banjospeedruns.com/bk/levels/sm"; // test url
+//var url = "https://banjospeedruns.com/bk/levels/rbb"; // test url
 var game = url.split("/")[3];
 switch (game) {
   case "bt":
@@ -100,8 +100,20 @@ async function injectLevelData () {
     }
   }
   populateNavBox();
+  checkURLForHash();
 }
 
+function checkURLForHash () {
+  var url = window.location.href;
+  var hash = url.split('#');
+  if (hash.length == 1) {
+    return;
+  }
+  else {
+    var bookmark = hash[1];
+    document.getElementById(bookmark).scrollIntoView({behavior: 'smooth', alignToTop: true}); //TODO fix this scroll acting weird in Firefox
+  }
+}
 
 function populateNavBox () {
   var index;
@@ -117,7 +129,7 @@ function populateNavBox () {
       ul = document.getElementById("boxlist");
       ul.appendChild(li);
       // create sublist of tricks for current trick section
-      var sub_ol = document.createElement("ol");
+      var sub_ol = document.createElement("ul");
       var num;
       for (num = 0; num < level[sections[index]].length; num++) {
         var sub_li = document.createElement("li");

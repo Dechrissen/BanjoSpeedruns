@@ -1,5 +1,5 @@
 var url = window.location.href;
-//var url = "https://banjospeedruns.com/bt/categories/nodcwbc"; // test url
+//var url = "https://banjospeedruns.com/bk/categories/100"; // test url
 var game = url.split("/")[3];
 var gamename;
 switch (game) {
@@ -55,7 +55,7 @@ async function injectCategoryData () {
       doc.classList.add("doc");
       doc.classList.add("tab");
       var doc_name = category["routedocuments"][i].name;
-      var name = document.createTextNode("• " + doc_name);
+      var name = document.createTextNode(doc_name);
       document.body.insertBefore(doc, last);
 
       // create link to document
@@ -63,6 +63,8 @@ async function injectCategoryData () {
       link.setAttribute("href", category["routedocuments"][i].link);
       link.setAttribute("target", "_blank");
       link.appendChild(name);
+      var bullet = document.createTextNode("♫ ");
+      doc.appendChild(bullet);
       doc.appendChild(link);
       doc.setAttribute("id", doc_name.replace(/ /g, "_").replace(/'/g, ""));
     }
