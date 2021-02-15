@@ -24,7 +24,7 @@
 		{
 			"name": "Matching Pyramid Pattern",
 			"description": "This is the optimal path for the matching pyramid.",
-			"image": ["/images/gobis_matching.png", "Matching Pyramid Pattern"]
+			"image": ["/assets/images/gobis_matching.png", "Matching Pyramid Pattern"]
 		},
 		{
 			"name": "Jinxy Notes with Speed Shoes",

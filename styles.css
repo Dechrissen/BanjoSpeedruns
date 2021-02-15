@@ -25,7 +25,7 @@ body.home {
 }
 
 body {
-  background-color: white;
+  background-color: #E8E8E8;
   margin-left: 24%;
   margin-right: 24%;
   margin-top: 0px;
@@ -33,9 +33,16 @@ body {
   padding: 20px;
   padding-bottom: 100px;
   font-family: 'Noto Sans', sans-serif;
-  font-size: .95em;
+  font-size: 1em;
   line-height: 140%;
-  box-shadow: -5px -1px 5px 0px white, 5px -1px 5px 0px white;
+  box-shadow: -5px -1px 5px 0px #E8E8E8, 5px -1px 5px 0px #E8E8E8;
+}
+
+#back-button {
+  font-size: .8em;
+}
+#back-button a {
+  color: black;
 }
 
 .button {
@@ -73,6 +80,7 @@ hr {
 }
 
 .comicrazy {
+  font-family: 'Comicrazy', Times, serif;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
@@ -92,7 +100,8 @@ hr {
 
 .panel-list {
   list-style-position: outside;
-  list-style-type: "▸ ";
+  list-style-type: "♫ ";
+  /*list-style-type: "▸ ";*/
 
 }
 
@@ -113,7 +122,7 @@ hr {
 
 .section {
   font-family: "Comicrazy", Times, serif;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.6em;
   /* This stuff is for Comicrazy to render properly; could also just give section elements the comicrazy class*/
   -webkit-font-smoothing: antialiased;
@@ -126,38 +135,57 @@ hr {
 }
 
 a:link {
-  color: Black;
+  color: #1250D7;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: Black;
+  color: #1250D7;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
   font-size: 100%;
-  color: white;
-  background-color: LightSlateGrey;
-  text-decoration: none;
-  border-radius: 3px;
+  color: #1250D7;
+  text-decoration: underline;
 }
 
 a:active {
-  color: LightGrey;
-  background-color: transparent;
+  color: black;
   text-decoration: none;
-  border-radius: 3px;
+}
+
+body.home ul.panel-list a {
+  color: black;
+}
+
+body.home ul.panel-list a:hover {
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: LightGrey;
+}
+body.home ul.panel-list a:visited {
+  color: black;
+}
+
+body.home ul.panel-list a:active {
+  color: black;
+  background-color: white;
 }
 
 .logo a:hover {
   background-color: transparent;
 }
+img.logo {
+  width: 75%;
+  margin: auto;
+}
 
 ul {
-  list-style: none;
+  list-style: '♫ ';
 }
 
 
@@ -166,10 +194,16 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 85%;
+  margin: auto;
+  border: 3px solid black;
+
 }
 #table-caption {
   width: 85%;
   font-style: italic;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
 }
 
 td, th {
@@ -183,12 +217,25 @@ tr:nth-child(even) {
 }
 /* END TABLE STUFF */
 
+.game-vid {
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
 .game-gif {
   width: 40%;
-  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 1rem;
 }
 .caption {
   font-style: italic;
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #trick-list-section {
@@ -207,10 +254,16 @@ div.navwrapper {
 div.navbox {
   grid-column: 1;
   grid-row: 1;
-  border: 1px solid;
+  border: 3px solid;
   border-radius: 5px;
-  padding: 2px;
-  background-color: FloralWhite;
+  padding: 5px;
+  background-color: lightgrey;
+}
+div.navbox a:link {
+  color: black;
+}
+div.navbox a:visited {
+  color: black;
 }
 
 
@@ -249,15 +302,17 @@ footer {
 div.wrapper {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
-  grid-gap: 10px;
+  grid-gap: 16px;
   grid-auto-rows: minmax(auto, auto);
 }
 
 div.panel {
   border: 2px solid;
-  padding: 4px;
+  padding: 10px;
+  padding-top: 0px;
   background-color: #D8D8D8;
   border-radius: 10px;
+  box-shadow: -7px 7px 3px Black;
 }
 
 
@@ -350,13 +405,37 @@ div.info {
   align-items: center;
 }
 
-footer.home-footer a {
+footer.home-footer a:link {
   color: white;
+}
+footer.home-footer a:visited {
+  color: white;
+}
+footer a:visited {
+  color: black;
+}
+footer a:link {
+  color: black;
+}
+
+body.home .topnav {
+  background-color: #35383F;
+}
+
+body.home .topnav a {
+  color: white;
+}
+
+body.home .topnav a:hover {
+  color: #FB2B31;
+}
+body.home .topnav a.active {
+  color: #FB2B31;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #35383F;
+  background-color: #E8E8E8;
   overflow: hidden;
 
   /* Navbox centering */
@@ -370,7 +449,7 @@ footer.home-footer a {
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: white;
+  color: black;
   text-align: center;
   padding: 6px 20px;
   text-decoration: none;
@@ -439,4 +518,122 @@ footer.home-footer a {
   text-align: center;
   font-weight: bold;
   font-size: 120%;
+}
+
+
+@media only screen and (max-width: 418px) {
+  /* For mobile phones*/
+  body.home {
+    font-size: 115%;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body {
+    font-size: 115%;
+    text-align: justify;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  img.logo {
+  }
+  p.tagline {
+    font-size: 80%;
+  }
+  .tab {
+    margin-left: 0px;
+  }
+  div.wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(auto, auto);
+  }
+
+  div.panel {
+    border: 2px solid;
+    padding: 10px;
+    padding-top: 0px;
+    background-color: #D8D8D8;
+    border-radius: 10px;
+  }
+
+
+  div.bk {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #fd9598;
+    border-color: #7e4a4c;
+  }
+
+  div.bt {
+    grid-column: 1;
+    grid-row: 3;
+    background-color: #88a7ea;
+    border-color: #445375;
+  }
+
+  div.gr {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #D6ADD6;
+    border-color: #6b566b;
+    display: none;
+  }
+
+  div.bp {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: LightGrey;
+    border-color: DarkSlateGrey;
+    display: none;
+  }
+
+  div.nb {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #E4D2BA;
+    border-color: #72695d;
+    display: none;
+  }
+
+  div.info {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #ffeeb4;
+    border-color: #7f775a;
+  }
+
+  div.navwrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(auto, auto);
+  }
+
+  div.navbox {
+    grid-column: 1;
+    grid-row: 1;
+    border: 3px solid;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: lightgrey;
+  }
+  table {
+    width: 100%;
+  }
+  .title, .section {
+    text-align: left;
+    line-height: 120%;
+  }
+  .game-gif {
+    padding: 0;
+  }
+  iframe {
+    width: 75%;
+    height: 75%;
+  }
+
+
+
 }

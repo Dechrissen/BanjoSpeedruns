@@ -3,22 +3,23 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Derek Andersen">
     <meta name="description" content="Website for the Banjo-Kazooie speedrunning community. A central hub for all things Banjo-Kazooie speedrun related. A compendium of documented tricks, tutorials, glitches, routes, and resources.">
     <link rel="stylesheet" type="text/css" href="/styles.css">
-    <link rel="icon" type="image/png" href="/images/icon.png">
+    <link rel="icon" type="image/png" href="/assets/images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Banjo-Kazooie Bitclips Guide | Banjo Speedruns</title>
 </head>
 
 <body>
-  <p style="font-size: .8em;"><a href="/home.html">← Back to Homepage</a></p>
+  <p id="back-button"><a href="/home.html">← Back to Homepage</a></p>
 
   <h1 class="title">Banjo-Kazooie Bitclips Guide</h1>
 
   <div class="navwrapper">
       <div class="navbox">
-          <h4>Table of Contents</h2>
+          <h4>Table of Contents</h4>
           <ol id="boxlist">
             <li><a href="#what-is-a-bitclip">What is a Bitclip?</a></li>
             <li><a href="#how-are-bitclips-found">How are Bitclips Found?</a></li>
@@ -69,7 +70,7 @@
 <p>This video goes over both movement options and angle/direction change options, to give a visual along with a slightly less in-depth explanation: </p>
 <iframe src="https://youtube.com/embed/OBGkHdv90l4" width="480" height="270"></iframe>
 <h3 id="movement-options">Movement Options</h3>
-<ul style="line-height: 190%; list-style-type: square;">
+<ul style="line-height: 190%; list-style-type: '♫ ';">
 <li><p><strong>Talon trot pause</strong> – This is the fastest form of movement we can do to consistently get close to our Bitclip point. It&#39;s most efficiently used when you have to travel a far distance to get to the general area where the bitclip will occur. For example, going from the loading zone to the stairs for MMM early or going from the puzzle switch to the shockpad for CCW early. The way we do this is by buffering a cardinal direction on the joystick (up, down, left, or right) while we get in talon trot so we’re holding that direction fully by the time we start moving, and then pausing on a specific frame. This pause is generally the hardest part about bitclips setup because if you miss the pause you must go all the way back and try it again.</p>
 </li>
 <li><p><strong>Beakbarges</strong> – Beakbarging is a good way of moving consistently. For all cases we either do a short beakbarge or long beakbarge (anything in between would be inconsistent. After a short or long beakbarge, Banjo will fully stop moving right about when he faces his nose to his right. If we hold Z after a beakbarge until banjo peaks his nose up, we can move a bit more distance which can be useful in some places.</p>
@@ -85,7 +86,13 @@
 <p>The second method is by using what we call <strong>twirly whirlies</strong>. This is the method we use that gives us the most precise directions so there are a lot of different aspects to consider and properties to learn.  </p>
 <p>To do a twirly whirly, you press C-up and buffer either right or left on the joystick while you get into first person - similar to how we buffer a joystick input while we get in talon trot. Then the camera will continuously change 3 degrees per frame and your goal is to pause on a specific frame to get a specific angle. Then you would let go of all your inputs, unpause, get out of first person, then do whatever movement input is next in your setup.  </p>
 <p>You can continuously turn right without any issue, but you cannot continuously turn left otherwise your angle will change a bit on a miniscule level every <strong>full loop</strong> causing your angle to be off just slightly. Now this doesn’t mean you have to continuously hold right and pause on every <strong>full loop</strong>, what you can do instead is hold right to get to the angle you want to pause at, and if you fail then you can buffer left while unpausing, go back to the left so you go a bit past the angle you want, pause again, buffer right while you unpause, then attempt to get the right angle again while turning right. This is faster than making a full loop for every attempt (In that example left and right are interchangeable, you can try and get your pause while holding right or left - it doesn&#39;t matter). Point is to just avoid doing a full loop (especially while holding left). Example:  </p>
-<img src="/images/mmm-early.gif" class="tab game-gif" style="margin-left: auto; margin-right: auto; display: block;">
+<video class="tab game-vid" controls width="300" autoplay="true" muted="true" loop="true" preload="metadata">
+
+    <source src="/assets/videos/mmm-early.mp4"
+            type="video/mp4">
+
+    Sorry, your browser doesn't support embedded videos.
+</video>
 <p>It’s worth noting that if you’re going left/right at full speed, it&#39;s ok if you accidentally move the camera up or down a tiny bit. It will mess with your visual cues a bit but will still work if you can still pause on the right angles.  </p>
 <p>Another thing to keep in mind is the possibility of getting a lag frame. A lag frame can happen if Grunty talks while you turn, or it could spontaneously happen while you face a laggy part of the room you are in. A lag frame changes the angle you are on by 1.5 (keep in mind normally you turn 3 degrees per frame) so the pattern is thrown off and it can make it impossible to get the right angle. Fortunately, you can fix this sometimes by trying to force another lag frame. The best way to do this is to purposely face towards a laggy part of the room and pause, then sometimes you’ll get another lag frame and the patterns will revert back to normal (1.5+1.5=3). Unfortunately, there isn’t really a way to tell if you got a lag frame other than being able to recognize when your pauses are unusually off.  </p>
 <p>Finally, there will be some instances where you must pause very shortly after getting into C-up. In some of these cases, your moving angle (the actual angle Banjo is facing) will be changing at a constant speed like normal, but your facing angle (the angle that the camera shows you) will still be accelerating to the normal speed it turns at. This just means that if you have to pause almost instantly, and you get it first try, your visual cues would be a tiny bit different compared to if you were to get it on another attempt when your camera is moving at a constant speed. Most tutorials/documents will show you both cues, so you won’t have to worry. </p>

@@ -3,23 +3,23 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Derek Andersen">
-    <meta name="description" content="Website for the Banjo-Kazooie speedrunning community. A central hub for all things Banjo-Kazooie speedrun related. A compendium of documented tricks, tutorials, glitches, routes, and resources.">
     <link rel="stylesheet" type="text/css" href="/styles.css">
-    <link rel="icon" type="image/png" href="/images/icon.png">
+    <link rel="icon" type="image/png" href="/assets/images/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <script type="text/javascript" src="/JavaScript/levels.js"></script>
     <title>BK/BT Level Template</title>
 </head>
 
 <body onload=injectLevelData()>
-    <p style="font-size: .8em;"><a href="/home">← Back to Homepage</a></p>
+    <p id="back-button"><a href="/home">← Back to Homepage</a></p>
 
     <h1 class="title" id="levelname">[LEVEL NAME]</h1>
 
     <div class="navwrapper">
         <div class="navbox">
-            <ul id="boxlist"></ul>
+            <ul id="boxlist" style="list-style-type: none;"></ul>
         </div>
     </div>
 

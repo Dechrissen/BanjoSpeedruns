@@ -1,0 +1,250 @@
+@font-face {
+  font-family: "Comicrazy";
+  src: url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.eot"); /* IE9*/
+  src: url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/CCComicrazy/03e56e6a9578c7e735af7c4befe478f7.svg#CCComicrazy Regular") format("svg"); /* iOS 4.1- */
+  font-weight: normal;
+}
+
+body.bingo-toolie {
+	background-color: #35383F;
+}
+
+#title {
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+textarea {
+	font-size: 18px;
+}
+
+form {
+	padding: 10px;
+}
+label {
+	padding: 2px;
+	font-family: 'Arial', sans-serif;
+}
+
+/* Counters */
+.quantity {
+	position: relative;
+	width: 100%;
+	margin-bottom: 0px;
+	margin-left: 10px;
+
+}
+
+.quantity input[type=number] {
+	-moz-appearance: textfield;
+}
+
+.quantity input {
+	width: 50px;
+	text-align: center;
+	padding: 0px;
+	padding-left: 0px; /* use this if input is not centered */
+	margin-bottom: 10px;
+  font-family: 'Comicrazy';
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; 
+	font-weight: normal;
+	font-size: 24px;
+}
+
+.quantity input:focus {
+	outline: 0;
+}
+
+.quantity-button {
+	cursor: pointer;
+	border: solid 1px solid #eee;
+	border-radius: 100%;
+	width: 30px; /* previously 26px */
+	text-align: center;
+	color: black;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+.quantity-button:hover {
+	background-color: #9a9a9a;
+}
+
+.quantity-button.quantity-up,
+.quantity-button.quantity-down,
+.quantity input {
+	border: solid 1px grey;
+	display: inline-block;
+	height: 50px; /* previously 42px ... this has to be 2px more than the one below */
+	line-height: 50px; /* previously 40px */
+}
+
+.quantity input {
+	border-radius: 10px;
+}
+
+.quantity-button.quantity-up {
+	/*border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;*/
+	border: none;
+
+}
+
+.quantity-button.quantity-down {
+	float: left;
+	/*border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;*/
+	border: none;
+
+}
+
+.icon {
+	float: left;
+	padding-right: 25px;
+}
+
+p.level-name {
+	font-family: 'Comicrazy', Times, serif;
+	margin: 0px;
+	-webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p.needed-moves {
+	text-align: center;
+	font-family: 'Comicrazy',Times,serif;
+	-webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* CSS Grid */
+div.page-wrapper {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(auto, auto);
+	padding: 10px;
+}
+div #app {
+	position: absolute;
+	grid-column: 1;
+  grid-row: 1;
+}
+div #how-to-use {
+	grid-column: 3;
+  grid-row: 1;
+
+	padding-right: 20px;
+}
+div #how-to-use p, li {
+	color: lightgrey;
+	font-size: 1.3rem;
+	font-family: 'Comicrazy',Times,serif;
+	-webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+div.wrapper {
+	/*position: absolute;*/
+  display: grid;
+  grid-template-columns: repeat(3, 9fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(auto, auto);
+	padding: 10px;
+	border: solid 2px Black;
+	border-radius: 5px;
+	background-color: LightGrey;
+}
+
+div.counter {
+  padding: 4px;
+}
+div #title {
+	grid-column: 1 / span 2;
+  grid-row: 1;
+}
+div #glowbo {
+  grid-column: 1;
+  grid-row: 2;
+}
+div #honeycomb {
+  grid-column: 1;
+  grid-row: 3;
+}
+div #hive {
+  grid-column: 2;
+  grid-row: 2;
+}
+div #minjo {
+  grid-column: 2;
+  grid-row: 3;
+}
+div #cheato-page {
+  grid-column: 1;
+  grid-row: 4;
+}
+div #treble {
+  grid-column: 1;
+  grid-row: 5;
+}
+div #mumbo-pad {
+  grid-column: 2;
+  grid-row: 4;
+}
+div #boss {
+  grid-column: 2;
+  grid-row: 5;
+}
+div #train {
+  grid-column: 1;
+  grid-row: 6;
+}
+div #egg {
+  grid-column: 2;
+  grid-row: 6;
+}
+div #text-box {
+	grid-column: 1 / span 2;
+  grid-row: 7;
+}
+div #clear-button {
+	grid-column: 1;
+  grid-row: 8;
+}
+
+div #move-list {
+	grid-column: 3;
+	grid-row: 1 / span 8;
+	font-size: 15px;
+}
+
+@media only screen and (max-width: 418px) {
+  /* For mobile phones*/
+div #how-to-use {
+  display: none;
+}
+div.page-wrapper {
+  grid-template-columns: repeat(1, 1fr);
+}
+div #app {
+	position: absolute;
+	grid-column: 1;
+  grid-row: 1;
+}
+
+}
