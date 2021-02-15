@@ -13,12 +13,14 @@ Added:
 - BK category extensions redirect page (/bk/category-extensions).
 - BT category extensions redirect page (/bt/category-extensions).
 - BK bitclips guide (/bk/bitclips).
-- Dark(er) theme.
 - Endpoints for version changelogs (like this one) (e.g. /updates/1.2 for version 1.2 notes). Current version changelog will now be clickable in footer sitewide.
-- New font for headings (CCComicrazy).
 
 Changed:
 
+- Changes to project directory structure:
+  - one directory per game (e.g. /bk for Banjo-Kazooie)
+  - /assets directory for images, videos, etc.
+  - homepage and 'main' pages sit in the root
 - Changes to URL nomenclature for consistency:
   - /bklevels/ttc --> /bk/levels/ttc
   - /bkcategories/100 --> /bk/categories/100
@@ -26,9 +28,11 @@ Changed:
   - etc.
 - Reorganized homepage, removed BP/GR/N&B panels until they are needed.
 - Better responsive design for most mobile phones (not perfect, but a lot better than v1.1).
+- Dark(er) theme.
+- New font for headings & elsewhere (CCComicrazy).
 - Style changes (headings, fonts, links, colors, etc.).
 
 Fixed:
 
-- Compressed GIFs and converted to MP4s for faster load times with the pages that use them (thanks, wed).
-- Fixed some broken video embeds.
+- Faster load times on the pages that used GIFs (compressed and converted to MP4s) (thanks, wed).
+- Fixed some broken video embeds on the level pages.
