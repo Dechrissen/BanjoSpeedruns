@@ -111,7 +111,7 @@ function checkURLForHash () {
   }
   else {
     var bookmark = hash[1];
-    document.getElementById(bookmark).scrollIntoView({behavior: 'smooth', alignToTop: true}); //TODO fix this scroll acting weird in Firefox
+    document.getElementById(bookmark).scrollIntoView({behavior: 'smooth', alignToTop: true});
   }
 }
 
