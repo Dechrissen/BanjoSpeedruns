@@ -15,7 +15,7 @@ individual game are below.
 - You can run your JSON through [this tool](https://jsonlint.com/?code=) to check its validity
 
 ### JSON to level page mapping
-<img src='https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/images/JSONtoPageGuide.png' width='500'>
+<img src='https://github.com/Dechrissen/Banjo_Speedrunning_Wiki/blob/master/assets/images/JSONtoPageGuide.png' width='500'>
 
 ## Banjo-Kazooie
 
