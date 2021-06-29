@@ -1,0 +1,53 @@
+{
+	"title": "100% No FFM",
+	"leaderboard": "https://www.speedrun.com/bkce#100_No_FFM",
+	"description": "This category involves collecting everything on the totals screen without the use of Furnace Fun Moves (FFM). There are generally 2 main routes for this category, No RBA and RRBA. No RBA is considered to be the ‘beginner’ route whereas RRBA is considered to be the ‘intermediate’ route. It is HIGHLY recommended to start with the RRBA route. The No RBA route exists mainly for emulator runners (since RBA does not work on emu) or those who absolutely cannot do the 765 clip. The RBA clip is not considered difficult by many. It saves a minute over the No RBA route, and it will allow you to easily transfer to the advanced route with boggy race as the bee when you are ready as the routes are 99% the same. (Note: This category will likely be moved to the main leaderboards on SRC soon)",
+	"routedocuments": [{
+			"name": "BK 100% No FFM Written Route Document (Beginner - No RBA)",
+			"link": "https://bit.ly/3h9fnDP"
+		},
+		{
+			"name": "BK 100% No FFM Written Route Document (Intermediate/Advanced - RRBA)",
+			"link": "https://bit.ly/3fgAEvI"
+		},
+		{
+			"name": "Mumbo Token Route for 100% No FFM Beginner Route",
+			"link": "https://pastebin.com/PRuyEcXZ"
+		},
+		{
+			"name": "Mumbo Token Route for 100% No FFM Intermediate/Advanced Route",
+			"link": "https://pastebin.com/hAvMkz9w"
+		},
+		{
+			"name": "BK 100% No FFM Beginner Route Demonstration by Azmi (Commentated)",
+			"link": "https://youtu.be/_GCvJcwEhe4"
+		},
+		{
+			"name": "BK 100% No FFM Intermediate Route Demonstration by Azmi (Commentated)",
+			"link": "https://youtu.be/VMzF3lMUAnI"
+		}
+	],
+	"videos": [{
+			"name": "Movement Mechanics Tutorial by The8bitbeast",
+			"video": "https://www.youtube.com/embed/4bgCu5itIBE"
+		},
+		{
+			"name": "765 Note Door Clip Tutorial (RBA)",
+			"video": "https://www.youtube.com/embed/WrLXEUN1G_8?start=66"
+		},
+		{
+			"name": "Boggy Race as the Bee Tutorial",
+			"video": "https://www.youtube.com/embed/Z9FDFBuE4bQ"
+		},
+		{
+			"name": "Leaky Skip Tutorial",
+			"video": "https://www.youtube.com/embed/n1azaxJDI84"
+		},
+		{
+			"name": "Learning Speedshoes Under Rubee's Timer",
+			"video": "https://www.youtube.com/embed/d-umjMqbUr0"
+		}
+
+
+	]
+}
