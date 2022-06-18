@@ -1,83 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Derek Andersen">
-    <meta name="description" content="Website for the Banjo-Kazooie speedrunning community. A central hub for all things Banjo-Kazooie speedrun related. A compendium of documented tricks, tutorials, glitches, routes, and resources.">
-    <link rel="stylesheet" type="text/css" href="/styles.css">
-    <link rel="icon" type="image/png" href="/assets/images/icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="author" content="Derek Andersen" />
+    <meta
+      name="description"
+      content="Website for the Banjo-Kazooie speedrunning community. A central hub for all things Banjo-Kazooie speedrun related. A compendium of documented tricks, tutorials, glitches, routes, and resources."
+    />
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <link rel="icon" type="image/png" href="/assets/images/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Donate | Banjo Speedruns</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="page-container">
-        <div id="content-wrap">
+      <div id="content-wrap">
+        <p class="logo">
+          <a href="/home"
+            ><img
+              class="logo"
+              src="/assets/images/banjospeedruns-logo.png"
+              alt="banjospeedruns.com logo"
+          /></a>
+        </p>
 
-            <p class="logo"><a href="/home"><img class="logo" src="/assets/images/banjospeedruns-logo.png" alt="banjospeedruns.com logo"></a></p>
+        <div class="topnav">
+          <a href="/home">Home</a>
+          <a href="/about">About</a>
+          <a class="active" href="/donate">Donate</a>
+        </div>
+        <br />
 
+        <h3 class="section">Donate</h3>
+        <hr />
+        <p class="tab">
+          This community website will always be ad-free. However, our server
+          upkeep and domain fees total $70 ~ $80 annually. Please consider
+          donating to help keep our site running. Even a small one-time donation
+          would be helpful and appreciated. If you'd like to donate, please
+          click the button below!
+        </p>
+        <p class="tab">
+          Even if we reach our goal for the year's fees, donations are still
+          accepted! Donations beyond the goal amount will be greatly
+          appreciated!
+        </p>
 
-            <div class="topnav">
-                <a href="/home">Home</a>
-                <a href="/about">About</a>
-                <a class="active" href="/donate">Donate</a>
-            </div>
-            <br>
+        <br />
 
-            <h3 class="section">Donate</h3>
-            <hr>
-            <p class="tab">This community website will always be ad-free. However, our server upkeep and domain fees total $70 ~ $80 annually.
-              Please consider donating to help keep our site running. Even a small one-time donation would be helpful and appreciated.
-              If you'd like to donate, please click the button below!</p>
-            <p class="tab">Even if we reach our goal for the year's fees, donations are still accepted!
-              Donations beyond the goal amount will be greatly appreciated!</p>
+        <div class="tab" style="float: left; padding-right: 5rem;">
+          <h3 style="font-family: 'Charter';">Breakdown</h3>
+          <ul style="list-style: none; padding-left: 0;">
+            <li>Hosting ................... $60</li>
+            <li>Domain ................... $12</li>
+            <li>__________________________</li>
+            <li>Total ....................... <b>$72</b></li>
+          </ul>
+        </div>
 
-            <br>
+        <div style="float: left;">
+          <h3 style="font-family: 'Charter';">Donate to Banjo Speedruns!</h3>
 
-
-
-            <div class="tab" style="float: left; padding-right: 5rem;">
-            <h3 style="font-family: 'Charter';">Breakdown (2021)</h3>
-            <ul style="list-style: none; padding-left: 0;">
-              <li>Hosting ................... $60</li>
-              <li>Domain ................... $12</li>
-              <li>__________________________</li>
-              <li>Total ....................... <b>$72</b></li>
-            </ul>
-            </div>
-
-            <div style="float: left;">
-            <h3 style="font-family: 'Charter';">Donate to Banjo Speedruns!</h3>
-
-            <form  action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <form
+            action="https://www.paypal.com/cgi-bin/webscr"
+            method="post"
+            target="_top"
+          >
             <input type="hidden" name="cmd" value="_donations" />
             <input type="hidden" name="business" value="EZVQJ9GWV2SMN" />
             <input type="hidden" name="currency_code" value="USD" />
-            <input type="image" src="/assets/images/paypal-button.png" border="0" width="220px" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-            </form>
-
-            </div>
-
-            <br style="clear: both;">
-
-            <p style="text-align: center; font-size: 150%; font-family: 'Comicrazy';">2021 Site Costs</p>
-            <p id="outof"></p>
-            <div class="meter red">
-              <span id="bar" style="width: 0%;"></span>
-            </div>
-
-
-            <script src="/JavaScript/donations.js"></script>
+            <input
+              type="image"
+              src="/assets/images/paypal-button.png"
+              border="0"
+              width="220px"
+              name="submit"
+              title="PayPal - The safer, easier way to pay online!"
+              alt="Donate with PayPal button"
+            />
+            <img
+              alt=""
+              border="0"
+              src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+              width="1"
+              height="1"
+            />
+          </form>
         </div>
 
-        <footer id="sticky-footer">
-            <script type="text/javascript" src="/JavaScript/footer.js"></script>
-        </footer>
+        <br style="clear: both;" />
 
+        <p
+          style="text-align: center; font-size: 150%; font-family: 'Comicrazy';"
+        >
+          2022 Site Costs
+        </p>
+        <p id="outof"></p>
+        <div class="meter red">
+          <span id="bar" style="width: 0%;"></span>
+        </div>
+
+        <script src="/JavaScript/donations.js"></script>
+      </div>
+
+      <footer id="sticky-footer">
+        <script type="text/javascript" src="/JavaScript/footer.js"></script>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
