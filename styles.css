@@ -25,7 +25,7 @@ body.home {
 }
 
 body {
-  background-color: #E8E8E8;
+  background-color: white;
   margin-left: 24%;
   margin-right: 24%;
   margin-top: 0px;
@@ -35,7 +35,7 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 1em;
   line-height: 140%;
-  box-shadow: -5px -1px 5px 0px #E8E8E8, 5px -1px 5px 0px #E8E8E8;
+  box-shadow: -5px -1px 5px 0px white, 5px -1px 5px 0px white;
 }
 
 #back-button {
