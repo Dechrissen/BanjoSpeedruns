@@ -435,7 +435,7 @@ body.home .topnav a.active {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #E8E8E8;
+  background-color: white;
   overflow: hidden;
 
   /* Navbox centering */
