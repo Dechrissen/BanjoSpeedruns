@@ -40,8 +40,8 @@ ghLi.appendChild(gh);
 // BanjoSpeedruns current version number
 var ver = document.createElement("p");
 var verLink = document.createElement("a");
-verLink.setAttribute("href", "/updates/1.2");
-var verText = document.createTextNode("BanjoSpeedruns v1.2");
+verLink.setAttribute("href", "/updates/1.3");
+var verText = document.createTextNode("BanjoSpeedruns v1.3");
 verLink.appendChild(verText);
 ver.appendChild(verLink);
 var verLi = document.createElement("li");
