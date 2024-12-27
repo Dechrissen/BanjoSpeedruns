@@ -7,3 +7,4 @@ BanjoSpeedruns Version 1.3 Changelog
 Added:
 
 - Link to Azmi's BK100 Bootcamp Discord server in the BK panel on the homepage.
+- Support for the 'www' prefix in the url hostname
